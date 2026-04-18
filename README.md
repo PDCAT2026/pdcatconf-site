@@ -1,6 +1,4 @@
-# pdcatconf2025 https://www.pd-cat.org/
-
-# PDCAT Conference Website
+# PDCAT Conference Website https://www.pd-cat.org/
 
 This repository hosts the official PDCAT conference website using GitHub Pages and a custom domain.
 
