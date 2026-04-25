@@ -97,21 +97,30 @@
 
               <div id="map" style="width: 800px; height: 500px; margin: 0 auto;"></div>
 
-              <script src="https://webapi.amap.com/maps?v=2.0&key=d2f2d6ae8c3f93409ada39dead876260"></script>
+              <script src="https://webapi.amap.com/maps?v=2.0&key=你的KEY"></script>
 
               <script>
                 var map = new AMap.Map('map', {
-                  zoom: 15,
-                  center: [112.944991, 28.178328]  // 你现在的经纬度（长沙）
+                  zoom: 16,
+                  center: [112.9389, 28.1736]
                 });
 
                 var marker = new AMap.Marker({
-                  position: [112.944991, 28.178328],
-                  title: "Conference Venue"
+                  position: [112.9389, 28.1736],
+                  title: "National Supercomputing Center in Changsha"
                 });
 
                 map.add(marker);
+
+                var info = new AMap.InfoWindow({
+                  content: "<h4>国家超级计算长沙中心</h4><p>Changsha, China</p>"
+                });
+
+                marker.on('click', function () {
+                  info.open(map, marker.getPosition());
+                });
               </script>
+              
               </div>
         </div>
       </div>
