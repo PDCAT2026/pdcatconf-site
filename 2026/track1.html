@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Minimal bootstrap head to avoid empty-head flash; the full head is appended below -->
+  <meta charset="utf-8">
+  <title>PDCAT 2026</title>
+<link href="css/pdcat-dropdown.css" rel="stylesheet">
+  <!-- Preload partials before we fetch and insert them -->
+  <link rel="preload" href="my_head.html" as="fetch" crossorigin>
+  <link rel="preload" href="my_navbar.html" as="fetch" crossorigin>
+  <link rel="preload" href="my_footer.html" as="fetch" crossorigin>
+
+  <script>
+    // Safely append head partial without wiping existing tags
+    fetch('my_head.html')
+      .then(res => res.text())
+      .then(html => {
+        document.head.insertAdjacentHTML('beforeend', html);
+      })
+      .catch(console.error);
+  </script>
+  <!-- Bootstrap core CSS -->
+<link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<!-- Plugin CSS -->
+<link href="../vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+<!-- Font Awesome -->
+<link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<!-- Custom styles -->
+<link href="../css/creative.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800|Merriweather:300,400,700,900&display=swap" rel="stylesheet">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Special Track 6 - AI-Driven Service Computing</title>
+    <style>
+        /* 基础样式重置 */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            color: #333333;
+            background-color: #ffffff;
+            line-height: 1.6;
+        }
+
+        /* 页面核心容器 */
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 60px 20px;
+        }
+
+        /* 顶部标题区 */
+        .header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .header h1 {
+            font-size: 36px;
+            font-weight: 500;
+            margin: 0 0 10px 0;
+            color: #000000;
+        }
+
+        .header h2 {
+            font-size: 28px;
+            font-weight: 500;
+            margin: 0 0 25px 0;
+            color: #000000;
+        }
+
+        /* 标题下方的装饰短线 */
+        .divider {
+            width: 80px;
+            height: 2px;
+            background-color: #000000;
+            margin: 0 auto;
+        }
+
+        /* 区域小标题 (Chairs, Introduction, Topics) */
+        .section-title {
+            font-size: 22px;
+            font-weight: bold;
+            color: #333333;
+            margin-top: 40px;
+            margin-bottom: 25px;
+        }
+
+        /* 委员卡片容器 (核心自适应设计)
+           无论放2个、3个还是更多，都会自动居中并优雅换行
+        */
+        .chairs-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 40px; /* 卡片之间的间距 */
+            margin-bottom: 50px;
+        }
+
+        /* 单个委员卡片 */
+        .chair-card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            width: 220px; /* 固定卡片宽度，保证整齐 */
+        }
+
+        /* 头像样式 */
+        .chair-avatar {
+            width: 150px;
+            height: 180px;
+            object-fit: cover; /* 保证图片不变形 */
+            background-color: #e0e0e0; /* 图片未加载时的占位背景 */
+            margin-bottom: 15px;
+        }
+
+        /* 委员姓名 */
+        .chair-name {
+            font-size: 20px;
+            font-weight: 500;
+            color: #222222;
+            margin-bottom: 6px;
+        }
+
+        /* 委员单位机构 */
+        .chair-institution {
+            font-size: 14px;
+            color: #666666;
+        }
+
+        /* 介绍段落 */
+        .introduction-text {
+            font-size: 15px;
+            color: #444444;
+            text-align: justify;
+            margin-bottom: 40px;
+        }
+
+        /* 主题列表 */
+        .topics-list {
+            padding-left: 20px;
+            margin: 0;
+        }
+
+        .topics-list li {
+            font-size: 15px;
+            color: #333333;
+            margin-bottom: 10px;
+            list-style-type: disc;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <div class="header">
+            <h1>Special Track 6</h1>
+            <h2>AI-Driven Service Computing</h2>
+            <div class="divider"></div>
+        </div>
+
+        <h3 class="section-title">Chairs</h3>
+        <div class="chairs-container">
+            
+            <div class="chair-card">
+                <img class="chair-avatar" src="https://via.placeholder.com/150x180?text=Avatar+1" alt="Buqing Cao">
+                <div class="chair-name">Buqing Cao</div>
+                <div class="chair-institution">Hunan University of Technology</div>
+            </div>
+
+            <div class="chair-card">
+                <img class="chair-avatar" src="https://via.placeholder.com/150x180?text=Avatar+2" alt="Pengcheng Zhan">
+                <div class="chair-name">Pengcheng Zhan</div>
+                <div class="chair-institution">Hohai University</div>
+            </div>
+
+            <div class="chair-card">
+                <img class="chair-avatar" src="https://via.placeholder.com/150x180?text=Avatar+3" alt="Yiwen Zhang">
+                <div class="chair-name">Yiwen Zhang</div>
+                <div class="chair-institution">Anhui University</div>
+            </div>
+
+            </div>
+
+        ---
+
+        <h3 class="section-title">Introduction</h3>
+        <p class="introduction-text">
+            As the wave of artificial intelligence deepens, AI-driven service computing has become a core engine reshaping the digital service ecosystem, integrating advanced AI technologies with service design, delivery, and management to realize intelligent, efficient, and personalized service innovation. This track focuses on the cutting-edge intersection of AI and service computing, aiming to gather global academic achievements and industrial practices, explore solutions to key challenges in intelligent service systems, and promote the innovation and application of intelligent service technologies. We warmly invite researchers, engineers, and practitioners worldwide to submit original research works.
+        </p>
+
+        <h3 class="section-title">Topics</h3>
+        <ul class="topics-list">
+            <li>AI-Native Service Modeling and Orchestration</li>
+            <li>Edge AI Service Computing</li>
+            <li>LLM-Powered Service Innovation</li>
+            <li>Intelligent Service Quality & Resource Optimization</li>
+            <li>Industry-Specific AI Service Applications</li>
+        </ul>
+
+    </div>
+
+</body>
+
+</html>
