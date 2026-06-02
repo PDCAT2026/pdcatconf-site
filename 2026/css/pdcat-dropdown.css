@@ -1,82 +1,59 @@
-/* CFP Dropdown */
-
-.special-track-menu{
-    display:none;
-    position:absolute;
-    left:100%;
-    top:0;
-    min-width:220px;
-    background:#fff;
-    border:1px solid #ddd;
-    box-shadow:0 3px 10px rgba(0,0,0,.15);
-    z-index:9999;
-}
-
-.dropdown-menu{
-    position:absolute;
-}
-
-.dropdown-item{
-    position:relative;
-}
-
-.dropdown-item:hover{
-    background:#f8f9fa;
-}
-/* 二级菜单容器 */
-
 .dropdown-submenu{
     position:relative;
 }
 
-/* 右侧菜单 */
+/* 右侧弹出菜单 */
 
 .special-track-menu{
+
     display:none;
+
     position:absolute;
 
     left:100%;
-    top:-1px;
+    top:0;
 
-    min-width:260px;
+    min-width:350px;
 
     background:#fff;
 
-    border:1px solid #e5e5e5;
+    border:1px solid #ddd;
 
-    box-shadow:
-        0 4px 12px rgba(0,0,0,.12);
+    box-shadow:0 4px 10px rgba(0,0,0,.15);
 
-    z-index:9999;
+    z-index:99999;
 }
 
-/* 鼠标放上去显示 */
+/* 鼠标移上去显示 */
 
-.dropdown-submenu:hover
-.special-track-menu{
+.dropdown-submenu:hover .special-track-menu{
     display:block;
 }
 
-/* Special Tracks 后面的箭头 */
+/* Track条目 */
 
-.special-track::after{
-
-    content:"›";
-
-    position:absolute;
-
-    right:15px;
-
-    font-size:20px;
-
-    color:#888;
+.special-track-menu .dropdown-item{
+    display:block;
+    padding:12px 20px;
+    white-space:normal;
 }
 
 /* hover效果 */
 
 .special-track-menu .dropdown-item:hover{
+    background:#f5f5f5;
+}
 
-    background:#f8f9fa;
+/* Special Tracks右箭头 */
 
-    color:#00843d;
+.special-track{
+    position:relative;
+}
+
+.special-track::after{
+    content:"›";
+    position:absolute;
+    right:15px;
+    font-size:20px;
+    color:#999;
 }
