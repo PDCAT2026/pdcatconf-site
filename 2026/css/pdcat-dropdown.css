@@ -13,9 +13,9 @@
     left:100%;
     top:0;
 
-    min-width:550px;
+    min-width:750px;
 
-    text-align: justify;
+    /* text-align: justify; */
     background:#fff;
 
     border:1px solid #ddd;
