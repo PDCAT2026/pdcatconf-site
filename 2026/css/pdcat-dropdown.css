@@ -25,6 +25,13 @@
     z-index:99999;
 }
 
+
+.special-track-menu .dropdown-item:hover,
+.dropdown-submenu:hover > .special-track {
+    background-color: #c82333 !important;
+    color: #fff !important;
+}
+
 /* 鼠标移上去显示 */
 
 .dropdown-submenu:hover .special-track-menu{
