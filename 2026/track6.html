@@ -3,20 +3,19 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Special Track 9 | PDCAT 2026</title>
+    <title>Special Track 6 | PDCAT 2026</title>
 
     <!-- Dropdown CSS -->
-    <!-- Dropdown CSS -->
-    <link href="../css/pdcat-dropdown.css" rel="stylesheet">
+    <link href="css/pdcat-dropdown.css" rel="stylesheet">
 
     <!-- Preload -->
-    <link rel="preload" href="../my_head.html" as="fetch" crossorigin>
-    <link rel="preload" href="../my_navbar.html" as="fetch" crossorigin>
-    <link rel="preload" href="../my_footer.html" as="fetch" crossorigin>
+    <link rel="preload" href="my_head.html" as="fetch" crossorigin>
+    <link rel="preload" href="my_navbar.html" as="fetch" crossorigin>
+    <link rel="preload" href="my_footer.html" as="fetch" crossorigin>
 
     <!-- Load shared head -->
     <script>
-        fetch('../my_head.html')
+        fetch('my_head.html')
             .then(res => res.text())
             .then(html => {
                 document.head.insertAdjacentHTML('beforeend', html);
@@ -25,16 +24,16 @@
     </script>
 
     <!-- Bootstrap -->
-    <link href="../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Plugin CSS -->
-    <link href="../../vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+    <link href="../vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
 
     <!-- Font Awesome -->
-    <link href="../../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
 
     <!-- Theme -->
-    <link href="../../css/creative.css" rel="stylesheet">
+    <link href="../css/creative.css" rel="stylesheet">
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800|Merriweather:300,400,700,900&display=swap" rel="stylesheet">
@@ -86,12 +85,13 @@
         .chairs-container {
             display: flex;
             justify-content: center;
-            flex-wrap: wrap;
-            gap: 40px;
+            flex-wrap: nowrap;
+            gap: 20px;
         }
 
         .chair-card {
             width: 220px;
+            flex: 0 0 220px;
             text-align: center;
         }
 
@@ -142,8 +142,8 @@
     <div class="track-container">
 
         <div class="track-header">
-            <h1>Special Track 9</h1>
-            <h2>Artificial Intelligence for Next-Generation Drug Design and Discovery: Models, Mechanisms, and Translational Applications</h2>
+            <h1>Special Track 6</h1>
+            <h2>Intelligent Embedded Systems: Architectures, Storage, Scheduling, and Agentic Computing</h2>
             <div class="divider"></div>
         </div>
 
@@ -152,30 +152,38 @@
         <div class="chairs-container">
 
             <div class="chair-card">
-                <img src="../img/tracks/Haolin.jpg"
+                <img src="../img/tracks/Xianzhangchen.png"
                      class="chair-avatar"
                      alt="Chair 1">
 
-                <div class="chair-name">Hao Lin</div>
-                <div class="chair-institution">University of Electronic Science and <br>Technology of China</div>
+                <div class="chair-name">Xianzhang Chen</div>
+                <div class="chair-institution">Chongqing University</div>
             </div>
 
             <div class="chair-card">
-                <img src="../img/tracks/Feiguo.jpg"
+                <img src="../img/tracks/Junlongzhou.jpg"
                      class="chair-avatar"
                      alt="Chair 2">
 
-                <div class="chair-name">Fei Guo</div>
-                <div class="chair-institution">Central South University</div>
+                <div class="chair-name">Junlong Zhou</div>
+                <div class="chair-institution">Nanjing University of<br> Science and Technology</div>
             </div>
 
             <div class="chair-card">
-                <img src="../img/tracks/Muhammadarif.jpg"
+                <img src="../img/tracks/Diliu.jpg"
                      class="chair-avatar"
                      alt="Chair 3">
 
-                <div class="chair-name">Muhammad Arif</div>
-                <div class="chair-institution">Hamad Bin Khalifa University</div>
+                <div class="chair-name">Di Liu</div>
+                <div class="chair-institution">Norwegian University of<br> Science and Technology</div>
+            </div>
+            <div class="chair-card">
+                <img src="../img/tracks/Zhiweifeng.jpg"
+                     class="chair-avatar"
+                     alt="Chair 1">
+
+                <div class="chair-name">Zhiwei Feng</div>
+                <div class="chair-institution">Northeastern University</div>
             </div>
 
         </div>
@@ -183,19 +191,23 @@
         <h3 class="section-heading">Introduction</h3>
 
         <p class="introduction-text">
-The rapid evolution of computational methodologies, encompassing machine learning, generative modeling, and large-scale biomedical data integration, is fundamentally reshaping the paradigm of modern drug design and discovery. Traditional drug discovery pipelines are inherently constrained by prolonged development cycles, high attrition rates, and limited capacity for systematic exploration of the vast chemical space. With the exponential growth of genomic and multi-omics profiles, high-resolution structural data, and complex pharmacological networks, advanced computational architectures now offer unprecedented opportunities to accelerate target identification, molecular generation, and precision therapeutics.
+The rapid advancement of intelligent vehicles, satellite platforms, smart terminals, robots, drones, and unmanned systems is reshaping the landscape of embedded and edge computing. These systems are evolving from conventional embedded devices into intelligent terminal systems that integrate sensing, computing, storage, communication, decision-making, and real-time control. Such a transformation brings new requirements for low-latency response, reliable execution, efficient data management, adaptive task scheduling, and robust system operation under resource-constrained and dynamic environments.        
         </p>
-        <p class="introduction-text">Recent breakthroughs—such as deep learning-driven molecular generation, high-throughput virtual screening, and multimodal representation learning—have demonstrated transformative potential across the preclinical and clinical drug development continuum. However, critical bottlenecks remain in cross-modal data integration, model interpretability, mechanism-aware validation, and the robust translation of in silico candidates into clinical efficacy. This track aims to highlight cutting-edge research that advances computationally-driven drug discovery, bridging the gap between theoretical algorithmic innovations and practical implementation in real-world pharmacological applications. By consolidating emerging methodologies, this track will advance a strategically critical research frontier and contribute to the development of intelligent, data-driven, and translational therapeutics.</p>
-
+        <p class="introduction-text">However, supporting intelligence on diverse terminal devices remains highly challenging. Intelligent terminal systems often operate on heterogeneous embedded architectures with limited computation, memory, storage, energy, and communication resources. Meanwhile, emerging AI workloads, agent-based applications, safety-critical control tasks, and massive edge data streams impose increasing pressure on embedded software, runtime systems, storage hierarchies, and scheduling mechanisms. This track focuses on the system-level foundations and enabling technologies for next-generation intelligent terminals. We aim to gather cutting-edge theoretical studies, architectural innovations, algorithmic designs, and practical applications addressing embedded architectures, edge storage, intelligent agents, real-time scheduling, and reliability across diverse intelligent edge environments.</p>
 
         <h3 class="section-heading">Topics</h3>
 
         <ul class="topics-list">
-            <li>High-Dimensional Topological Analysis for Target Identification</li>
-            <li>Generative Modeling and Multi-Dimensional Conditional Design</li>
-            <li>Dynamic Network Representation for Drug Repurposing and Synergistic Therapy</li>
-            <li>High-Fidelity Semantic Fusion of Multi-Omics and Pharmacological Data</li>
-            <li>Mechanism-Aware Predictive Modeling for Clinical Translation</li>
+            <li>Architectures and Runtime for Intelligent Embedded Systems</li>
+            <li>Embedded Data Storage, Memory Management, and Cache-Aware System Optimization</li>
+            <li>On-device AI, Intelligent Agents, and Embedded Intelligence for Smart Terminals</li>
+            <li>Real-Time Task Scheduling and Resource Management on Heterogeneous Embedded Platforms</li>
+            <li>Reliability, Safety, and Resilience in Intelligent Embedded and Edge Systems</li>
+            <li>System Design and Optimization for Intelligent Vehicles, Satellites, Robots, Drones, and Smart Devices</li>
+            <!-- <li>Broad Learning-Enhanced Knowledge Discovery</li>
+            <li>Efficient Data Mining with Lightweight Broad Learning Models</li>
+            <li>Trustworthy and Robust Broad Learning for Data Mining</li>
+            <li>Cross-Domain Intelligent Data Mining Based on Broad Learning</li> -->
         </ul>
         <h3 class="section-heading">Important Date</h3>
         <p>We are pleased to announce the important dates for PDCAT 2026.
@@ -212,7 +224,6 @@ The rapid evolution of computational methodologies, encompassing machine learnin
               October 2026</li>
             <li><strong>Conference Dates:</strong> 4 – 6 December 2026</li>
           </ul>
-
     </div>
 
     <!-- Footer -->
@@ -230,7 +241,7 @@ The rapid evolution of computational methodologies, encompassing machine learnin
 
     <!-- Navbar -->
     <script>
-        fetch("../my_navbar.html")
+        fetch("my_navbar.html")
             .then(res => res.text())
             .then(data => {
 
@@ -258,7 +269,7 @@ The rapid evolution of computational methodologies, encompassing machine learnin
 
     <!-- Footer -->
     <script>
-        fetch("../my_footer.html")
+        fetch("my_footer.html")
             .then(res => res.text())
             .then(data => {
                 document.getElementById(
@@ -268,7 +279,7 @@ The rapid evolution of computational methodologies, encompassing machine learnin
     </script>
 
     <!-- CFP Dropdown -->
-    <script src="../js/pdcat-dropdown.js"></script>
+    <script src="js/pdcat-dropdown.js"></script>
 
 </body>
 

@@ -3,20 +3,19 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Special Track 13 | PDCAT 2026</title>
+    <title>Special Track 5 | PDCAT 2026</title>
 
     <!-- Dropdown CSS -->
-    <!-- Dropdown CSS -->
-    <link href="../css/pdcat-dropdown.css" rel="stylesheet">
+    <link href="css/pdcat-dropdown.css" rel="stylesheet">
 
     <!-- Preload -->
-    <link rel="preload" href="../my_head.html" as="fetch" crossorigin>
-    <link rel="preload" href="../my_navbar.html" as="fetch" crossorigin>
-    <link rel="preload" href="../my_footer.html" as="fetch" crossorigin>
+    <link rel="preload" href="my_head.html" as="fetch" crossorigin>
+    <link rel="preload" href="my_navbar.html" as="fetch" crossorigin>
+    <link rel="preload" href="my_footer.html" as="fetch" crossorigin>
 
     <!-- Load shared head -->
     <script>
-        fetch('../my_head.html')
+        fetch('my_head.html')
             .then(res => res.text())
             .then(html => {
                 document.head.insertAdjacentHTML('beforeend', html);
@@ -25,16 +24,16 @@
     </script>
 
     <!-- Bootstrap -->
-    <link href="../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Plugin CSS -->
-    <link href="../../vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+    <link href="../vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
 
     <!-- Font Awesome -->
-    <link href="../../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
 
     <!-- Theme -->
-    <link href="../../css/creative.css" rel="stylesheet">
+    <link href="../css/creative.css" rel="stylesheet">
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800|Merriweather:300,400,700,900&display=swap" rel="stylesheet">
@@ -86,12 +85,13 @@
         .chairs-container {
             display: flex;
             justify-content: center;
-            flex-wrap: wrap;
-            gap: 40px;
+            flex-wrap: nowrap;
+            gap: 20px;
         }
 
         .chair-card {
             width: 220px;
+            flex: 0 0 220px;
             text-align: center;
         }
 
@@ -142,8 +142,8 @@
     <div class="track-container">
 
         <div class="track-header">
-            <h1>Special Track 13</h1>
-            <h2>Scalable Pre-processing and Visual Analytics for<br> High-Performance Computing</h2>
+            <h1>Special Track 5</h1>
+            <h2>Performance Optimization , Modeling, and Computing Libraries</h2>
             <div class="divider"></div>
         </div>
 
@@ -152,38 +152,60 @@
         <div class="chairs-container">
 
             <div class="chair-card">
-                <img src="../img/tracks/Jinyepeng.png"
+                <img src="../img/tracks/Haipengjia.jpg"
                      class="chair-avatar"
                      alt="Chair 1">
 
-                <div class="chair-name">Jinye Peng</div>
-                <div class="chair-institution">Northwest University</div>
+                <div class="chair-name">Haipeng Jia</div>
+                <div class="chair-institution">Institute of Computing Technology, Chinese Academy of Sciences</div>
             </div>
 
             <div class="chair-card">
-                <img src="../img/tracks/Wangqingzhao.jpg"
+                <img src="../img/tracks/Fangli.jpg"
                      class="chair-avatar"
                      alt="Chair 2">
 
-                <div class="chair-name">Wanqing Zhao</div>
-                <div class="chair-institution">Northwest University</div>
+                <div class="chair-name">Fang Li</div>
+                <div class="chair-institution">Jiangnan Institute of<br> Computing Technology</div>
             </div>
 
+            <div class="chair-card">
+                <img src="../img/tracks/Shengguoli.jpg"
+                     class="chair-avatar"
+                     alt="Chair 3">
+
+                <div class="chair-name">Shengguo Li</div>
+                <div class="chair-institution">National University of<br> Defense Technology</div>
+            </div>
+            <div class="chair-card">
+                <img src="../img/tracks/Yingjiang.jpg"
+                     class="chair-avatar"
+                     alt="Chair 1">
+
+                <div class="chair-name">Ying Jiang</div>
+                <div class="chair-institution">Sun Yat-sen University</div>
+            </div>
 
         </div>
 
         <h3 class="section-heading">Introduction</h3>
 
         <p class="introduction-text">
-The exponential growth of data in High-Performance Computing (HPC) simulations has exposed severe I/O bottlenecks in traditional offline post-processing. To address these challenges, this track, titled "Scalable Pre-processing and Visual Analytics for High-Performance Computing", focuses on optimizing the end-to-end computational pipeline. We seek cutting-edge algorithmic innovations for scalable data preparation, including parallel mesh generation and distributed discretization. Furthermore, to facilitate insights from massive datasets, we welcome breakthroughs in advanced visual computing paradigms, such as in-situ/in-transit visualization, remote data streaming, and high-performance rendering. Ultimately, this track aims to empower next-generation scientific discovery through novel distributed solutions.</p>
+            The relentless growth in computational demands—from scientific simulations, AI training/inference, and large-scale data analytics—places immense pressure on high-performance computing (HPC) systems, and as architectures evolve toward exascale and beyond, the growing complexity of software stacks, heterogeneous hardware, and diverse workloads makes performance measurement, modeling, and efficient library implementations more critical than ever. This track centers on the three foundational pillars that bridge hardware capabilities and application performance: performance measurement methodologies for deep system-level insight, performance modeling techniques to guide architectural design and optimization, and high-performance libraries—including operator libraries, AI frameworks, and compute kernels—that convert peak theoretical performance into sustained practical throughput. We invite cutting-edge contributions spanning the full spectrum from low-level micro-benchmarking and profiling to high-level prediction, auto-tuning, and domain-specific optimizations, and we welcome researchers and practitioners from academia and industry to share their latest advances in performance engineering for parallel and distributed computing systems.
+        </p>
+
         <h3 class="section-heading">Topics</h3>
 
         <ul class="topics-list">
-            <li>Parallel and distributed algorithms for data pre-processing and discretization</li>
-            <li>Scalable and parallel mesh generation algorithms</li>
-            <li>In-situ and in-transit visualization frameworks</li>
-            <li>Data compression and streaming for remote visual computing</li>
-            <li>High-performance rendering architectures and large-scale data exploration</li>
+            <li>Performance Modeling, Profiling, and Analysis Methodologies for Heterogeneous HPC Systems</li>
+            <li>High-Performance Operator Libraries and Kernel Optimizations for HPC Systemsg</li>
+            <li>Auto-Tuning and Performance Portability across Diverse Hardware Architectures (CPU, GPU, DPU, FPGA)</li>
+            <li>Performance Measurement and Modeling for Large-Scale AI Training and Inference</li>
+            <li>Performance Visualization, Analytics, and Anomaly Detection in Distributed Systems</li>
+            <!-- <li>Broad Learning-Enhanced Knowledge Discovery</li>
+            <li>Efficient Data Mining with Lightweight Broad Learning Models</li>
+            <li>Trustworthy and Robust Broad Learning for Data Mining</li>
+            <li>Cross-Domain Intelligent Data Mining Based on Broad Learning</li> -->
         </ul>
         <h3 class="section-heading">Important Date</h3>
         <p>We are pleased to announce the important dates for PDCAT 2026.
@@ -200,7 +222,6 @@ The exponential growth of data in High-Performance Computing (HPC) simulations h
               October 2026</li>
             <li><strong>Conference Dates:</strong> 4 – 6 December 2026</li>
           </ul>
-
     </div>
 
     <!-- Footer -->
@@ -218,7 +239,7 @@ The exponential growth of data in High-Performance Computing (HPC) simulations h
 
     <!-- Navbar -->
     <script>
-        fetch("../my_navbar.html")
+        fetch("my_navbar.html")
             .then(res => res.text())
             .then(data => {
 
@@ -246,7 +267,7 @@ The exponential growth of data in High-Performance Computing (HPC) simulations h
 
     <!-- Footer -->
     <script>
-        fetch("../my_footer.html")
+        fetch("my_footer.html")
             .then(res => res.text())
             .then(data => {
                 document.getElementById(
@@ -256,7 +277,8 @@ The exponential growth of data in High-Performance Computing (HPC) simulations h
     </script>
 
     <!-- CFP Dropdown -->
-    <script src="../js/pdcat-dropdown.js"></script>
+    <script src="js/pdcat-dropdown.js"></script>
+
 </body>
 
 </html>

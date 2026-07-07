@@ -3,20 +3,19 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Special Track 6 | PDCAT 2026</title>
+    <title>Special Track 15 | PDCAT 2026</title>
 
     <!-- Dropdown CSS -->
-    <!-- Dropdown CSS -->
-    <link href="../css/pdcat-dropdown.css" rel="stylesheet">
+    <link href="css/pdcat-dropdown.css" rel="stylesheet">
 
     <!-- Preload -->
-    <link rel="preload" href="../my_head.html" as="fetch" crossorigin>
-    <link rel="preload" href="../my_navbar.html" as="fetch" crossorigin>
-    <link rel="preload" href="../my_footer.html" as="fetch" crossorigin>
+    <link rel="preload" href="my_head.html" as="fetch" crossorigin>
+    <link rel="preload" href="my_navbar.html" as="fetch" crossorigin>
+    <link rel="preload" href="my_footer.html" as="fetch" crossorigin>
 
     <!-- Load shared head -->
     <script>
-        fetch('../my_head.html')
+        fetch('my_head.html')
             .then(res => res.text())
             .then(html => {
                 document.head.insertAdjacentHTML('beforeend', html);
@@ -25,16 +24,16 @@
     </script>
 
     <!-- Bootstrap -->
-    <link href="../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Plugin CSS -->
-    <link href="../../vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+    <link href="../vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
 
     <!-- Font Awesome -->
-    <link href="../../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
 
     <!-- Theme -->
-    <link href="../../css/creative.css" rel="stylesheet">
+    <link href="../css/creative.css" rel="stylesheet">
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800|Merriweather:300,400,700,900&display=swap" rel="stylesheet">
@@ -86,13 +85,12 @@
         .chairs-container {
             display: flex;
             justify-content: center;
-            flex-wrap: nowrap;
-            gap: 20px;
+            flex-wrap: wrap;
+            gap: 40px;
         }
 
         .chair-card {
             width: 220px;
-            flex: 0 0 220px;
             text-align: center;
         }
 
@@ -143,8 +141,8 @@
     <div class="track-container">
 
         <div class="track-header">
-            <h1>Special Track 6</h1>
-            <h2>Intelligent Embedded Systems: Architectures, Storage, Scheduling, and Agentic Computing</h2>
+            <h1>Special Track 14</h1>
+            <h2>Intelligent Storage Systems for AI, Cloud, and High-Performance Distributed Computing</h2>
             <div class="divider"></div>
         </div>
 
@@ -153,62 +151,47 @@
         <div class="chairs-container">
 
             <div class="chair-card">
-                <img src="../img/tracks/Xianzhangchen.png"
+                <img src="../img/tracks/Yinalv.png"
                      class="chair-avatar"
                      alt="Chair 1">
 
-                <div class="chair-name">Xianzhang Chen</div>
-                <div class="chair-institution">Chongqing University</div>
+                <div class="chair-name">Yina Lv</div>
+                <div class="chair-institution">Xiamen University</div>
             </div>
 
             <div class="chair-card">
-                <img src="../img/tracks/Junlongzhou.jpg"
+                <img src="../img/tracks/Congminggao.png"
                      class="chair-avatar"
                      alt="Chair 2">
 
-                <div class="chair-name">Junlong Zhou</div>
-                <div class="chair-institution">Nanjing University of<br> Science and Technology</div>
+                <div class="chair-name">Congming Gao</div>
+                <div class="chair-institution">Xiamen University</div>
             </div>
-
             <div class="chair-card">
-                <img src="../img/tracks/Diliu.jpg"
+                <img src="../img/tracks/Ruixu.jpg"
                      class="chair-avatar"
                      alt="Chair 3">
 
-                <div class="chair-name">Di Liu</div>
-                <div class="chair-institution">Norwegian University of<br> Science and Technology</div>
+                <div class="chair-name">Rui Xu</div>
+                <div class="chair-institution">Jinan University</div>
             </div>
-            <div class="chair-card">
-                <img src="../img/tracks/Zhiweifeng.jpg"
-                     class="chair-avatar"
-                     alt="Chair 1">
 
-                <div class="chair-name">Zhiwei Feng</div>
-                <div class="chair-institution">Northeastern University</div>
-            </div>
 
         </div>
 
         <h3 class="section-heading">Introduction</h3>
 
-        <p class="introduction-text">
-The rapid advancement of intelligent vehicles, satellite platforms, smart terminals, robots, drones, and unmanned systems is reshaping the landscape of embedded and edge computing. These systems are evolving from conventional embedded devices into intelligent terminal systems that integrate sensing, computing, storage, communication, decision-making, and real-time control. Such a transformation brings new requirements for low-latency response, reliable execution, efficient data management, adaptive task scheduling, and robust system operation under resource-constrained and dynamic environments.        
-        </p>
-        <p class="introduction-text">However, supporting intelligence on diverse terminal devices remains highly challenging. Intelligent terminal systems often operate on heterogeneous embedded architectures with limited computation, memory, storage, energy, and communication resources. Meanwhile, emerging AI workloads, agent-based applications, safety-critical control tasks, and massive edge data streams impose increasing pressure on embedded software, runtime systems, storage hierarchies, and scheduling mechanisms. This track focuses on the system-level foundations and enabling technologies for next-generation intelligent terminals. We aim to gather cutting-edge theoretical studies, architectural innovations, algorithmic designs, and practical applications addressing embedded architectures, edge storage, intelligent agents, real-time scheduling, and reliability across diverse intelligent edge environments.</p>
-
+        <p class="introduction-text">The rapid growth of artificial intelligence (AI), cloud computing, and data-intensive applications has generated growing demands for high-performance, scalable, and intelligent storage systems. Emerging storage technologies and architectures, including high-density flash-based SSDs, computational storage, and AI-oriented storage infrastructures, are transforming modern distributed computing environments. Meanwhile, supporting diverse workloads with efficient resource management, performance isolation, and hardware-software co-design remains a major challenge.</p>
+        <p class="introduction-text">This track focuses on Intelligent Storage Systems for AI, Cloud, and High-Performance Distributed Computing, bringing researchers to present the latest advances in storage architectures, resource management, computational storage, virtualization, multi-tenant QoS, hardware-software co-design, and storage systems for AI and large-scale data analytics. We welcome original research that advances next-generation storage technologies for cloud and high-performance distributed computing.</p>
         <h3 class="section-heading">Topics</h3>
 
         <ul class="topics-list">
-            <li>Architectures and Runtime for Intelligent Embedded Systems</li>
-            <li>Embedded Data Storage, Memory Management, and Cache-Aware System Optimization</li>
-            <li>On-device AI, Intelligent Agents, and Embedded Intelligence for Smart Terminals</li>
-            <li>Real-Time Task Scheduling and Resource Management on Heterogeneous Embedded Platforms</li>
-            <li>Reliability, Safety, and Resilience in Intelligent Embedded and Edge Systems</li>
-            <li>System Design and Optimization for Intelligent Vehicles, Satellites, Robots, Drones, and Smart Devices</li>
-            <!-- <li>Broad Learning-Enhanced Knowledge Discovery</li>
-            <li>Efficient Data Mining with Lightweight Broad Learning Models</li>
-            <li>Trustworthy and Robust Broad Learning for Data Mining</li>
-            <li>Cross-Domain Intelligent Data Mining Based on Broad Learning</li> -->
+            <li>Flash Storage Systems and SSD Architecture</li>
+            <li>Storage Resource Management for Cloud and Distributed Systems</li>
+            <li>Computational Storage and Near-Data Processing</li>
+            <li>Storage Virtualization and Multi-Tenant QoS Isolation</li>
+            <li>Hardware-Software Co-design for Next-Generation Storage Systems</li>
+            <li>AI Infrastructure Storage for Large Language Models and Data Analytics</li>
         </ul>
         <h3 class="section-heading">Important Date</h3>
         <p>We are pleased to announce the important dates for PDCAT 2026.
@@ -225,6 +208,7 @@ The rapid advancement of intelligent vehicles, satellite platforms, smart termin
               October 2026</li>
             <li><strong>Conference Dates:</strong> 4 – 6 December 2026</li>
           </ul>
+
     </div>
 
     <!-- Footer -->
@@ -242,7 +226,7 @@ The rapid advancement of intelligent vehicles, satellite platforms, smart termin
 
     <!-- Navbar -->
     <script>
-        fetch("../my_navbar.html")
+        fetch("my_navbar.html")
             .then(res => res.text())
             .then(data => {
 
@@ -270,7 +254,7 @@ The rapid advancement of intelligent vehicles, satellite platforms, smart termin
 
     <!-- Footer -->
     <script>
-        fetch("../my_footer.html")
+        fetch("my_footer.html")
             .then(res => res.text())
             .then(data => {
                 document.getElementById(
@@ -280,7 +264,7 @@ The rapid advancement of intelligent vehicles, satellite platforms, smart termin
     </script>
 
     <!-- CFP Dropdown -->
-    <script src="../js/pdcat-dropdown.js"></script>
+    <script src="js/pdcat-dropdown.js"></script>
 
 </body>
 

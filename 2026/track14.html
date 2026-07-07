@@ -3,19 +3,19 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Special Track 15 | PDCAT 2026</title>
+    <title>Special Track 14 | PDCAT 2026</title>
 
     <!-- Dropdown CSS -->
-    <link href="../css/pdcat-dropdown.css" rel="stylesheet">
+    <link href="css/pdcat-dropdown.css" rel="stylesheet">
 
     <!-- Preload -->
-    <link rel="preload" href="../my_head.html" as="fetch" crossorigin>
-    <link rel="preload" href="../my_navbar.html" as="fetch" crossorigin>
-    <link rel="preload" href="../my_footer.html" as="fetch" crossorigin>
+    <link rel="preload" href="my_head.html" as="fetch" crossorigin>
+    <link rel="preload" href="my_navbar.html" as="fetch" crossorigin>
+    <link rel="preload" href="my_footer.html" as="fetch" crossorigin>
 
     <!-- Load shared head -->
     <script>
-        fetch('../my_head.html')
+        fetch('my_head.html')
             .then(res => res.text())
             .then(html => {
                 document.head.insertAdjacentHTML('beforeend', html);
@@ -24,16 +24,16 @@
     </script>
 
     <!-- Bootstrap -->
-    <link href="../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Plugin CSS -->
-    <link href="../../vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+    <link href="../vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
 
     <!-- Font Awesome -->
-    <link href="../../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
 
     <!-- Theme -->
-    <link href="../../css/creative.css" rel="stylesheet">
+    <link href="../css/creative.css" rel="stylesheet">
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800|Merriweather:300,400,700,900&display=swap" rel="stylesheet">
@@ -142,7 +142,7 @@
 
         <div class="track-header">
             <h1>Special Track 14</h1>
-            <h2>Intelligent Storage Systems for AI, Cloud, and High-Performance Distributed Computing</h2>
+            <h2>Artificial Intelligence for Healthcare: Foundation Models, Medical Intelligence, and Intelligent Clinical Systems</h2>
             <div class="divider"></div>
         </div>
 
@@ -151,29 +151,29 @@
         <div class="chairs-container">
 
             <div class="chair-card">
-                <img src="../img/tracks/Yinalv.png"
+                <img src="../img/tracks/Yapingwan.jpg"
                      class="chair-avatar"
                      alt="Chair 1">
 
-                <div class="chair-name">Yina Lv</div>
-                <div class="chair-institution">Xiamen University</div>
+                <div class="chair-name">Yaping Wan</div>
+                <div class="chair-institution">University of South China</div>
             </div>
 
             <div class="chair-card">
-                <img src="../img/tracks/Congminggao.png"
+                <img src="../img/tracks/Weiliang.jpg"
                      class="chair-avatar"
                      alt="Chair 2">
 
-                <div class="chair-name">Congming Gao</div>
-                <div class="chair-institution">Xiamen University</div>
+                <div class="chair-name">Wei Liang</div>
+                <div class="chair-institution">University of South China</div>
             </div>
             <div class="chair-card">
-                <img src="../img/tracks/Ruixu.jpg"
+                <img src="../img/tracks/Chunpingouyang.jpg"
                      class="chair-avatar"
                      alt="Chair 3">
 
-                <div class="chair-name">Rui Xu</div>
-                <div class="chair-institution">Jinan University</div>
+                <div class="chair-name">Chunping Ouyang</div>
+                <div class="chair-institution">University of South China</div>
             </div>
 
 
@@ -181,17 +181,30 @@
 
         <h3 class="section-heading">Introduction</h3>
 
-        <p class="introduction-text">The rapid growth of artificial intelligence (AI), cloud computing, and data-intensive applications has generated growing demands for high-performance, scalable, and intelligent storage systems. Emerging storage technologies and architectures, including high-density flash-based SSDs, computational storage, and AI-oriented storage infrastructures, are transforming modern distributed computing environments. Meanwhile, supporting diverse workloads with efficient resource management, performance isolation, and hardware-software co-design remains a major challenge.</p>
-        <p class="introduction-text">This track focuses on Intelligent Storage Systems for AI, Cloud, and High-Performance Distributed Computing, bringing researchers to present the latest advances in storage architectures, resource management, computational storage, virtualization, multi-tenant QoS, hardware-software co-design, and storage systems for AI and large-scale data analytics. We welcome original research that advances next-generation storage technologies for cloud and high-performance distributed computing.</p>
+        <p class="introduction-text">The rapid advancement of Artificial Intelligence (AI), particularly large language models, multimodal foundation models, and generative AI, is fundamentally transforming modern healthcare. AI technologies are enabling new paradigms in medical diagnosis, clinical decision support, disease prediction, drug discovery, personalized medicine, and intelligent healthcare services. Meanwhile, the growing availability of electronic health records, medical imaging, wearable sensors, and multi-omics data presents unprecedented opportunities for developing intelligent and trustworthy healthcare systems. Despite remarkable progress, numerous challenges remain, including heterogeneous medical data integration, model reliability, interpretability, privacy preservation, fairness, regulatory compliance, and deployment in real-world clinical environments. This special track aims to bring together researchers and practitioners from artificial intelligence, data science, biomedical informatics, and healthcare to present the latest theoretical advances, innovative researches, and practical applications that drive the next generation of AI-enabled healthcare systems.</p>
         <h3 class="section-heading">Topics</h3>
 
         <ul class="topics-list">
-            <li>Flash Storage Systems and SSD Architecture</li>
-            <li>Storage Resource Management for Cloud and Distributed Systems</li>
-            <li>Computational Storage and Near-Data Processing</li>
-            <li>Storage Virtualization and Multi-Tenant QoS Isolation</li>
-            <li>Hardware-Software Co-design for Next-Generation Storage Systems</li>
-            <li>AI Infrastructure Storage for Large Language Models and Data Analytics</li>
+            <li>Large Language Models (LLMs) and Foundation Models for Healthcare</li>
+            <li>Generative AI for Medical Applications</li>
+            <li>Medical Vision-Language Models and Multimodal Learning</li>
+            <li>Clinical Decision Support Systems</li>
+            <li>Medical Image Analysis and Computer-Aided Diagnosis</li>
+            <li>Electronic Health Record (EHR) Mining and Clinical NLP</li>
+            <li>AI for Disease Prediction, Prognosis, and Risk Assessment</li>
+            <li>Retrieval-Augmented Generation (RAG) for Medical Knowledge Systems</li>
+            <li>Medical Knowledge Graphs and Knowledge-Enhanced AI</li>
+            <li>AI for Drug Discovery and Biomedical Research</li>
+            <li>Precision Medicine and Personalized Healthcare</li>
+            <li>AI for Medical Robotics and Intelligent Surgery</li>
+            <li>Federated Learning and Privacy-Preserving Healthcare AI</li>
+            <li>Explainable, Trustworthy, and Responsible Medical AI</li>
+            <li>Healthcare Digital Twins and Intelligent Hospital Systems</li>
+            <li>AI for Public Health and Epidemic Intelligence</li>
+            <li>Remote Healthcare, Telemedicine, and Wearable Intelligence</li>
+            <li>Edge AI and IoT for Smart Healthcare</li>
+            <li>Human-AI Collaboration in Clinical Practice</li>
+            <li>Real-World Deployment and Evaluation of Healthcare AI Systems</li>
         </ul>
         <h3 class="section-heading">Important Date</h3>
         <p>We are pleased to announce the important dates for PDCAT 2026.
@@ -226,7 +239,7 @@
 
     <!-- Navbar -->
     <script>
-        fetch("../my_navbar.html")
+        fetch("my_navbar.html")
             .then(res => res.text())
             .then(data => {
 
@@ -254,7 +267,7 @@
 
     <!-- Footer -->
     <script>
-        fetch("../my_footer.html")
+        fetch("my_footer.html")
             .then(res => res.text())
             .then(data => {
                 document.getElementById(
@@ -264,7 +277,7 @@
     </script>
 
     <!-- CFP Dropdown -->
-    <script src="../js/pdcat-dropdown.js"></script>
+    <script src="js/pdcat-dropdown.js"></script>
 
 </body>
 

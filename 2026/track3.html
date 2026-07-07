@@ -3,20 +3,19 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Special Track 5 | PDCAT 2026</title>
+    <title>Special Track 3  | PDCAT 2026</title>
 
     <!-- Dropdown CSS -->
-    <!-- Dropdown CSS -->
-    <link href="../css/pdcat-dropdown.css" rel="stylesheet">
+    <link href="css/pdcat-dropdown.css" rel="stylesheet">
 
     <!-- Preload -->
-    <link rel="preload" href="../my_head.html" as="fetch" crossorigin>
-    <link rel="preload" href="../my_navbar.html" as="fetch" crossorigin>
-    <link rel="preload" href="../my_footer.html" as="fetch" crossorigin>
+    <link rel="preload" href="my_head.html" as="fetch" crossorigin>
+    <link rel="preload" href="my_navbar.html" as="fetch" crossorigin>
+    <link rel="preload" href="my_footer.html" as="fetch" crossorigin>
 
     <!-- Load shared head -->
     <script>
-        fetch('../my_head.html')
+        fetch('my_head.html')
             .then(res => res.text())
             .then(html => {
                 document.head.insertAdjacentHTML('beforeend', html);
@@ -25,16 +24,16 @@
     </script>
 
     <!-- Bootstrap -->
-    <link href="../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Plugin CSS -->
-    <link href="../../vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+    <link href="/vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
 
     <!-- Font Awesome -->
-    <link href="../../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
 
     <!-- Theme -->
-    <link href="../../css/creative.css" rel="stylesheet">
+    <link href="/css/creative.css" rel="stylesheet">
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800|Merriweather:300,400,700,900&display=swap" rel="stylesheet">
@@ -143,8 +142,8 @@
     <div class="track-container">
 
         <div class="track-header">
-            <h1>Special Track 5</h1>
-            <h2>Performance Optimization , Modeling, and Computing Libraries</h2>
+            <h1>Special Track 3</h1>
+            <h2>Secure Distributed Computing and <br>Multi-Center Medical Image Intelligence</h2>
             <div class="divider"></div>
         </div>
 
@@ -153,38 +152,38 @@
         <div class="chairs-container">
 
             <div class="chair-card">
-                <img src="../img/tracks/Haipengjia.jpg"
+                <img src="../img/tracks/Ningbozhu.jpg"
                      class="chair-avatar"
                      alt="Chair 1">
 
-                <div class="chair-name">Haipeng Jia</div>
-                <div class="chair-institution">Institute of Computing Technology, Chinese Academy of Sciences</div>
+                <div class="chair-name">Ningbo Zhu</div>
+                <div class="chair-institution">Hunan University of Science and Technology</div>
             </div>
 
             <div class="chair-card">
-                <img src="../img/tracks/Fangli.jpg"
+                <img src="../img/tracks/Shiwenzhang.jpg"
                      class="chair-avatar"
                      alt="Chair 2">
 
-                <div class="chair-name">Fang Li</div>
-                <div class="chair-institution">Jiangnan Institute of<br> Computing Technology</div>
+                <div class="chair-name">Shiwen Zhang </div>
+                <div class="chair-institution">Hunan University of Science and Technology</div>
             </div>
 
             <div class="chair-card">
-                <img src="../img/tracks/Shengguoli.jpg"
+                <img src="../img/tracks/Xiaoliangwang.jpg"
                      class="chair-avatar"
                      alt="Chair 3">
 
-                <div class="chair-name">Shengguo Li</div>
-                <div class="chair-institution">National University of<br> Defense Technology</div>
+                <div class="chair-name">Xiaoliang Wang</div>
+                <div class="chair-institution">Hunan University of Science and Technology</div>
             </div>
             <div class="chair-card">
-                <img src="../img/tracks/Yingjiang.jpg"
+                <img src="../img/tracks/Zulongdiao.jpg"
                      class="chair-avatar"
                      alt="Chair 1">
 
-                <div class="chair-name">Ying Jiang</div>
-                <div class="chair-institution">Sun Yat-sen University</div>
+                <div class="chair-name">Zulong Diao</div>
+                <div class="chair-institution">Hunan University of Science and Technology</div>
             </div>
 
         </div>
@@ -192,17 +191,16 @@
         <h3 class="section-heading">Introduction</h3>
 
         <p class="introduction-text">
-            The relentless growth in computational demands—from scientific simulations, AI training/inference, and large-scale data analytics—places immense pressure on high-performance computing (HPC) systems, and as architectures evolve toward exascale and beyond, the growing complexity of software stacks, heterogeneous hardware, and diverse workloads makes performance measurement, modeling, and efficient library implementations more critical than ever. This track centers on the three foundational pillars that bridge hardware capabilities and application performance: performance measurement methodologies for deep system-level insight, performance modeling techniques to guide architectural design and optimization, and high-performance libraries—including operator libraries, AI frameworks, and compute kernels—that convert peak theoretical performance into sustained practical throughput. We invite cutting-edge contributions spanning the full spectrum from low-level micro-benchmarking and profiling to high-level prediction, auto-tuning, and domain-specific optimizations, and we welcome researchers and practitioners from academia and industry to share their latest advances in performance engineering for parallel and distributed computing systems.
+            Driven by the advancement of cloud-edge infrastructure, large-scale cluster computing and cross-site collaborative intelligence, high-performance parallel distributed computing and distributed system security have become two equally critical, mutually supportive core domains in modern computing research. Faced with growing computational complexity, heterogeneous node deployment, and exploding volume of multi-source service data and medical imaging data, it is urgent to build efficient collaborative service execution frameworks, while guaranteeing overall system security, node credibility and operational robustness. This track highlights the equal development of secure computing and high-performance parallel/distributed systems, alongside distributed multi-center medical image intelligence. It focuses on distributed system security, parallel cluster scheduling, cloud-edge service collaboration, and large-scale cross-site medical image collaborative processing, to build reliable, efficient, generalized distributed computing paradigms for both general service scenarios and medical imaging application scenarios.
         </p>
 
         <h3 class="section-heading">Topics</h3>
 
         <ul class="topics-list">
-            <li>Performance Modeling, Profiling, and Analysis Methodologies for Heterogeneous HPC Systems</li>
-            <li>High-Performance Operator Libraries and Kernel Optimizations for HPC Systemsg</li>
-            <li>Auto-Tuning and Performance Portability across Diverse Hardware Architectures (CPU, GPU, DPU, FPGA)</li>
-            <li>Performance Measurement and Modeling for Large-Scale AI Training and Inference</li>
-            <li>Performance Visualization, Analytics, and Anomaly Detection in Distributed Systems</li>
+            <li>Fundamental parallel/distributed privacy computing</li>
+            <li>Cloud-Edge Collaborative Service Computing</li>
+            <li>Distributed & privacy-preserving medical image intelligence</li>
+            <li>Trustworthy cloud-edge distributed service computing</li>
             <!-- <li>Broad Learning-Enhanced Knowledge Discovery</li>
             <li>Efficient Data Mining with Lightweight Broad Learning Models</li>
             <li>Trustworthy and Robust Broad Learning for Data Mining</li>
@@ -229,18 +227,18 @@
     <div id="footer-placeholder"></div>
 
     <!-- JS -->
-    <script src="../vendor/jquery/jquery.min.js"></script>
-    <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="/vendor/jquery/jquery.min.js"></script>
+    <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-    <script src="../vendor/jquery-easing/jquery.easing.min.js"></script>
-    <script src="../vendor/scrollreveal/scrollreveal.min.js"></script>
-    <script src="../vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+    <script src="/vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="/vendor/scrollreveal/scrollreveal.min.js"></script>
+    <script src="/vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
 
-    <script src="../js/creative.min.js"></script>
+    <script src="/js/creative.min.js"></script>
 
     <!-- Navbar -->
     <script>
-        fetch("../my_navbar.html")
+        fetch("my_navbar.html")
             .then(res => res.text())
             .then(data => {
 
@@ -268,7 +266,7 @@
 
     <!-- Footer -->
     <script>
-        fetch("../my_footer.html")
+        fetch("my_footer.html")
             .then(res => res.text())
             .then(data => {
                 document.getElementById(
@@ -278,7 +276,7 @@
     </script>
 
     <!-- CFP Dropdown -->
-    <script src="../js/pdcat-dropdown.js"></script>
+    <script src="js/pdcat-dropdown.js"></script>
 
 </body>
 

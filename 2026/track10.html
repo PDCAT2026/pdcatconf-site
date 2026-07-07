@@ -3,20 +3,19 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Special Track 2 | PDCAT 2026</title>
+    <title>Special Track 10 | PDCAT 2026</title>
 
     <!-- Dropdown CSS -->
-    <!-- Dropdown CSS -->
-    <link href="../css/pdcat-dropdown.css" rel="stylesheet">
+    <link href="css/pdcat-dropdown.css" rel="stylesheet">
 
     <!-- Preload -->
-    <link rel="preload" href="../my_head.html" as="fetch" crossorigin>
-    <link rel="preload" href="../my_navbar.html" as="fetch" crossorigin>
-    <link rel="preload" href="../my_footer.html" as="fetch" crossorigin>
+    <link rel="preload" href="my_head.html" as="fetch" crossorigin>
+    <link rel="preload" href="my_navbar.html" as="fetch" crossorigin>
+    <link rel="preload" href="my_footer.html" as="fetch" crossorigin>
 
     <!-- Load shared head -->
     <script>
-        fetch('../my_head.html')
+        fetch('my_head.html')
             .then(res => res.text())
             .then(html => {
                 document.head.insertAdjacentHTML('beforeend', html);
@@ -25,16 +24,16 @@
     </script>
 
     <!-- Bootstrap -->
-    <link href="../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Plugin CSS -->
-    <link href="../../vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+    <link href="../vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
 
     <!-- Font Awesome -->
-    <link href="../../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
 
     <!-- Theme -->
-    <link href="../../css/creative.css" rel="stylesheet">
+    <link href="../css/creative.css" rel="stylesheet">
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800|Merriweather:300,400,700,900&display=swap" rel="stylesheet">
@@ -86,12 +85,13 @@
         .chairs-container {
             display: flex;
             justify-content: center;
-            flex-wrap: wrap;
-            gap: 40px;
+            flex-wrap: nowrap;
+            gap: 20px;
         }
 
         .chair-card {
             width: 220px;
+            flex: 0 0 220px;
             text-align: center;
         }
 
@@ -142,8 +142,8 @@
     <div class="track-container">
 
         <div class="track-header">
-            <h1>Special Track 2</h1>
-            <h2>Intelligent Data Management and Distributed Data<br> Systems in the Era of AI</h2>
+            <h1>Special Track 10</h1>
+            <h2>Application-Oriented Distributed Systems for<br> Smart Society and Industry</h2>
             <div class="divider"></div>
         </div>
 
@@ -152,53 +152,59 @@
         <div class="chairs-container">
 
             <div class="chair-card">
-                <img src="../img/tracks/Bolongzheng.jpg"
+                <img src="../img/tracks/Jiehe.jpg"
                      class="chair-avatar"
                      alt="Chair 1">
 
-                <div class="chair-name">Bolong Zheng</div>
-                <div class="chair-institution">Wuhan University of Technology</div>
+                <div class="chair-name">Jie He</div>
+                <div class="chair-institution">Wuzhou University</div>
             </div>
 
             <div class="chair-card">
-                <img src="../img/tracks/Jilinhu.jpg"
+                <img src="../img/tracks/Binpu.jpg"
                      class="chair-avatar"
                      alt="Chair 2">
 
-                <div class="chair-name">Jilin Hu</div>
-                <div class="chair-institution">East China Normal University</div>
+                <div class="chair-name">Bin Pu</div>
+                <div class="chair-institution">The Hong Kong University of Science and Technology</div>
             </div>
 
-            <!-- <div class="chair-card">
-                <img src="img/images.png"
+            <div class="chair-card">
+                <img src="../img/tracks/Xiongjietao.jpg"
                      class="chair-avatar"
                      alt="Chair 3">
 
-                <div class="chair-name">AAAA</div>
-                <div class="chair-institution">AAAA</div>
-            </div> -->
+                <div class="chair-name">Xiongjie Tao</div>
+                <div class="chair-institution">Guangzhou Forcecontrol Yuanhai <br>Information Technology Co., Ltd</div>
+            </div>
+            <div class="chair-card">
+                <img src="../img/tracks/Hongyanlu.jpg"
+                     class="chair-avatar"
+                     alt="Chair 1">
+
+                <div class="chair-name">Hongyan Lu</div>
+                <div class="chair-institution">Wuzhou Vocational College</div>
+            </div>
 
         </div>
 
         <h3 class="section-heading">Introduction</h3>
 
         <p class="introduction-text">
-            Artificial intelligence is rapidly changing the way data is produced, managed, analyzed, and consumed. With the rise of foundation models, data agents, scientific AI, and data-intensive intelligent applications, modern data systems are expected to support not only large-scale storage and computation, but also semantic understanding, autonomous decision-making, trustworthy governance, and efficient interaction with distributed computing infrastructures. These emerging requirements bring new research challenges to parallel and distributed computing, including scalable data preparation for AI, intelligent orchestration of heterogeneous data pipelines, adaptive data services across cloud-edge environments, and high-performance management of vector, multimodal, and scientific data. This track invites original research that explores the next generation of AI-driven and AI-ready data management technologies. We welcome contributions on novel models, algorithms, systems, platforms, and applications that connect intelligent data management with distributed computing, high-performance analytics, and emerging AI workloads.
-        </p>
+            Distributed computing plays an increasingly important role in manufacturing, urban services, infrastructure, healthcare, and public services. This track focuses on the design, collaboration, deployment, and evaluation of distributed systems for real-world applications, rather than low-level resource management, data management, security, or embedded architectures.        </p>
+        <p class="introduction-text">We welcome research and practical experiences on distributed applications, collaborative platforms, digital-twin-enabled services, and deployed systems across diverse industry and societal domains. Healthcare-related submissions should focus on non-imaging applications, such as telemedicine, hospital information collaboration, medical IoT, and digital health services.</p>
 
         <h3 class="section-heading">Topics</h3>
 
         <ul class="topics-list">
-            <li>Data Agents for Distributed and Autonomous Data Management</li>
-            <li>AI for Data Science and Scientific Discovery at Scale</li>
-            <li>AI-ready Data Management and Data Infrastructure</li>
-            <li>Parallel and Distributed Systems for Data-intensive AI Applications</li>
-            <!-- <li>Broad Learning-Enhanced Knowledge Discovery</li>
-            <li>Efficient Data Mining with Lightweight Broad Learning Models</li>
-            <li>Trustworthy and Robust Broad Learning for Data Mining</li>
-            <li>Cross-Domain Intelligent Data Mining Based on Broad Learning</li> -->
+            <li>Smart Manufacturing and Industrial Collaboration</li>
+            <li>Digital Twins for Smart Cities and Infrastructure</li>
+            <li>Distributed Healthcare and Clinical Collaboration</li>
+            <li>Deployment and Evaluation of Distributed Systems</li>
+            <li>Smart Sports and Public Sports Health Services</li>
+            <li>Smart Interaction Design and Collaborative Systems</li>
         </ul>
-                        <h3 class="section-heading">Important Date</h3>
+        <h3 class="section-heading">Important Date</h3>
         <p>We are pleased to announce the important dates for PDCAT 2026.
             Please mark your calendars! 
             <br>
@@ -230,7 +236,7 @@
 
     <!-- Navbar -->
     <script>
-        fetch("../my_navbar.html")
+        fetch("my_navbar.html")
             .then(res => res.text())
             .then(data => {
 
@@ -258,7 +264,7 @@
 
     <!-- Footer -->
     <script>
-        fetch("../my_footer.html")
+        fetch("my_footer.html")
             .then(res => res.text())
             .then(data => {
                 document.getElementById(
@@ -268,7 +274,7 @@
     </script>
 
     <!-- CFP Dropdown -->
-    <script src="../js/pdcat-dropdown.js"></script>
+    <script src="js/pdcat-dropdown.js"></script>
 
 </body>
 

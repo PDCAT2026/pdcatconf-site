@@ -3,20 +3,19 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Special Track 11 | PDCAT 2026</title>
+    <title>Special Track 9 | PDCAT 2026</title>
 
     <!-- Dropdown CSS -->
-    <!-- Dropdown CSS -->
-    <link href="../css/pdcat-dropdown.css" rel="stylesheet">
+    <link href="css/pdcat-dropdown.css" rel="stylesheet">
 
     <!-- Preload -->
-    <link rel="preload" href="../my_head.html" as="fetch" crossorigin>
-    <link rel="preload" href="../my_navbar.html" as="fetch" crossorigin>
-    <link rel="preload" href="../my_footer.html" as="fetch" crossorigin>
+    <link rel="preload" href="my_head.html" as="fetch" crossorigin>
+    <link rel="preload" href="my_navbar.html" as="fetch" crossorigin>
+    <link rel="preload" href="my_footer.html" as="fetch" crossorigin>
 
     <!-- Load shared head -->
     <script>
-        fetch('../my_head.html')
+        fetch('my_head.html')
             .then(res => res.text())
             .then(html => {
                 document.head.insertAdjacentHTML('beforeend', html);
@@ -25,16 +24,16 @@
     </script>
 
     <!-- Bootstrap -->
-    <link href="../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Plugin CSS -->
-    <link href="../../vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+    <link href="../vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
 
     <!-- Font Awesome -->
-    <link href="../../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
 
     <!-- Theme -->
-    <link href="../../css/creative.css" rel="stylesheet">
+    <link href="../css/creative.css" rel="stylesheet">
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800|Merriweather:300,400,700,900&display=swap" rel="stylesheet">
@@ -142,8 +141,8 @@
     <div class="track-container">
 
         <div class="track-header">
-            <h1>Special Track 11</h1>
-            <h2>Quantum–Supercomputing–AI Integrated Computing Systems: Architectures and Applications</h2>
+            <h1>Special Track 9</h1>
+            <h2>Artificial Intelligence for Next-Generation Drug Design and Discovery: Models, Mechanisms, and Translational Applications</h2>
             <div class="divider"></div>
         </div>
 
@@ -152,30 +151,30 @@
         <div class="chairs-container">
 
             <div class="chair-card">
-                <img src="../img/tracks/Zhengshan.png"
+                <img src="../img/tracks/Haolin.jpg"
                      class="chair-avatar"
                      alt="Chair 1">
 
-                <div class="chair-name">Zheng Shan</div>
-                <div class="chair-institution">Information Engineering University</div>
+                <div class="chair-name">Hao Lin</div>
+                <div class="chair-institution">University of Electronic Science and <br>Technology of China</div>
             </div>
 
             <div class="chair-card">
-                <img src="../img/tracks/Fudongliu.jpg"
+                <img src="../img/tracks/Feiguo.jpg"
                      class="chair-avatar"
                      alt="Chair 2">
 
-                <div class="chair-name">Fudong Liu</div>
-                <div class="chair-institution">Information Engineering University</div>
+                <div class="chair-name">Fei Guo</div>
+                <div class="chair-institution">Central South University</div>
             </div>
 
             <div class="chair-card">
-                <img src="../img/tracks/Bozhao.png"
+                <img src="../img/tracks/Muhammadarif.jpg"
                      class="chair-avatar"
                      alt="Chair 3">
 
-                <div class="chair-name">Bo Zhao</div>
-                <div class="chair-institution">Information Engineering University</div>
+                <div class="chair-name">Muhammad Arif</div>
+                <div class="chair-institution">Hamad Bin Khalifa University</div>
             </div>
 
         </div>
@@ -183,21 +182,19 @@
         <h3 class="section-heading">Introduction</h3>
 
         <p class="introduction-text">
-With the rapid advancement of quantum computing (QC), high-performance computing (HPC), and artificial intelligence (AI), computing systems are undergoing a fundamental transformation toward heterogeneous and deeply integrated paradigms. Quantum computing offers the potential for exponential speedup in specific problem domains, HPC systems provide large-scale parallel processing capabilities, and AI techniques enable intelligent system optimization, resource management, and application-level acceleration. The convergence of these three paradigms is reshaping the future of computing infrastructures, driving the evolution from traditional performance-centric systems to intelligent, adaptive, and hybrid computing ecosystems.        </p>
-        <p class="introduction-text">This Special Track aims to bring together researchers and practitioners from quantum computing, parallel and distributed systems, high-performance computing, and artificial intelligence to explore novel architectures, system software, programming models, and applications for quantum–supercomputing–AI integrated computing systems. The track particularly focuses on the design and implementation of scalable, reliable, and efficient hybrid computing infrastructures that bridge quantum processors, classical HPC systems, and AI accelerators. We welcome original research contributions that advance the theory, systems, and applications of next-generation integrated computing paradigms.</p>
+The rapid evolution of computational methodologies, encompassing machine learning, generative modeling, and large-scale biomedical data integration, is fundamentally reshaping the paradigm of modern drug design and discovery. Traditional drug discovery pipelines are inherently constrained by prolonged development cycles, high attrition rates, and limited capacity for systematic exploration of the vast chemical space. With the exponential growth of genomic and multi-omics profiles, high-resolution structural data, and complex pharmacological networks, advanced computational architectures now offer unprecedented opportunities to accelerate target identification, molecular generation, and precision therapeutics.
+        </p>
+        <p class="introduction-text">Recent breakthroughs—such as deep learning-driven molecular generation, high-throughput virtual screening, and multimodal representation learning—have demonstrated transformative potential across the preclinical and clinical drug development continuum. However, critical bottlenecks remain in cross-modal data integration, model interpretability, mechanism-aware validation, and the robust translation of in silico candidates into clinical efficacy. This track aims to highlight cutting-edge research that advances computationally-driven drug discovery, bridging the gap between theoretical algorithmic innovations and practical implementation in real-world pharmacological applications. By consolidating emerging methodologies, this track will advance a strategically critical research frontier and contribute to the development of intelligent, data-driven, and translational therapeutics.</p>
 
 
         <h3 class="section-heading">Topics</h3>
 
         <ul class="topics-list">
-            <li>Hybrid Quantum-Classical-AI Computing Architectures</li>
-            <li>Distributed Quantum Computing and Quantum Networking</li>
-            <li>Programming Models and System Software for Hybrid Computing</li>
-            <li>AI-Driven System Optimization and Resource Management</li>
-            <li>Hybrid Quantum-Classical Algorithms and Applications</li>
-            <li>HPC-Quantum Accelerated Scientific and Industrial Applications</li>
-            <li>Fault Tolerance, Reliability, and Security in Integrated Systems</li>
-            <li>Scalable Infrastructure for Quantum-Supercomputing-AI Convergence</li>
+            <li>High-Dimensional Topological Analysis for Target Identification</li>
+            <li>Generative Modeling and Multi-Dimensional Conditional Design</li>
+            <li>Dynamic Network Representation for Drug Repurposing and Synergistic Therapy</li>
+            <li>High-Fidelity Semantic Fusion of Multi-Omics and Pharmacological Data</li>
+            <li>Mechanism-Aware Predictive Modeling for Clinical Translation</li>
         </ul>
         <h3 class="section-heading">Important Date</h3>
         <p>We are pleased to announce the important dates for PDCAT 2026.
@@ -232,7 +229,7 @@ With the rapid advancement of quantum computing (QC), high-performance computing
 
     <!-- Navbar -->
     <script>
-        fetch("../my_navbar.html")
+        fetch("my_navbar.html")
             .then(res => res.text())
             .then(data => {
 
@@ -260,7 +257,7 @@ With the rapid advancement of quantum computing (QC), high-performance computing
 
     <!-- Footer -->
     <script>
-        fetch("../my_footer.html")
+        fetch("my_footer.html")
             .then(res => res.text())
             .then(data => {
                 document.getElementById(
@@ -270,7 +267,7 @@ With the rapid advancement of quantum computing (QC), high-performance computing
     </script>
 
     <!-- CFP Dropdown -->
-    <script src="../js/pdcat-dropdown.js"></script>
+    <script src="js/pdcat-dropdown.js"></script>
 
 </body>
 
