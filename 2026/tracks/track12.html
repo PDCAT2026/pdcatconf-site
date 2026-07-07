@@ -9,13 +9,13 @@
     <link href="../css/pdcat-dropdown.css" rel="stylesheet">
 
     <!-- Preload -->
-    <link rel="preload" href="my_head.html" as="fetch" crossorigin>
-    <link rel="preload" href="my_navbar.html" as="fetch" crossorigin>
-    <link rel="preload" href="my_footer.html" as="fetch" crossorigin>
+    <link rel="preload" href="../my_head.html" as="fetch" crossorigin>
+    <link rel="preload" href="../my_navbar.html" as="fetch" crossorigin>
+    <link rel="preload" href="../my_footer.html" as="fetch" crossorigin>
 
     <!-- Load shared head -->
     <script>
-        fetch('my_head.html')
+        fetch('../my_head.html')
             .then(res => res.text())
             .then(html => {
                 document.head.insertAdjacentHTML('beforeend', html);
@@ -220,7 +220,7 @@ The rapid growth of data-intensive applications has reshaped parallel and distri
 
     <!-- Navbar -->
     <script>
-        fetch("my_navbar.html")
+        fetch("../my_navbar.html")
             .then(res => res.text())
             .then(data => {
 
@@ -248,7 +248,7 @@ The rapid growth of data-intensive applications has reshaped parallel and distri
 
     <!-- Footer -->
     <script>
-        fetch("my_footer.html")
+        fetch("../my_footer.html")
             .then(res => res.text())
             .then(data => {
                 document.getElementById(
@@ -258,7 +258,7 @@ The rapid growth of data-intensive applications has reshaped parallel and distri
     </script>
 
     <!-- CFP Dropdown -->
-    <script src="js/pdcat-dropdown.js"></script>
+    <script src="../js/pdcat-dropdown.js"></script>
 
 </body>
 
