@@ -106,4 +106,16 @@
     <priority>0.6</priority>
   </url>
 
+  <url>
+    <loc>https://www.pd-cat.org/2026/register.html</loc>
+    <lastmod>2026-10-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.pd-cat.org/2026/registration-form.html</loc>
+    <lastmod>2026-10-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
 </urlset>
