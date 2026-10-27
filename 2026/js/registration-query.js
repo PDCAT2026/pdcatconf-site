@@ -13,8 +13,9 @@ queryForm.addEventListener('submit',async event=>{
   const data=await response.json();if(!response.ok)throw new Error(data.error||'Query failed / 查询失败');
   for(const [index,item] of data.items.entries()){
    const section=document.createElement('section');section.className='form-section';const title=document.createElement('h3');title.textContent=`Registration ${index+1} / 登记 ${index+1}`;section.append(title);
-   const money=value=>value===null?'Not confirmed / 尚未确认':(value/100).toFixed(2);
-   for(const [label,value] of [['Status / 缴费状态',paymentLabels[item.status]],['Amount due (RMB) / 应缴金额（元）',money(item.expected_cents)],['Reported paid (RMB) / 申报已付（元）',money(item.paid_cents)],['Confirmed paid (RMB) / 已确认缴费（元）',money(item.confirmed_cents)]]){
+   const currency=item.currency==='USD'?'USD':'RMB';
+   const money=value=>value===null?'Not confirmed / 尚未确认':currency+' '+(value/100).toFixed(2);
+   for(const [label,value] of [['Status / 缴费状态',paymentLabels[item.status]],['Amount due / 应缴金额',money(item.expected_cents)],['Registration amount / 登记金额',money(item.paid_cents)],['Confirmed paid / 已确认缴费',money(item.confirmed_cents)]]){
     const row=document.createElement('div');row.className='result-row';const key=document.createElement('strong'),val=document.createElement('span');key.textContent=label;val.textContent=value;row.append(key,val);section.append(row);
    }
    queryResult.append(section);

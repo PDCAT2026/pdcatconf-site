@@ -39,7 +39,7 @@
     <section id="query-section" class="query-section" aria-labelledby="query-title">
       <h2 id="query-title">Check payment / 查询缴费</h2>
       <p>Enter the email used when registering. Only payment status and amounts are shown. If the email has multiple registrations, each is listed separately.<br>请输入登记时填写的邮箱。仅显示缴费状态和金额；同一邮箱多次登记将逐条列出。</p>
-      <p>Reported payment is the amount entered on the registration form. It is confirmed only after review by the organizers.<br>申报已付金额来自登记表，须经会务人员审核后才属于已确认缴费。</p>
+      <p>New registration amounts are calculated from the selected region, category and extra pages. Payment is confirmed only after review by the organizers.<br>新登记金额由地区、类别和超页数自动计算，须经会务人员审核后才属于已确认缴费。</p>
       <noscript><p class="alert alert-warning">Enable JavaScript to query. / 请启用 JavaScript 后查询。</p></noscript>
       <form id="query-form"><div class="form-group"><label for="query-email">Registration email / 登记邮箱</label><input class="form-control" type="email" id="query-email" required maxlength="254" autocomplete="email"></div><button class="btn btn-primary" id="query-button" type="submit" disabled>Check payment / 查询缴费</button></form>
       <p id="query-status" role="status" aria-live="polite" class="mt-3"></p><div id="query-result"></div>
@@ -58,6 +58,6 @@
     }).catch(console.error);
   </script>
   <script src="js/pdcat-dropdown.js"></script>
-  <script src="js/registration-query.js"></script>
+  <script src="js/registration-query.js?v=20261027-fees"></script>
 </body>
 </html>
