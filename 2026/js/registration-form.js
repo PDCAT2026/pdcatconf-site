@@ -27,7 +27,7 @@ byId('country').addEventListener('change',updatePaymentAmount);
 byId('extra-pages').addEventListener('input',updatePaymentAmount);
 category.addEventListener('change', updateRegistrationCategory);
 receipt.addEventListener('change', () => {
-  const file = receipt.files[0];
+  const file = receipt.files[0];byId('receipt-filename').textContent=file?file.name:'No file selected';
   receipt.setCustomValidity(file && (!/\.(jpe?g|png)$/i.test(file.name) || file.size > 10 * 1024 * 1024 || file.size === 0)
     ? 'Choose a nonempty JPG or PNG file no larger than 10 MB.' : '');
 });
@@ -67,7 +67,7 @@ byId('save-confirmation').addEventListener('click',()=>{
   const url=URL.createObjectURL(new Blob([content],{type:'text/plain;charset=utf-8'}));const link=document.createElement('a');link.href=url;link.download=saved.id+'.txt';link.click();setTimeout(()=>URL.revokeObjectURL(url),1000);
 });
 byId('new-registration').addEventListener('click',()=>{
-  saved=null;queryCode='';registrationForm.reset();fields.disabled=false;receipt.setCustomValidity('');updateRegistrationCategory();formStatus.textContent='';byId('submission-result').hidden=true;
+  saved=null;queryCode='';registrationForm.reset();byId('receipt-filename').textContent='No file selected';fields.disabled=false;receipt.setCustomValidity('');updateRegistrationCategory();formStatus.textContent='';byId('submission-result').hidden=true;
   try{sessionStorage.removeItem('pdcat2026-pending-code');}catch(_){}
 });
 fields.disabled=false;
