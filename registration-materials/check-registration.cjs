@@ -11,5 +11,5 @@ for(const [value,author]of [['author',true],['attendee',false]]){element('catego
 for(const [name,size,valid]of [['x.PDF',10*1024*1024,true],['x.jpg',0,false],['x.png',10*1024*1024+1,false],['x.exe',100,false],['x.jpg',100,true]]){element('receipt').files=[{name,size}];element('receipt').handlers.change();assert.equal(element('receipt').validationMessage==='',valid);}
 element('receipt').files=[];element('receipt').handlers.change();assert.equal(element('receipt').validationMessage,'');
 const html=fs.readFileSync(path.join(root,'2026/registration-form.html'),'utf8');
-assert.match(html,/id="registration-fields" disabled/);assert.match(html,/name="consent"[^>]*required/);assert.match(html,/id="query-code"[^>]*type="password"/);assert.doesNotMatch(html,/Preview only/);
+assert.match(html,/id="registration-fields" disabled/);assert.match(html,/name="consent"[^>]*required/);assert.doesNotMatch(html,/id="query-form"/);const query=fs.readFileSync(path.join(root,"2026/registration-query.html"),"utf8");assert.match(query,/id="query-email"/);assert.doesNotMatch(query,/id="registration-form"/);assert.doesNotMatch(html,/Preview only/);
 console.log('PASS: category requirements, upload limits, consent, query privacy and no-JS guard');

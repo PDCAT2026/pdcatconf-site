@@ -1,9 +1,13 @@
-# PDCAT registration backend (2026-10-27)
+# PDCAT registration backend
 
-The static registration page now submits to `https://101.37.245.203/api/registrations` and queries `https://101.37.245.203/api/query` from the same GitHub Pages URL.
+Registration: https://pdcat2026.github.io/pdcatconf-site/2026/registration-form.html
 
-The administrator interface is at `https://101.37.245.203/admin/`. Administrator credentials are managed outside this repository. No password, database, receipt, or server private key belongs in the static site.
+Payment query: https://pdcat2026.github.io/pdcatconf-site/2026/registration-query.html
 
-Submission success means the record and receipt were saved; payment confirmation requires administrator review. Participants save their registration ID and private query code using the downloadable confirmation receipt.
+The registration instructions page shows separate registration and query buttons. Query uses only the registered email and returns payment status and amounts for each matching registration. It does not return names, paper details, phone numbers, receipts, internal review notes or full registration records. Anyone who knows the email can see these limited payment summaries.
 
-Checks: local Go integration tests, local browser submission/query/review flow, real HTTPS certificate validation, real GitHub-origin CORS lookup, production administrator login/read/logout, and certificate renewal dry run. Production registration write/review tests were not run; no synthetic registration was inserted into the live database.
+API: `https://101.37.245.203`. Go stores registration details and payment receipt bytes atomically in MariaDB. Amounts are integer RMB cents; reported paid amounts remain separate from amounts confirmed by administrator review. Email lookup is case-insensitive. A random request key is used internally only to make submission retries idempotent.
+
+Admin: https://101.37.245.203/admin/ . Credentials and data are not in this repository. Production uses an OS-authenticated local MariaDB socket account with only SELECT/INSERT/UPDATE on its own database. Daily backups use mariadb-dump with a consistent transaction and receipt blobs.
+
+Local MariaDB integration and real-browser tests cover submission, email query, multiple records, admin login, receipt download, review and logout. Production verification uses read-only queries and preserves existing registrations.

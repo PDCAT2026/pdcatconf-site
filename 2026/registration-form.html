@@ -36,13 +36,12 @@
   <main class="container">
     <h1 class="section-heading">Registration Form <span lang="zh-CN">注册信息登记</span></h1>
     <p><a href="register.html">← Registration fees and payment instructions / 注册费用与付款说明</a></p>
-    <nav class="registration-links" aria-label="Registration actions"><a href="#registration-form">Submit registration / 提交登记</a><a href="#query-section">Check registration / 查询登记</a></nav>
     <div class="alert alert-info" id="registration-notice">
-      Submit your registration information and payment receipt. A saved submission is pending review until the organizers confirm your payment. Keep your registration ID and private query code.<br>
-      <span lang="zh-CN">请提交注册信息和付款凭证。保存成功后进入待审核状态，付款由会务人员核对确认。请保存注册编号和私密查询码。</span>
+      Submit your registration information and payment receipt. A saved submission is pending review until the organizers confirm your payment. Use your registration email on the separate payment query page.<br>
+      <span lang="zh-CN">请提交注册信息和付款凭证。保存成功后进入待审核状态，付款由会务人员核对确认。请在独立查询页面使用登记邮箱查询缴费状态。</span>
     </div>
     <p>Fields marked * are required. Payments are in RMB only. / <span lang="zh-CN">带 * 为必填项，仅收人民币。</span></p>
-    <noscript><p class="alert alert-warning">Please enable JavaScript to submit or query. / 请启用 JavaScript 后提交或查询。</p></noscript>
+    <noscript><p class="alert alert-warning">Please enable JavaScript to submit. / 请启用 JavaScript 后提交。</p></noscript>
     <form id="registration-form" aria-describedby="registration-notice">
       <fieldset id="registration-fields" disabled>
         <legend class="sr-only">Registration details</legend>
@@ -83,14 +82,12 @@
           <div class="form-group"><label for="tax-id">Tax ID / 纳税人识别号</label><input class="form-control" id="tax-id" name="tax_id" maxlength="100"></div>
           <div class="form-group"><label for="notes">Notes / 备注</label><textarea class="form-control" id="notes" name="notes" rows="3" maxlength="2000"></textarea></div>
         </fieldset>
-        <div class="form-section"><p id="privacy-notice">Your details and payment receipt are sent to the PDCAT registration server and used by authorized organizers for registration, payment verification and invoicing. Anyone holding your registration ID and query code can view your record. Keep the code private. For corrections or a lost code, contact the organizers using the contact information on the registration instructions page.<br><span lang="zh-CN">信息和付款凭证将发送至 PDCAT 注册服务器，仅供授权会务人员办理注册、核对付款和处理开票使用。持有注册编号及查询码的人可查看本条登记，请妥善保管。需要更正信息或丢失查询码时，请通过注册说明页面的联系方式联系会务人员。</span></p><label><input type="checkbox" name="consent" value="yes" required aria-describedby="privacy-notice"> I agree to this use of my information. / 我同意上述信息使用方式。 *</label></div>
+        <div class="form-section"><p id="privacy-notice">Your details and payment receipt are sent to the PDCAT registration server and used by authorized organizers for registration, payment verification and invoicing. Payment status and amounts can be looked up by anyone who knows your registration email; other registration details and receipts are restricted to organizers. For corrections, contact the organizers using the contact information on the registration instructions page.<br><span lang="zh-CN">信息和付款凭证将发送至 PDCAT 注册服务器，仅供授权会务人员办理注册、核对付款和处理开票使用。知道登记邮箱的人可以查询缴费状态与金额；其余报名信息和凭证仅管理员可见。需要更正信息时，请通过注册说明页面的联系方式联系会务人员。</span></p><label><input type="checkbox" name="consent" value="yes" required aria-describedby="privacy-notice"> I agree to this use of my information. / 我同意上述信息使用方式。 *</label></div>
         <button class="btn btn-primary" type="submit">Submit registration / 提交登记</button>
       </fieldset>
       <p id="form-status" role="status" class="mt-3" aria-live="polite"></p>
     </form>
-    <div id="recovery-notice" class="alert alert-warning" hidden>Keep this code while submitting. If the connection fails, retry with the same form contents.<br>提交期间请保留此码；连接失败时保持表单内容不变并重试。<div id="pending-code" class="query-code"></div></div>
-    <section id="submission-result" class="alert alert-success" hidden aria-labelledby="saved-title"><h2 id="saved-title">Submission received / 已收到登记</h2><p>Payment awaits review. Save this receipt before leaving this page.<br>付款待审核，请在离开本页前保存回执。</p><p><strong>Registration ID / 注册编号：</strong><span id="saved-id"></span></p><p><strong>Private query code / 私密查询码：</strong><span id="saved-code" class="query-code"></span></p><button type="button" id="save-confirmation" class="btn btn-primary">Save receipt / 保存回执</button> <button type="button" id="new-registration" class="btn btn-outline-secondary">Start another registration / 另填一份登记</button></section>
-    <section id="query-section" class="query-section" aria-labelledby="query-title"><h2 id="query-title">Check registration / 查询登记</h2><p>Use the ID and code from your saved receipt. / 使用已保存回执中的注册编号和查询码。</p><form id="query-form"><div class="form-group"><label for="query-id">Registration ID / 注册编号</label><input class="form-control" id="query-id" required maxlength="64" placeholder="PDCAT-…" autocomplete="off"></div><div class="form-group"><label for="query-code">Private query code / 私密查询码</label><input class="form-control" id="query-code" type="password" required minlength="64" maxlength="64" autocomplete="off" spellcheck="false"></div><button class="btn btn-primary" id="query-button" type="submit">Check status / 查询状态</button></form><p id="query-status" role="status" aria-live="polite" class="mt-3"></p><div id="query-result"></div></section>
+    <section id="submission-result" class="alert alert-success" hidden aria-labelledby="saved-title"><h2 id="saved-title">Submission received / 已收到登记</h2><p>Payment awaits review. Save this receipt before leaving this page.<br>付款待审核，请在离开本页前保存回执。</p><p><strong>Registration ID / 注册编号：</strong><span id="saved-id"></span></p><button type="button" id="save-confirmation" class="btn btn-primary">Save receipt / 保存回执</button> <button type="button" id="new-registration" class="btn btn-outline-secondary">Start another registration / 另填一份登记</button></section>
   </main>
   <div id="footer-placeholder"></div>
   <script src="../vendor/jquery/jquery.min.js"></script>

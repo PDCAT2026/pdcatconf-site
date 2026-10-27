@@ -57,10 +57,10 @@
               <div> 
                   <p>Registration guidelines for PDCAT 2026, December 4–6, 2026, Changsha, China.</p>
                   <div class="alert alert-warning">
-                    <strong>Submit and check your registration online.</strong> Use the registration form below to submit your details and payment receipt. Save your registration ID and private query code to check the review status on the same page.
-                    <span lang="zh-CN">通过下方登记页面提交信息和付款凭证。请保存注册编号和私密查询码，在同一页面查询审核状态。</span>
+                    <strong>Submit and check your registration online.</strong> Use the registration form below to submit your details and payment receipt. Use your registration email on the separate payment query page to check the review status.
+                    <span lang="zh-CN">通过下方登记页面提交信息和付款凭证。请在独立查询页面使用登记邮箱查询缴费状态。</span>
                   </div>
-                  <p><a href="registration-form.html" class="btn btn-primary">Registration Form / 填写注册信息</a></p>
+                  <p><a href="registration-form.html" class="btn btn-primary">Registration Form / 填写注册信息</a> <a href="registration-query.html" class="btn btn-outline-primary">Payment Query / 查询缴费信息</a></p>
                   <p><a href="#registration-steps">Registration steps</a> · <a href="#payment-methods">Payment details</a> · <a href="#hotel-booking">Hotel booking</a> · <a href="#registration-contact">Contact</a></p>
                   <p> <strong> At least one author of each accepted paper must register to ensure that the paper will be included in the PDCAT 2026 conference proceedings. Note that each accepted paper must have at least one full registration.</strong> </p>
                   <p> If you have any special dietary requirements for the conference dinner, please email <a href="mailto:luohuizhang@hnu.edu.cn">luohuizhang@hnu.edu.cn</a> by 30 November 2026.</p>
@@ -97,7 +97,7 @@
                   <ol>
                     <li><strong>Confirm your registration category and fee.</strong> Each accepted paper requires at least one full author registration.</li>
                     <li><strong>Pay in RMB and keep your payment receipt.</strong> Include your name and paper ID (if applicable) in the payment reference.</li>
-                    <li><strong>Complete the <a href="registration-form.html">registration form</a>.</strong> Submit your registration information and payment receipt, then save the confirmation receipt. A received submission remains pending until the organizers verify your payment. Use the same form page to check its status.</li>
+                    <li><strong>Complete the <a href="registration-form.html">registration form</a>.</strong> Submit your registration information and payment receipt, then save the confirmation receipt. A received submission remains pending until the organizers verify your payment. Use your registration email on the <a href="registration-query.html">payment query page</a> to check its status.</li>
                   </ol>
 
                   <h3 class="section-heading" id="payment-methods">Payment Details <span lang="zh-CN">付款信息</span></h3>
@@ -217,7 +217,7 @@
     <script src="../vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
 
     <!-- Custom scripts for this template -->
-    <script src="../js/creative.min.js"></script>
+
 
 
 <script>
@@ -225,6 +225,10 @@
       .then(res => res.text())
       .then(data => {
         document.getElementById("navbar-placeholder").innerHTML = data;
+        // The template reads #mainNav immediately, so load it after the navbar exists.
+        const templateScript = document.createElement('script');
+        templateScript.src = '../js/creative.min.js';
+        document.body.appendChild(templateScript);
         const currentPage = window.location.pathname.split("/").pop();
         document.querySelectorAll(".nav-link[data-page]").forEach(link => {
           if (link.getAttribute("data-page") === currentPage) {
