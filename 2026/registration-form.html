@@ -50,7 +50,7 @@
         </fieldset>
         <fieldset class="form-section">
           <legend>Registration / 注册类别</legend>
-          <div class="form-group"><label for="category">Category / 类别 *</label><select class="form-control" id="category" name="category" required><option value="">Select / 请选择</option><option value="author">Author / 作者 — RMB 3400 (14 pages)</option><option value="attendee">Attendee / 普通参会 — RMB 1800</option></select></div>
+          <div class="form-group"><label for="category">Category / 类别 *</label><select class="form-control" id="category" name="category" required><option value="" disabled selected hidden>Select / 请选择</option><option value="author">Author / 作者 — RMB 3400 (14 pages)</option><option value="attendee">Attendee / 普通参会 — RMB 1800</option></select></div>
           <p id="paper-help">Authors must provide a paper ID and title. / 作者须填写论文编号和题目。</p>
           <div class="form-group"><label for="paper-id">Paper ID / 论文编号（作者必填）</label><input class="form-control" id="paper-id" name="paper_id" maxlength="100" aria-describedby="paper-help"></div>
           <div class="form-group"><label for="paper-title">Paper title / 论文题目（作者必填）</label><input class="form-control" id="paper-title" name="paper_title" maxlength="500" aria-describedby="paper-help"></div>
@@ -58,7 +58,7 @@
         </fieldset>
         <fieldset class="form-section">
           <legend>Payment / 付款信息</legend>
-          <div class="form-group"><label for="payment-method">Payment method / 付款方式 *</label><select class="form-control" id="payment-method" name="payment_method" required><option value="">Select / 请选择</option><option value="domestic_transfer">Domestic bank transfer / 国内银行转账</option><option value="qr">Payment QR code / 扫码付款</option><option value="cross_border_rmb">Cross-border RMB transfer / 跨境人民币汇款</option></select></div>
+          <div class="form-group"><label for="payment-method">Payment method / 付款方式 *</label><select class="form-control" id="payment-method" name="payment_method" required><option value="" disabled selected hidden>Select / 请选择</option><option value="domestic_transfer">Domestic bank transfer / 国内银行转账</option><option value="qr">Payment QR code / 扫码付款</option><option value="cross_border_rmb">Cross-border RMB transfer / 跨境人民币汇款</option></select></div>
           <div class="form-group"><label for="payer">Payer name / 付款人或付款单位 *</label><input class="form-control" id="payer" name="payer" maxlength="250" required></div>
           <div class="row">
             <div class="form-group col-md-6"><label for="amount">Amount paid (RMB) / 实付金额（元）*</label><input class="form-control" type="number" id="amount" name="amount_rmb" min="0.01" step="0.01" required></div>
