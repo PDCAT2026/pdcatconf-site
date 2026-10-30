@@ -63,7 +63,7 @@ registrationForm.addEventListener('submit', async event => {
 });
 
 byId('save-confirmation').addEventListener('click',()=>{
-  const content=`PDCAT 2026 registration confirmation\nRegistration ID: ${saved.id}\nRegistration email: ${saved.email}\nPayment query: https://pdcat2026.github.io/pdcatconf-site/2026/registration-query.html\nReceived; payment awaits review.\n`;
+  const content=`PDCAT 2026 registration confirmation\nRegistration ID: ${saved.id}\nRegistration email: ${saved.email}\nPayment query: ${new URL('registration-query.html', location.href).href}\nReceived; payment awaits review.\n`;
   const url=URL.createObjectURL(new Blob([content],{type:'text/plain;charset=utf-8'}));const link=document.createElement('a');link.href=url;link.download=saved.id+'.txt';link.click();setTimeout(()=>URL.revokeObjectURL(url),1000);
 });
 byId('new-registration').addEventListener('click',()=>{
