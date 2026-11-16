@@ -1,4 +1,6 @@
 'use strict';
+const attendanceLabels = {poster:'Poster', onsite:'Oral(In-Person)', online:'Oral (Online)'};
+const attendanceLabel = value => attendanceLabels[value] || 'Not specified';
 
 const adminForm = document.getElementById('registration-form').dataset.admin === 'true';
 const API_BASE = adminForm ? location.origin : 'https://101.37.245.203';
@@ -59,7 +61,7 @@ registrationForm.addEventListener('submit', async event => {
   try{
     saved=await request(adminForm?'/api/admin/registrations':'/api/registrations',body);
     byId('saved-id').textContent=saved.id;saved.email=body.get('email');
-    byId('saved-paper-id').textContent=saved.paper_id||'Not applicable';byId('saved-created-at').textContent=submittedAt(saved.created_at);
+    byId('saved-paper-id').textContent=saved.paper_id||'Not applicable';byId('saved-attendance-mode').textContent=attendanceLabel(saved.attendance_mode);byId('saved-created-at').textContent=submittedAt(saved.created_at);
     byId('submission-result').hidden=false;
     formStatus.textContent=saved.message;
     try{sessionStorage.removeItem(pendingKey);}catch(_){}
@@ -68,7 +70,7 @@ registrationForm.addEventListener('submit', async event => {
 });
 
 byId('save-confirmation').addEventListener('click',()=>{
-  const content=`PDCAT 2026 registration confirmation\nRegistration ID: ${saved.id}\nRegistration email: ${saved.email}\nPaper ID: ${saved.paper_id||'Not applicable'}\nSubmitted at (UTC+8): ${submittedAt(saved.created_at)}\nPayment query: ${adminForm?'https://www.pd-cat.org/2026/registration-query.html':new URL('registration-query.html', location.href).href}\nReceived; payment awaits review.\n`;
+  const content=`PDCAT 2026 registration confirmation\nRegistration ID: ${saved.id}\nRegistration email: ${saved.email}\nPaper ID: ${saved.paper_id||'Not applicable'}\nAttendance mode: ${attendanceLabel(saved.attendance_mode)}\nSubmitted at (UTC+8): ${submittedAt(saved.created_at)}\nPayment query: ${adminForm?'https://www.pd-cat.org/2026/registration-query.html':new URL('registration-query.html', location.href).href}\nReceived; payment awaits review.\n`;
   const url=URL.createObjectURL(new Blob([content],{type:'text/plain;charset=utf-8'}));const link=document.createElement('a');link.href=url;link.download=saved.id+'.txt';link.click();setTimeout(()=>URL.revokeObjectURL(url),1000);
 });
 byId('new-registration').addEventListener('click',()=>{
