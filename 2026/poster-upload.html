@@ -73,7 +73,7 @@
   <script>
     fetch('my_navbar.html').then(res => res.text()).then(html => {
       document.getElementById('navbar-placeholder').innerHTML = html;
-      document.querySelector('.nav-link[data-page="poster-upload.html"]')?.classList.add('active');
+      document.querySelector('.nav-link[data-page="register.html"]')?.classList.add('active');
     }).catch(console.error);
     fetch('my_footer.html').then(res => res.text()).then(html => {
       document.getElementById('footer-placeholder').innerHTML = html;
