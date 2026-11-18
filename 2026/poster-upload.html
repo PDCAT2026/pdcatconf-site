@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Poster Upload | PDCAT 2026</title>
+  <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../css/creative.css" rel="stylesheet">
+  <link href="css/pdcat-dropdown.css" rel="stylesheet">
+  <style>
+    main { padding: 6rem 0 2rem; max-width: 920px; }
+    .form-section { padding: 1.5rem; border: 1px solid #dee2e6; border-radius: 8px; margin-bottom: 1.5rem; }
+    label { font-weight: 600; }
+    fieldset { min-width: 0; }
+    input[type="file"] { max-width: 100%; }
+    #form-status { white-space: pre-wrap; }
+    #submission-result { scroll-margin-top: 6rem; overflow-wrap: anywhere; }
+    [hidden] { display: none !important; }
+  </style>
+  <script>
+    fetch('my_head.html').then(res => res.text()).then(html => {
+      document.head.insertAdjacentHTML('beforeend', html);
+      document.title = 'Poster Upload | PDCAT 2026';
+    }).catch(console.error);
+  </script>
+</head>
+<body id="page_top">
+  <div id="navbar-placeholder"></div>
+  <main class="container">
+    <h1 class="section-heading">Poster Upload</h1>
+    <p>Submit your PDCAT 2026 poster to the organizing committee.</p>
+    <div class="alert alert-info"><strong>PDF only · Maximum 10 MB per file.</strong> Please upload one complete poster PDF for each paper.</div>
+    <p><a href="register.html">Registration instructions</a> · <a href="mailto:luohuizhang@hnu.edu.cn">Contact the organizers</a></p>
+    <p>Fields marked * are required. To submit a revised poster, make a new upload. Previous submissions are kept for the organizers to review.</p>
+    <noscript><p class="alert alert-warning">Please enable JavaScript to upload your poster.</p></noscript>
+    <form id="poster-form" enctype="multipart/form-data">
+      <fieldset id="poster-fields" disabled>
+        <section class="form-section" aria-labelledby="paper-heading">
+          <h2 id="paper-heading" class="h4">Paper and contact details</h2>
+          <div class="form-group"><label for="paper-id">Paper ID *</label><input class="form-control" id="paper-id" name="paper_id" inputmode="numeric" maxlength="100" placeholder="e.g. 501" required></div>
+          <div class="form-group"><label for="paper-title">Paper title *</label><input class="form-control" id="paper-title" name="paper_title" maxlength="500" required></div>
+          <div class="form-group"><label for="full-name">Contact name *</label><input class="form-control" id="full-name" name="full_name" autocomplete="name" maxlength="150" required></div>
+          <div class="form-group"><label for="email">Contact email *</label><input class="form-control" type="email" id="email" name="email" autocomplete="email" maxlength="254" required></div>
+        </section>
+        <section class="form-section" aria-labelledby="file-heading">
+          <h2 id="file-heading" class="h4">Poster PDF</h2>
+          <div class="form-group"><label for="poster">Select a PDF file *</label><input type="file" class="form-control-file" id="poster" name="poster" accept=".pdf,application/pdf" aria-describedby="poster-help poster-filename" required></div>
+          <p id="poster-help" class="text-muted">PDF only, up to 10 MB. Check that the PDF opens correctly before uploading.</p>
+          <p id="poster-filename" class="text-muted" aria-live="polite">No file selected</p>
+        </section>
+        <section class="form-section">
+          <p id="privacy-notice">Your contact details and poster will be sent to the PDCAT conference server for conference organization. Only authorized organizers can view submission details and access the uploaded PDF.</p>
+          <label><input type="checkbox" name="consent" value="yes" required aria-describedby="privacy-notice"> I agree to this use of my information and poster. *</label>
+        </section>
+        <button class="btn btn-primary" id="upload-button" type="submit">Upload poster</button>
+      </fieldset>
+    </form>
+    <p id="form-status" role="status" aria-live="polite" class="mt-3"></p>
+    <section id="submission-result" class="alert alert-success" hidden aria-labelledby="saved-title">
+      <h2 id="saved-title" class="h4">Poster received</h2>
+      <p>Your poster has been uploaded successfully. Please save this confirmation for your records.</p>
+      <p><strong>Submission ID: </strong><span id="saved-id"></span></p>
+      <p><strong>Paper ID: </strong><span id="saved-paper-id"></span></p>
+      <p><strong>File: </strong><span id="saved-filename"></span></p>
+      <p><strong>Submitted at (UTC+8): </strong><span id="saved-created-at"></span></p>
+      <button type="button" id="save-confirmation" class="btn btn-primary">Save confirmation</button>
+      <button type="button" id="new-upload" class="btn btn-outline-secondary">Upload another poster</button>
+    </section>
+  </main>
+  <div id="footer-placeholder"></div>
+  <script src="../vendor/jquery/jquery.min.js"></script>
+  <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script>
+    fetch('my_navbar.html').then(res => res.text()).then(html => {
+      document.getElementById('navbar-placeholder').innerHTML = html;
+      document.querySelector('.nav-link[data-page="register.html"]')?.classList.add('active');
+    }).catch(console.error);
+    fetch('my_footer.html').then(res => res.text()).then(html => {
+      document.getElementById('footer-placeholder').innerHTML = html;
+    }).catch(console.error);
+  </script>
+  <script src="js/pdcat-dropdown.js"></script>
+  <script src="js/poster-upload.js?v=20261118"></script>
+</body>
+</html>
