@@ -1,6 +1,6 @@
 'use strict';
 
-const API_BASE = 'https://119.91.95.42';
+const API_BASE = 'https://101.37.245.203';
 const byId = id => document.getElementById(id);
 const pendingKey = 'pdcat2026-poster-upload-code';
 const fields = byId('poster-fields'), fileInput = byId('poster'), form = byId('poster-form');
