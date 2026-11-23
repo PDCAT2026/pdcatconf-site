@@ -32,7 +32,8 @@
 .schedule-page .paper-id { font-weight: 700; }
 .schedule-page .paper-title { font-weight: 700; color: #263f5a; }
 .schedule-page .authors, .schedule-page .presenter { color: #526173; margin-top: .2rem; font-size: .91rem; }
-.schedule-page .pending { display: inline-block; color: #ffe066; background: #24384b; border-radius: .2rem; padding: 0 .3rem; font-weight: 700; }
+.schedule-page .pending { color: #8a6d00; font-weight: 400; }
+.schedule-page .session-slot { white-space: nowrap; }
 .schedule-page .session { background: #fff; border: 1px solid #ccd6e0; border-radius: .35rem; padding: 1.25rem; margin: 1.25rem 0; scroll-margin-top: 5rem; }
 .schedule-page .session:target { border-color: #c45a34; }
 .schedule-page .session-meta { display: flex; flex-wrap: wrap; gap: .35rem 1.5rem; margin: .55rem 0 1rem; font-size: .95rem; }
