@@ -1,713 +1,336 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="zh-CN">
 <head>
-  <!-- Minimal bootstrap head to avoid empty-head flash; the full head is appended below -->
-  <meta charset="utf-8">
-  <title>PDCAT 2026</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="PDCAT 2026 conference program, December 4–6, Changsha, China.">
+<title>Program | PDCAT 2026</title>
+<link rel="icon" href="../favicon.ico">
+<link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<link href="../css/creative.css" rel="stylesheet">
 <link href="css/pdcat-dropdown.css" rel="stylesheet">
-  <!-- Preload partials before we fetch and insert them -->
-  <link rel="preload" href="my_head.html" as="fetch" crossorigin>
-  <link rel="preload" href="my_navbar.html" as="fetch" crossorigin>
-  <link rel="preload" href="my_footer.html" as="fetch" crossorigin>
-
-  <script>
-    // Safely append head partial without wiping existing tags
-    fetch('my_head.html')
-      .then(res => res.text())
-      .then(html => {
-        document.head.insertAdjacentHTML('beforeend', html);
-      })
-      .catch(console.error);
-  </script>
-  <!-- Bootstrap core CSS -->
-  <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- Plugin CSS -->
-  <link href="../vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
-
-  <!-- Font Awesome -->
-  <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-
-  <!-- Custom styles -->
-  <link href="../css/creative.css" rel="stylesheet">
-  <link
-    href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800|Merriweather:300,400,700,900&display=swap"
-    rel="stylesheet">
+<link href="css/program.css" rel="stylesheet">
 </head>
-
 <body id="page_top">
-  <div id="navbar-placeholder"></div>
-
-  <header>
-    <div class="title-class">
-      <!-- <h1 class="text-uppercase">
-          <strong>The 20<sup class="text-lowercase">th</sup> International Conference on Parallel and Distributed Computing, Applications and Technologies</strong>
-        </h1>
-        <h1>
-          5-7 December 2019 <br> Gold Coast, Australia
-        </h1> -->
-    </div>
-  </header>
-
-  <section id="program">
-    <!-- <p class="text-center">Tentative</p> -->
-    <div class="container text-center">
-      <div class="row">
-        <div class="introduction">
-
-          <!-- Openning -->
-          <table width="1100" border="1" cellspacing="0" cellpadding="0" class="program"
-            style="background-color:#eefaff; line-height:40px;">
-            <tr height="60px">
-              <td colspan="3" bgcolor="#ff6c40"
-                style="color:#FFF; font-weight:bold; font-size:18px; line-height:40px; ">
-                November 22 AEST (Saturday) <br />
-                Conference Venue: ROOM 101</td>
-            </tr>
-
-            <tr>
-              <td width="20%">08:00 - 09:10</td>
-              <td width="80%" colspan="2">Registration & Arrival Tea/Coffee</td>
-            </tr>
-
-            <tr>
-              <td width="20%">09:00 - 09:30 </td>
-              <td width="80%" colspan="2">Opening Ceremony </td>
-            </tr>
-
-            <tr>
-              <td width="20%">09:30 - 10:30</td>
-              <td width="80%" colspan="2" align="left" style=" line-height:40px; text-align:left; padding-left:30px;">
-                <strong>Keynote Speaker: Dr Cheng-Zhong Xu </strong> <br />
-                Cloud-Edge Computing for Machine Learning and Large Models
-              </td>
-              <!-- <td width="20%">Chair
-              </td> -->
-            </tr>
-
-            <tr bgcolor="#fff4e3">
-              <td width="20%">10:30 - 11:00</td>
-              <td width="80%" colspan="2"> <strong>Coffee Break</strong></td>
-            </tr>
-
-            <tr>
-              <td width="20%">11:00 - 12:00</td>
-              <td width="80%" colspan="2" align="center" style=" line-height:40px; text-align:left; padding-left:30px;">
-                <strong>
-                  Keynote Speaker: Dr Chee Peng Lim</strong> <br />
-                Computational Intelligence-based Models for Data Analytics: Architectures, Algorithms, and Applications
-              </td>
-              <!-- <td width="20%"> Chair
-              </td> -->
-            </tr>
-
-            <tr bgcolor="#fff4e3">
-              <td width="20%">12:00 - 13:00 </td>
-              <td width="80%" colspan="2"> <strong>Lunch</strong></td>
-            </tr>
-            <!-- </table> -->
-
-            <!-- 1-A 2-A -->
-            <!-- <br /> -->
-            <!-- <table width="1100" border="1" cellspacing="0" cellpadding="0" class="program"
-            style="background-color:#eefaff; line-height:40px;"> -->
-            <!-- <tr height="60px">
-              <td colspan="3" bgcolor="#ff6c40"
-                style="color:#FFF; font-weight:bold; font-size:18px; line-height:40px;    ">
-                November 22 (Saturday) <br />
-                Conference Venue: ROOM 101
-              </td>
-            </tr> -->
-
-            <tr>
-              <td width="20%" rowspan="6">
-                Session 1-A <br />
-                <strong>Chair: Hui Tian</strong>
-              </td>
-              <td width="20%"> 13:00 - 13:20 </td>
-              <td width="60%" style="line-height:30px; padding:10px 20px; ">
-                A Quantum-GenAI-Enhanced Framework for Predictive and Privacy-Preserving Surveillance in CCTV
-                Networks<br />
-                <em>Abir El Azzaoui, Byung Hyun Jo, Ji Su Park, Jungho Kang, James Jong Hyuk Park</em>
-              </td>
-            </tr>
-
-            <tr>
-              <td width="20%"> 13:20 - 13:40 </td>
-              <td width="60%" style="line-height:30px; padding:10px 20px;">
-                Bandicoot: A Templated C++ Library for GPU Linear Algebra<br />
-                <em>Ryan Curtin, Marcus Edel, Conrad Sanderson</em>
-              </td>
-            </tr>
-            <tr>
-              <td width="20%"> 13:40 - 14:00 </td>
-              <td width="60%" style="line-height:30px; padding:10px 20px;">
-                gCloudSim: A GPU Accelerated Simulator for learning-driven Cloud Resource Optimisation<br />
-                <em>Jie Zhao, Rajkumar Buyya</em>
-              </td>
-            </tr>
-            <tr>
-              <td width="20%"> 14:00 - 14:20 </td>
-              <td width="60%" style="line-height:30px; padding:10px 20px;">
-                Cost-Performance Analysis: A Comparative Study of CPU-Based Serverless and GPU-Based Training
-                Architectures<br />
-                <em>Amine Barrak, Fabio Petrillo, Fehmi Jaafar</em>
-              </td>
-            </tr>
-            <tr>
-              <td width="20%"> 14:20 - 14:40 </td>
-              <td width="60%" style="line-height:30px; padding:10px 20px;">
-                Efficient GNN-based Client Selection for Optimizing Resource Allocation in Hierarchical Federated
-                Learning<sup>★</sup><br />
-                <em>Chenghao Zhou, Huaiwen He, Hong Shen, Hui Tian</em>
-              </td>
-            </tr>
-            <tr>
-              <td width="20%"> 14:40 - 15:00 </td>
-              <td width="60%" style="line-height:30px; padding:10px 20px;">
-                Efficient Parallel Implementation of the Pilot Assignment Problem in Massive MIMO
-                Systems<sup>★</sup><br />
-                <em>Eman Alqudah, Ashfaq Khokhar</em>
-              </td>
-            </tr>
-
-            <tr bgcolor="#fff4e3">
-              <td width="20%" colspan="2"> 15:00 - 15:20 </td>
-              <td width="80%"> <strong> Coffee Break </strong></td>
-            </tr>
-
-            <tr>
-              <td width="20%" rowspan="6">
-                Session 2-A <br />
-                <strong>Chair: Chois Zhi Cai</strong>
-              </td>
-              <td width="20%"> 15:20 - 15:40 </td>
-              <td width="60%" style="line-height:30px; padding:10px 20px; ">
-                MuS-Q-Le: On the fly Multi-State Q-Learning for Large-Scale State and Action Spaces on GPU's <br />
-                <em>Julian Gross</em>
-              </td>
-            </tr>
-            <tr>
-              <td width="20%"> 15:40 - 16:00 </td>
-              <td width="60%" style="line-height:30px; padding:10px 20px;">
-                Multiplex Networks Oriented Industrial Scheduling with Cross-Layer Enterprise Coordination and
-                Heterogeneous Task Flows <br />
-                <em>Zhenyu Wang, Bingru Bao, Yichuan Jiang, Xianghui Hu</em>
-              </td>
-            </tr>
-            <tr>
-              <td width="20%"> 16:00 - 16:20 </td>
-              <td width="60%" style="line-height:30px; padding:10px 20px;">
-                Plug-and-Play Dynamic Programming for Parallel Execution and Benchmarking <br />
-                <em>Jiang Long</em>
-              </td>
-            </tr>
-            <tr>
-              <td width="20%"> 16:20 - 16:40 </td>
-              <td width="60%" style="line-height:30px; padding:10px 20px;">
-                Deep Q-Learning from Statistical Demonstrations for Efficient Battery Storage Energy Arbitrage<br />
-                <em>Chois Zhi Cai, Hui Tian, Leo Yu Zhang, Lee Weng</em>
-              </td>
-            </tr>
-            <tr>
-              <td width="20%"> 16:40 - 17:00 </td>
-              <td width="60%" style="line-height:30px; padding:10px 20px;">
-                AI-based Micro-services for Real-time Analysis of Crowdfunding Campaigns Performance<sup>★</sup><br />
-                <em>Manar Ben Fraj, Nissaf Fredj, Ridha Jemmali, Samir Ksibi</em>
-              </td>
-            </tr>
-            <tr>
-              <td width="20%"> 17:00 - 17:20 </td>
-              <td width="60%" style="line-height:30px; padding:10px 20px;">
-                TD3-Sched: Learning to Orchestrate Container-based Cloud–Edge Resources via Distributed Reinforcement
-                Learning<sup>★</sup><br />
-                <em>ShengYe Song, Minxian Xu, Kan Hu, Wenxia Guo, Kejiang Ye</em>
-              </td>
-            </tr>
-          </table>
-
-          <!-- 1-B 2-B -->
-          <br />
-          <table width="1100" border="1" cellspacing="0" cellpadding="0" class="program"
-            style="background-color:#eefaff; line-height:40px;">
-            <tr height="60px">
-              <td colspan="3" bgcolor="#ff6c40"
-                style="color:#FFF; font-weight:bold; font-size:18px; line-height:40px;    ">
-                November 22 AEST (Saturday) <br />
-                Conference Venue: ROOM 102
-              </td>
-            </tr>
-
-
-            <tr>
-              <td width="20%" rowspan="6">
-                Session 1-B <br />
-                <strong>Chair: Steven Gordon</strong>
-              </td>
-              <td width="20%"> 13:00 - 13:20 </td>
-              <td width="60%" style="line-height:30px; padding:10px 20px; ">
-                Analysis of FM Modulated Wave Propagation at 4.5 GHz using SDR in a Controlled Scenario <br />
-                <em>James Neira, Esneider Castiblanco</em>
-              </td>
-            </tr>
-            <tr>
-              <td width="20%"> 13:20 - 13:40 </td>
-              <td width="60%" style="line-height:30px; padding:10px 20px;">
-                Improving the Traditional Propagation Model on the Multi-layer Network: From Random Initialization to
-                Relationship-driven Influence<br />
-                <em>Zhengyi An, Xianghui Hu, Yichuan Jiang</em>
-              </td>
-            </tr>
-            <tr>
-              <td width="20%"> 13:40 - 14:00 </td>
-              <td width="60%" style="line-height:30px; padding:10px 20px;">
-                Scenario-Aware Pareto Optimization for Limited-Round Unknown-Opponent Competition<br />
-                <em>FanKe Chen, JiaKang Mei, Zongyang Liu, Yinghui Pan</em>
-              </td>
-            </tr>
-            <tr>
-              <td width="20%"> 14:00 - 14:20 </td>
-              <td width="60%" style="line-height:30px; padding:10px 20px;">
-                A Comparative Performance of WiFi Spatial Reuse Solutions in 802.11ax<br />
-                <em>Haonan Chi, Wee Lum Tan, Hui Tian</em>
-              </td>
-            </tr>
-            <tr>
-              <td width="20%"> 14:20 - 14:40 </td>
-              <td width="60%" style="line-height:30px; padding:10px 20px;">
-                Machine Learning Forecasting of Romanian Earthquakes: Challenges and Opportunities<sup>★</sup><br />
-                <em>Sara Boanca</em>
-              </td>
-            </tr>
-            <tr>
-              <td width="20%"> 14:40 - 15:00 </td>
-              <td width="60%" style="line-height:30px; padding:10px 20px;">
-                Approximation algorithm for prize-collecting constraint sweep edge cover problem with base
-                stations<sup>★</sup><br />
-                <em>Ying Yin, Wencheng Wang, Xiaofei Liu</em>
-              </td>
-            </tr>
-
-            <tr bgcolor="#fff4e3">
-              <td width="20%" colspan="2"> 15:00 - 15:20 </td>
-              <td width="80%"> <strong> Coffee Break </strong></td>
-            </tr>
-
-            <tr>
-              <td width="20%" rowspan="6">
-                Session 2-B <br />
-                <strong>Chair: Yanming Zhu</strong>
-              </td>
-              <td width="20%"> 15:20 - 15:40 </td>
-              <td width="60%" style="line-height:30px; padding:10px 20px; ">
-                CIIV: A Hybrid Framework for Real Time Container Image Integrity Verification<br />
-                <em>Byoungchan Kim, Sejin Park</em>
-              </td>
-            </tr>
-            <tr>
-              <td width="20%"> 15:40 - 16:00 </td>
-              <td width="60%" style="line-height:30px; padding:10px 20px;">
-                Private UAV Mesh Networking for Live Match Video Streaming<br />
-                <em>Prabhu Jyot Singh, Nitiraj Sandu</em>
-              </td>
-            </tr>
-            <tr>
-              <td width="20%"> 16:00 - 16:20 </td>
-              <td width="60%" style="line-height:30px; padding:10px 20px;">
-                Blockchain Solutions for Pharmaceuticals Supply Chain Integrity: Smart Contracts and RSA-Encrypted NFTs
-                in Action<br />
-                <em>Bang Le, Ngan Nguyen</em>
-              </td>
-            </tr>
-            <tr>
-              <td width="20%"> 16:20 - 16:40 </td>
-              <td width="60%" style="line-height:30px; padding:10px 20px;">
-                VESTA-MADDRL: Joint Task Offloading and Service Placement in MEC-Vehicle Networks Based on Improved
-                MADDPG<sup>★</sup><br />
-                <em>Yintong Lu</em>
-              </td>
-            </tr>
-            <tr>
-              <td width="20%"> 16:40 - 17:00 </td>
-              <td width="60%" style="line-height:30px; padding:10px 20px;">
-                Utility-aware Collaboration Structure Optimization in Federated Learning<sup>★</sup><br />
-                <em>Qiqin Huang</em>
-              </td>
-            </tr>
-            <tr>
-              <td width="20%"> 17:00 - 17:20 </td>
-              <td width="60%" style="line-height:30px; padding:10px 20px;">
-                Cold-Start Microservice Workload Prediction by Dynamically Annealed Graph-Regularized Matrix
-                Factorization<sup>★</sup><br />
-                <em>Xiaoxuan Luo, Hong Shen, Wei Ke</em>
-              </td>
-            </tr>
-          </table>
-
-          <!-- 3-A 4-A 5-A -->
-          <br />
-          <table width="1100" border="1" cellspacing="0" cellpadding="0" class="program"
-            style="background-color:#eefaff; line-height:40px;">
-            <tr height="60px">
-              <td colspan="3" bgcolor="#ff6c40"
-                style="color:#FFF; font-weight:bold; font-size:18px; line-height:40px;    ">
-                November 23 AEST (Sunday) <br />
-                Conference Venue: ROOM 101
-              </td>
-            </tr>
-
-            <tr>
-              <td width="20%">8:30 - 9:00</td>
-              <td width="80%" colspan="2">Arrival Tea & Coffee</td>
-            </tr>
-
-            <tr>
-              <td width="20%">9:00 - 10:00</td>
-              <td width="80%" colspan="2" align="center" style=" line-height:40px; text-align:left; padding-left:30px;">
-                <strong>
-                  Keynote Speaker: Dr Michael Sheng</strong> <br />
-                AIoT: The History, A Decade-Long Research Program, and The Future Directions
-              </td>
-            </tr>
-
-            <tr bgcolor="#fff4e3">
-              <td width="20%">10:00 - 10:20</td>
-              <td width="80%" colspan="2"> <strong>Coffee Break</strong></td>
-            </tr>
-
-
-            <tr>
-              <td width="20%" rowspan="5">
-                Session 3-A <br />
-                <strong>Chair: Yufeng Lin </strong>
-              </td>
-              <td width="20%"> 10:20 - 10:40 </td>
-              <td width="60%" style="line-height:30px; padding:10px 20px; ">
-                Design of a Blockchain Plugin for Secure Electronic Medical Records<br />
-                <em>Zhenglin Wang, Umair Ullah Tariq, MD Mamunur Rashid, Yufeng Lin, Steven Gordon, Fariza Sabrina,
-                  Salahuddin Azad</em>
-              </td>
-            </tr>
-            <tr>
-              <td width="20%"> 10:40 - 11:00 </td>
-              <td width="60%" style="line-height:30px; padding:10px 20px;">
-                Enhancing Intellectual Property Rights Management Through Blockchain and RSA-Encrypted NFTs<br />
-                <em>Bang Le, Ngan Nguyen</em>
-              </td>
-            </tr>
-            <tr>
-              <td width="20%"> 11:00 - 11:20 </td>
-              <td width="60%" style="line-height:30px; padding:10px 20px;">
-                AgnosL2: Adaptive Layer 2 Framework for Heterogeneous Blockchain Ecosystems<br />
-                <em>Zhongli Dong, Young Choon Lee, Albert Y. Zomaya</em>
-              </td>
-            </tr>
-            <tr>
-              <td width="20%"> 11:20 - 11:40 </td>
-              <td width="60%" style="line-height:30px; padding:10px 20px;">
-                Adaptive AI for Power-Efficient IoT in Smart Agriculture<sup>★</sup><br />
-                <em>Praveen Kumar Sayani</em>
-              </td>
-            </tr>
-            <tr>
-              <td width="20%"> 11:40 - 12:00 </td>
-              <td width="60%" style="line-height:30px; padding:10px 20px;">
-                Data-Transfer-Aware Microservice Deployment for Edge Computing<sup>★</sup><br />
-                <em>Man Hou Lok, Hong Shen, Yingpeng Sang</em>
-              </td>
-            </tr>
-
-
-            <tr bgcolor="#fff4e3">
-              <td width="20%" colspan="2"> 12:00 - 13:00 </td>
-              <td width="80%"> <strong> Lunch </strong></td>
-            </tr>
-            <tr>
-              <td width="20%" rowspan="6">
-                Session 4-A <br />
-                <strong>Chair: Ye Tao</strong>
-              </td>
-
-              <td width="20%"> 13:00 - 13:20 </td>
-              <td width="60%" style="line-height:30px; padding:10px 20px; ">
-                Energy-Aware Optimization of CFD Workloads in HPC via Machine Learning-Based Dynamic CPU Scaling <br />
-                <em>Imad kissami, Fahd Kalloubi</em>
-              </td>
-            </tr>
-            <tr>
-              <td width="20%"> 13:20 - 13:40 </td>
-              <td width="60%" style="line-height:30px; padding:10px 20px;">
-                Enhancing Intellectual Property Rights Management through Blockchain Technology, Smart Contracts, and
-                IPFS: An Integrative Approach
-                <br />
-                <em>Bang Le, Ngan Nguyen</em>
-              </td>
-            </tr>
-            <tr>
-              <td width="20%"> 13:40 - 14:00 </td>
-              <td width="60%" style="line-height:30px; padding:10px 20px;">
-                Scalable Approximate Nearest Neighbor Search with PCA-Augmented HNSW in Vector Databases
-                <br />
-                <em>Yuanpeng Wang, Mohammadreza Hoseinyfarahabady, Albert Y. Zomaya</em>
-              </td>
-            </tr>
-            <tr>
-              <td width="20%"> 14:00 - 14:20 </td>
-              <td width="60%" style="line-height:30px; padding:10px 20px;">
-                Enhance Privacy Protection by Reducing Information Exchanges in Multi-Agent System Consensus<sup>★</sup>
-                <br />
-                <em>Sheng Tian, Hong Shen, Wei Ke</em>
-              </td>
-            </tr>
-            <tr>
-              <td width="20%"> 14:20 - 14:40 </td>
-              <td width="60%" style="line-height:30px; padding:10px 20px;">
-                Blockchain-Assisted Lightweight Secure Aggregation in Federated Learning via Trust Aware Client
-                Selection<sup>★</sup> <br />
-                <em>Su Liu, Hong Shen, Eddie K. L. Law, Chan Tong Lam</em>
-              </td>
-            </tr>
-            <tr>
-              <td width="20%"> 14:40 - 15:00 </td>
-              <td width="60%" style="line-height:30px; padding:10px 20px;">
-                Robust Aggregation on Federated Distillation in Adversarial Environments via Entropy and Semantic-Aware
-                Logit Filtering<sup>★</sup><br />
-                <em>Xiao Ma, Hong Shen, Wei Ke, Wenqi Lyu</em>
-              </td>
-            </tr>
-            <tr bgcolor="#fff4e3">
-              <td width="20%" colspan="2"> 15:20 - 16:00 </td>
-              <td width="80%"> <strong> Coffee Break </strong></td>
-            </tr>
-
-            <tr bgcolor="#f7b267">
-              <td width="20%" colspan="2"> 17:30 - 22:00 </td>
-              <td width="80%"> <strong> Banquet </strong></td>
-            </tr>
-
-          </table>
-
-          <!-- 3-B 4-B 5-B 6-B -->
-          <br />
-          <table width="1100" border="1" cellspacing="0" cellpadding="0" class="program"
-            style="background-color:#eefaff; line-height:40px;">
-            <tr height="60px">
-              <td colspan="3" bgcolor="#ff6c40"
-                style="color:#FFF; font-weight:bold; font-size:18px; line-height:40px;    ">
-                November 23 AEST (Sunday) <br />
-                Conference Venue: ROOM 102
-              </td>
-            </tr>
-
-            <tr>
-              <td width="20%" rowspan="5">
-                Session 3-B <br />
-                <strong>Chair: Yuanpeng Wang </strong>
-              </td>
-              <td width="20%"> 10:20 - 10:40 </td>
-              <td width="60%" style="line-height:30px; padding:10px 20px; ">
-                Real-Time Detection of Injection Attacks in Industrial Multi-Agent Systems<br />
-                <em>Qi Yu, Kai Di, Chengge Duan, Xinwei Xue, Pan Li</em>
-              </td>
-            </tr>
-            <tr>
-              <td width="20%"> 10:40 - 11:00 </td>
-              <td width="60%" style="line-height:30px; padding:10px 20px;">
-                Quantum Multicast Communication in Mesh-of-Trees Networks: A Teleportation-Based Approach<br />
-                <em>Ye Tao, Hong Shen, Fariza Sabrina, Steven Gordon, Fabio Serpiello</em>
-              </td>
-            </tr>
-            <tr>
-              <td width="20%"> 11:00 - 11:20 </td>
-              <td width="60%" style="line-height:30px; padding:10px 20px;">
-                Efficient Computation of TDM Disjoint Paths in Networks<br />
-                <em>Zhipeng Liu, Longkun Guo, Jiawei Lin</em>
-              </td>
-            </tr>
-            <tr>
-              <td width="20%"> 11:20 - 11:40 </td>
-              <td width="60%" style="line-height:30px; padding:10px 20px;">
-                Adversarial Assembly: Leveraging LLMs to Evade CNN-Based Windows Malware Detection<sup>★</sup><br />
-                <em>Md Mashrur Arifin, Brodie Abrew, Devyn Hubbs, Jyh-haw Yeh</em>
-              </td>
-            </tr>
-            <tr>
-              <td width="20%"> 11:40 - 12:00 </td>
-              <td width="60%" style="line-height:30px; padding:10px 20px;">
-                PDP-RAG: Privacy-Preserving Retrieval-Augmented Generation Based on Personalized Differential
-                Privacy<sup>★</sup><br />
-                <em>Yufu Chen, Yingpeng Sang</em>
-              </td>
-            </tr>
-
-
-            <tr bgcolor="#fff4e3">
-              <td width="20%" colspan="2"> 12:00 - 13:00 </td>
-              <td width="80%"> <strong> Lunch </strong></td>
-            </tr>
-
-
-            <tr>
-              <td width="20%" rowspan="7">
-                Session 4-B <br />
-                <strong>Chair: Xuefei Yin</strong>
-              </td>
-              <td width="20%"> 13:00 - 13:20 </td>
-              <td width="60%" style="line-height:30px; padding:10px 20px; ">
-                MethaneSegNet: Methane Plume Segmentation via Multi-Scale SwinTransformer-Based Network<br />
-                <em>Thi Hao Nguyen, Tran Dung Pham, Anh Tuan Nguyen, Chang Gyoon Lim, Seungbum Kim, Hoseop Lee, Jun
-                  Jo</em>
-              </td>
-            </tr>
-            <tr>
-              <td width="20%"> 13:20 - 13:40 </td>
-              <td width="60%" style="line-height:30px; padding:10px 20px;">
-                Noise-Resilient Small Object Detection with Octave and Cross-Frequency Convolution<br />
-                <em>Timothy Jo, Thi Hao Nguyen, Dong Duc Anh Nguyen, Anh Tuan Nguyen, Yongsik Chun, Jun Jo</em>
-              </td>
-            </tr>
-            <tr>
-              <td width="20%"> 13:40 - 14:00 </td>
-              <td width="60%" style="line-height:30px; padding:10px 20px;">
-                Radar Signal Recognition Based on DAVG-GRN Network<sup>★</sup><br />
-                <em>Zeyu Tang, Hong Shen, Chan Tong Lam</em>
-              </td>
-            </tr>
-            <tr>
-              <td width="20%"> 14:00 - 14:20 </td>
-              <td width="60%" style="line-height:30px; padding:10px 20px;">
-                MIFNet: Mamba-based Information Fusion Network for Remote Sensing Change Detection<sup>★</sup><br />
-                <em>Yichen Cui, Hong Shen , Chan Tong Lam</em>
-              </td>
-            </tr>
-            <tr>
-              <td width="20%"> 14:20 - 14:40 </td>
-              <td width="60%" style="line-height:30px; padding:10px 20px;">
-                Pyramid Mamba with Multi-Directional Scanning for Light Field Image Super-Resolution<sup>★</sup><br />
-                <em>Wenqi Lyu, Wei Ke, Hao Sheng, Xiao Ma</em>
-              </td>
-            </tr>
-            <tr>
-              <td width="20%"> 14:40 - 15:00 </td>
-              <td width="60%" style="line-height:30px; padding:10px 20px;">
-                Dual-Scale Motion Extraction for Enhanced Human Action Recognition Based on RGB and Skeleton
-                Modalities<sup>★</sup><br />
-                <em>Ke Xu, Hong Shen, Chan Tong Lam</em>
-              </td>
-            </tr>
-            <tr>
-              <td width="20%"> 15:00 - 15:20 </td>
-              <td width="60%" style="line-height:30px; padding:10px 20px;">
-                An Approach to Enhance Image Recognition Using Improved Triplet-Loss and Reinforcement Learning and
-                Active Learning<sup>★</sup><br />
-                <em>Anh Khoa Ha, Ngoc Vu Nguyen, Trung Ky Nguyen, Long Van Ho, Tu Nga Ly, Senerath Jayatilake, Tran Dung
-                  Pham</em>
-              </td>
-            </tr>
-            <tr bgcolor="#fff4e3">
-              <td width="20%" colspan="2"> 15:20 - 16:00 </td>
-              <td width="80%"> <strong> Coffee Break </strong></td>
-            </tr>
-
-            <tr bgcolor="#f7b267">
-              <td width="20%" colspan="2"> 17:30 - 22:00 </td>
-              <td width="80%"> <strong> Banquet </strong></td>
-            </tr>
-          </table>
-
-          <!-- Closing -->
-          <br />
-          <table width="1100" border="1" cellspacing="0" cellpadding="0" class="program"
-            style="background-color:#eefaff; line-height:40px;">
-            <tr height="60px">
-              <td colspan="3" bgcolor="#ff6c40"
-                style="color:#FFF; font-weight:bold; font-size:18px;  line-height:40px;">
-                November 24 AEST (Monday) <br />
-                Griffith Tour Visit and Collaboration Discussion
-              </td>
-            </tr>
-
-            <tr>
-              <td width="20%"> 10:00 </td>
-              <td width="80%" style="line-height:30px; padding:10px 20px; ">
-                Arriving at Griffith University
-              </td>
-            </tr>
-
-            <tr>
-              <td width="20%"> 10:00-10:30 </td>
-              <td width="60%" style="line-height:30px; padding:10px 20px; ">
-                Griffith Programs Introduction<br />
-              </td>
-            </tr>
-
-            <tr bgcolor="#fff4e3">
-              <td width="20%"> 10:30-11:30 </td>
-              <td width="60%" style="line-height:30px; padding:10px 20px; ">
-                Morning Tea
-              </td>
-            </tr>
-
-            <tr>
-              <td width="20%"> 11:30-12:00 </td>
-              <td width="60%" style="line-height:30px; padding:10px 20px; ">
-                Guided Tour at Griffith
-              </td>
-            </tr>
-
-            <tr>
-              <td width="20%"> 12:00 </td>
-              <td width="60%" style="line-height:30px; padding:10px 20px; ">
-                Conclude
-              </td>
-            </tr>
-
-          </table>
-
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- Bootstrap core JavaScript -->
-  <script src="../vendor/jquery/jquery.min.js"></script>
-  <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-  <!-- Plugin JavaScript -->
-  <script src="../vendor/jquery-easing/jquery.easing.min.js"></script>
-  <script src="../vendor/scrollreveal/scrollreveal.min.js"></script>
-  <script src="../vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
-
-  <!-- Custom scripts for this template -->
-  <script src="../js/creative.min.js"></script>
-
-
-
-  <script>
-    fetch("my_navbar.html")
-      .then(res => res.text())
-      .then(data => {
-        document.getElementById("navbar-placeholder").innerHTML = data;
-        const currentPage = window.location.pathname.split("/").pop();
-        document.querySelectorAll(".nav-link[data-page]").forEach(link => {
-          if (link.getAttribute("data-page") === currentPage) {
-            link.classList.add("active");
-          }
-        });
-      });
-  </script>
-
-  <div id="footer-placeholder"></div>
-  <script>
-    fetch("my_footer.html")
-      .then(res => res.text())
-      .then(data => {
-        document.getElementById("footer-placeholder").innerHTML = data;
-      });
-  </script>
+<div id="navbar-placeholder"></div>
+<section class="schedule-page" id="program"><main class="container schedule-container">
+<h1>Conference Program | 大会议程</h1>
+<p class="intro">2026年12月4–6日 · 中国长沙 · 湖南佳兴世尊酒店。以下时间均为北京时间（UTC+8）。未确认的信息以黄色“待定”标注。</p>
+<div class="stats"><span><strong>12</strong> 个线下 Session</span><span><strong>2</strong> 个独立线上专场</span><span><strong>119</strong> 篇口头报告</span><span><strong>1</strong> 篇 Poster</span></div>
+<nav class="quick-links" aria-label="页内导航"><a href="#registration">12月4日报到</a><a href="#day-1">12月5日</a><a href="#day-2">12月6日</a><a href="#technical-sessions">Session 论文列表</a><a href="#poster">Poster</a></nav>
+<section class="day" id="registration"><h2>12月4日（星期五）· 报到</h2>
+<div class="table-scroll"><table class="agenda-table"><thead><tr><th scope="col">时间 / Time</th><th scope="col">活动 / Program</th></tr></thead><tbody>
+<tr><td class="time">10:00–22:00</td><td>参会报到 · 湖南佳兴世尊酒店（长沙市金星中路247号） · 报到楼层及签到台：<span class="pending">待定</span></td></tr>
+</tbody></table></div>
+</section>
+<section id="overview">
+<section class="day" id="day-1"><h2>12月5日（星期六）· 大会第一天</h2>
+<p class="day-date">上午主会场：湖南佳兴世尊酒店四楼湖南厅</p>
+<div class="table-scroll"><table class="agenda-table"><thead><tr><th scope="col">时间 / Time</th><th scope="col">活动 / Program</th></tr></thead><tbody>
+<tr><td class="time">09:00–09:05</td><td>大会主席欢迎辞 / Welcome · 大会主席：<span class="pending">待定</span></td></tr>
+<tr><td class="time">09:05–09:10</td><td>领导致欢迎辞 · 致辞人：<span class="pending">待定</span></td></tr>
+<tr><td class="time">09:10–09:15</td><td>会议 PC 主席介绍会议与论文交流情况 · PC 主席：<span class="pending">待定</span></td></tr>
+<tr><td class="time">09:15–09:20</td><td>合影 / Group Photo</td></tr>
+<tr><td class="time">09:20–09:50</td><td><strong>Keynote 1</strong> · <a href="keynote.html">陈雷 Lei Chen · 香港科技大学（广州）</a><br>报告题目 / Title: <span class="pending">待定</span></td></tr>
+<tr><td class="time">09:50–10:20</td><td><strong>Keynote 2</strong> · <a href="keynote.html">陈进军 Jinjun Chen · 斯威本科技大学</a><br>报告题目 / Title: Composite DP: Bounded and Unbiased Composite Differential Privacy</td></tr>
+<tr><td class="time">10:20–10:40</td><td>茶歇 / Tea Break</td></tr>
+<tr><td class="time">10:40–11:10</td><td><strong>Keynote 3</strong> · <span class="pending">待定</span><br>报告题目 / Title: <span class="pending">待定</span></td></tr>
+<tr><td class="time">11:10–11:40</td><td><strong>Keynote 4</strong> · <span class="pending">待定</span><br>报告题目 / Title: <span class="pending">待定</span></td></tr>
+<tr><td class="time">11:40–12:00</td><td>颁奖 / Awards · 获奖论文：<span class="pending">待定</span></td></tr>
+<tr><td class="time">12:00–13:30</td><td>午餐／休息 · 地点：<span class="pending">待定</span></td></tr>
+</tbody></table></div>
+<h3>下午并行 Session / Parallel Sessions</h3>
+<p class="note">线下 A/B/C 三个会场；线上专场使用独立腾讯会议。每个会场第一组结束后茶歇，第二组结束后直接进入学术讨论，17:30 统一结束。</p>
+<div class="table-scroll"><table class="overview-table"><thead><tr><th scope="col">会场 / Room</th><th scope="col">地点 / Venue</th><th scope="col">第一组 / Session 1</th><th scope="col">茶歇 / Break</th><th scope="col">第二组 / Session 2</th><th scope="col">学术讨论 / Discussion</th></tr></thead><tbody>
+<tr><th scope="row">A</th><td>五楼 桃花厅</td><td><a href="#session-1a">Session 1A</a><br>13:30–15:20<br>高性能算法与科学计算</td><td class="time">15:20–15:30</td><td><a href="#session-2a">Session 2A</a><br>15:30–16:50<br>生物信号、行为感知与生物医学智能</td><td class="time">16:50–17:30</td></tr>
+<tr><th scope="row">B</th><td>五楼 百合厅</td><td><a href="#session-1b">Session 1B</a><br>13:30–15:20<br>异构加速与互连体系结构</td><td class="time">15:20–15:30</td><td><a href="#session-2b">Session 2B</a><br>15:30–17:00<br>边缘协同与网络优化</td><td class="time">17:00–17:30</td></tr>
+<tr><th scope="row">C</th><td>五楼 芙蓉1厅</td><td><a href="#session-1c">Session 1C</a><br>13:30–15:10<br>知识增强、智能检索与推荐</td><td class="time">15:10–15:30</td><td><a href="#session-2c">Session 2C</a><br>15:30–17:10<br>隐私保护数据处理与系统网络安全</td><td class="time">17:10–17:30</td></tr>
+<tr><th scope="row">线上 / Online</th><td>腾讯会议：<span class="pending">待定</span></td><td>—</td><td>—</td><td><a href="#session-online-1">Session Online-1</a><br>16:00–17:10<br>线上专场一：分布式系统与安全</td><td class="time">17:10–17:30</td></tr>
+</tbody></table></div>
+<p>13:30–17:30 · <a href="#poster">Poster 展示</a> · 展示区与展板位置：<span class="pending">待定</span></p>
+<p>会议晚宴 · 时间：<span class="pending">待定</span> · 地点：<span class="pending">待定</span></p>
+</section>
+<section class="day" id="day-2"><h2>12月6日（星期日）· 大会第二天</h2>
+<p class="day-date">上午主会场：湖南佳兴世尊酒店芙蓉厅 · 楼层：<span class="pending">待定</span></p>
+<div class="table-scroll"><table class="agenda-table"><thead><tr><th scope="col">时间 / Time</th><th scope="col">活动 / Program</th></tr></thead><tbody>
+<tr><td class="time">09:00–09:30</td><td><strong>Keynote 1</strong> · <a href="keynote.html">王子栋 Zidong Wang · 伦敦布鲁内尔大学</a><br>报告题目 / Title: Big Data Analysis and LLMs: Enhancing Reliability and Safety</td></tr>
+<tr><td class="time">09:30–10:00</td><td><strong>Keynote 2</strong> · <a href="keynote.html">熊辉 Hui Xiong · 香港科技大学（广州）</a><br>报告题目 / Title: <span class="pending">待定</span></td></tr>
+<tr><td class="time">10:00–10:20</td><td>茶歇 / Tea Break</td></tr>
+<tr><td class="time">10:20–10:50</td><td><strong>Keynote 3</strong> · <span class="pending">待定</span><br>报告题目 / Title: <span class="pending">待定</span></td></tr>
+<tr><td class="time">10:50–11:20</td><td><strong>Keynote 4</strong> · <span class="pending">待定</span><br>报告题目 / Title: <span class="pending">待定</span></td></tr>
+<tr><td class="time">11:20–12:00</td><td>后续安排：<span class="pending">待定</span></td></tr>
+<tr><td class="time">12:00–13:30</td><td>午餐／休息 · 地点：<span class="pending">待定</span></td></tr>
+</tbody></table></div>
+<h3>下午并行 Session / Parallel Sessions</h3>
+<p class="note">线下 D/E/F 三个会场；线上专场使用独立腾讯会议。每个会场第一组结束后茶歇，第二组结束后直接进入学术讨论，17:30 统一结束。</p>
+<div class="table-scroll"><table class="overview-table"><thead><tr><th scope="col">会场 / Room</th><th scope="col">地点 / Venue</th><th scope="col">第一组 / Session 1</th><th scope="col">茶歇 / Break</th><th scope="col">第二组 / Session 2</th><th scope="col">学术讨论 / Discussion</th></tr></thead><tbody>
+<tr><th scope="row">D</th><td>五楼 芙蓉1厅</td><td><a href="#session-1d">Session 1D</a><br>13:30–15:20<br>医学影像与多模态模型适配</td><td class="time">15:20–15:30</td><td><a href="#session-2d">Session 2D</a><br>15:30–17:00<br>系统优化、性能观测与可靠性分析</td><td class="time">17:00–17:30</td></tr>
+<tr><th scope="row">E</th><td>五楼 芙蓉2厅</td><td><a href="#session-1e">Session 1E</a><br>13:30–15:20<br>模型服务、专家协同与智能体工作流</td><td class="time">15:20–15:30</td><td><a href="#session-2e">Session 2E</a><br>15:30–16:50<br>新型计算范式：量子计算</td><td class="time">16:50–17:30</td></tr>
+<tr><th scope="row">F</th><td>五楼 紫荆厅</td><td><a href="#session-1f">Session 1F</a><br>13:30–15:20<br>视觉感知与时序预测</td><td class="time">15:20–15:30</td><td><a href="#session-2f">Session 2F</a><br>15:30–17:00<br>在线优化、资源调度与绿色计算</td><td class="time">17:00–17:30</td></tr>
+<tr><th scope="row">线上 / Online</th><td>腾讯会议：<span class="pending">待定</span></td><td>—</td><td>—</td><td><a href="#session-online-2">Session Online-2</a><br>16:10–17:10<br>线上专场二：智能计算与交叉应用</td><td class="time">17:10–17:30</td></tr>
+</tbody></table></div>
+<p>13:30–17:30 · <a href="#poster">Poster 展示</a> · 展示区与展板位置：<span class="pending">待定</span></p>
+</section></section>
+<section class="day" id="technical-sessions"><h2>Technical Sessions | 论文报告明细</h2>
+<p class="intro">按实际报告顺序列出论文 ID、题目、作者和时段。每个现场会场每天前两篇为 20 分钟重点报告，其余为 10 分钟常规报告；时长均包含问答。</p>
+<h3>12月5日 Session</h3>
+<article class="session" id="session-1a">
+<h3>Session 1A — 高性能算法与科学计算</h3>
+<p class="english-title" lang="en">High-Performance Algorithms and Scientific Computing</p>
+<div class="session-meta"><span><strong>日期：</strong>12月5日</span> <span><strong>时间：</strong>13:30–15:20</span> <span><strong>地点：</strong>五楼 桃花厅</span> <span><strong>主持人：</strong><span class="pending">待定</span></span> <span><strong>技术联系人：</strong><span class="pending">待定</span></span></div>
+<div class="table-scroll"><table class="paper-table"><thead><tr><th scope="col">报告时间 / Time</th><th scope="col">论文ID</th><th scope="col">论文题目与作者 / Paper and Authors</th><th scope="col">类型 / Type</th></tr></thead><tbody>
+<tr id="paper-429"><td class="time">13:30–13:50</td><td class="paper-id">429</td><td><span class="paper-title">HiSYMV: A GPU Kernel Hierarchy for SYMV/HEMV across Scales</span><div class="authors">Haowei Li; Libo Liu; Xinzhe Chen; Lijuan Hu; Wenjing Ma; Fangfang Liu</div><div class="presenter">报告人 / Presenter: <span class="pending">待定</span></div></td><td><span class="key-report">重点报告 · 20 min</span></td></tr>
+<tr id="paper-546"><td class="time">13:50–14:10</td><td class="paper-id">546</td><td><span class="paper-title">CSP: A Coordinated Optimization Framework for Large-Scale Dense Linear Solvers on Heterogeneous Supercomputers</span><div class="authors">Qianxi Sun; Haipeng Jia; Yunquan Zhang</div><div class="presenter">报告人 / Presenter: <span class="pending">待定</span></div></td><td><span class="key-report">重点报告 · 20 min</span></td></tr>
+<tr id="paper-469"><td class="time">14:10–14:20</td><td class="paper-id">469</td><td><span class="paper-title">StenSVE: Efficient Stencil Computation on Arm SVE</span><div class="authors">Hualun Zhu; Hang Cao; Chenyang Huang; Qinghua Yu; Yi He; Lijuan Zhang; Lei Zhang; Jian Wan</div><div class="presenter">报告人 / Presenter: <span class="pending">待定</span></div></td><td>常规报告 · 10 min</td></tr>
+<tr id="paper-334"><td class="time">14:20–14:30</td><td class="paper-id">334</td><td><span class="paper-title">Joint Compensation of Conversion and Rounding Errors for Low-Precision Floating-Point Arithmetic</span><div class="authors">Weizhe Sun; Fang Li</div><div class="presenter">报告人 / Presenter: <span class="pending">待定</span></div></td><td>常规报告 · 10 min</td></tr>
+<tr id="paper-443"><td class="time">14:30–14:40</td><td class="paper-id">443</td><td><span class="paper-title">Memory-Traffic-Based Load Balancing for GPU SpMV in Compressed Sparse Matrix Formats</span><div class="authors">Shun MURAKAMI; Kazunori YONEDA; Takashi IWAMURA; Masahiro WATANABE; Keisuke TAKANO; Yasushi INOGUCHI</div><div class="presenter">报告人 / Presenter: <span class="pending">待定</span></div></td><td>常规报告 · 10 min</td></tr>
+<tr id="paper-1040"><td class="time">14:40–14:50</td><td class="paper-id">1040</td><td><span class="paper-title">Implementation and Optimization of a Unified-Interface Numerical Algorithm Library for Chinese Supercomputers</span><div class="authors">Wenhao Fan; Haipeng Jia; Yunquan Zhang</div><div class="presenter">报告人 / Presenter: <span class="pending">待定</span></div></td><td>常规报告 · 10 min</td></tr>
+<tr id="paper-250"><td class="time">14:50–15:00</td><td class="paper-id">250</td><td><span class="paper-title">Algorithm-Architecture Co-Design of a Million-Core Multigrid Solver on the Tianhe Supercomputer</span><div class="authors">Junlin Chen; Jiapeng Zhang; Zhuo Tang; Anupam Chattopadhyay; Zean Tian; Lin Yan</div><div class="presenter">报告人 / Presenter: <span class="pending">待定</span></div></td><td>常规报告 · 10 min</td></tr>
+<tr id="paper-596"><td class="time">15:00–15:10</td><td class="paper-id">596</td><td><span class="paper-title">xmesh: A Performance Portable Parallel Mesh Generator for Spectral-Element Seismic Simulations</span><div class="authors">Chenzhi Nie; Kexin Chen; Yibo Yuan; Qiang Wu</div><div class="presenter">报告人 / Presenter: <span class="pending">待定</span></div></td><td>常规报告 · 10 min</td></tr>
+<tr id="paper-578"><td class="time">15:10–15:20</td><td class="paper-id">578</td><td><span class="paper-title">Porting a Cosmological N-Body Code to a Many-Core Accelerator: Methodology and Performance of CUBE2 on the  New-generation Sunway Many-core Processor</span><div class="authors">Weizhe Sun; Binghang Chen; Haoran Yu; Fang Li; Heng Guo; Xin Chen; Yuling Yang</div><div class="presenter">报告人 / Presenter: <span class="pending">待定</span></div></td><td>常规报告 · 10 min</td></tr>
+<tr class="event-row"><td class="time">15:20–15:30</td><td>—</td><td>茶歇 / Tea Break</td><td>—</td></tr>
+</tbody></table></div>
+<p class="back-top"><a href="#overview">返回日程总览 ↑</a></p>
+</article>
+<article class="session" id="session-1b">
+<h3>Session 1B — 异构加速与互连体系结构</h3>
+<p class="english-title" lang="en">Heterogeneous Acceleration and Interconnect Architectures</p>
+<div class="session-meta"><span><strong>日期：</strong>12月5日</span> <span><strong>时间：</strong>13:30–15:20</span> <span><strong>地点：</strong>五楼 百合厅</span> <span><strong>主持人：</strong><span class="pending">待定</span></span> <span><strong>技术联系人：</strong><span class="pending">待定</span></span></div>
+<div class="table-scroll"><table class="paper-table"><thead><tr><th scope="col">报告时间 / Time</th><th scope="col">论文ID</th><th scope="col">论文题目与作者 / Paper and Authors</th><th scope="col">类型 / Type</th></tr></thead><tbody>
+<tr id="paper-370"><td class="time">13:30–13:50</td><td class="paper-id">370</td><td><span class="paper-title">PIMHash: An Efficient Hash Index with Bucket Probing on Processing-in-Memory Devices</span><div class="authors">Zhijie Huo; Yuhao Zhang; Shumeng Zhang; Jiwu Shu</div><div class="presenter">报告人 / Presenter: <span class="pending">待定</span></div></td><td><span class="key-report">重点报告 · 20 min</span></td></tr>
+<tr id="paper-780"><td class="time">13:50–14:10</td><td class="paper-id">780</td><td><span class="paper-title">ReAP: A ReRAM-based In-situ Accelerator for Attention Approximation</span><div class="authors">Xinyang Shen</div><div class="presenter">报告人 / Presenter: <span class="pending">待定</span></div></td><td><span class="key-report">重点报告 · 20 min</span></td></tr>
+<tr id="paper-255"><td class="time">14:10–14:20</td><td class="paper-id">255</td><td><span class="paper-title">LightMat: A Hybrid Photonic-Electronic Computing System for Matrix Multiplication</span><div class="authors">Hailong Gong; Haibo Zhang; Amanda S Barnard; Matt Woolley; Rajkumar Buyya</div><div class="presenter">报告人 / Presenter: <span class="pending">待定</span></div></td><td>常规报告 · 10 min</td></tr>
+<tr id="paper-489"><td class="time">14:20–14:30</td><td class="paper-id">489</td><td><span class="paper-title">An Optoelectronic Signed Multiplier Based on Shift-and-Add Dataflow</span><div class="authors">Fei Gao; Haibo Zhang; Brendan McCane; Hammond Pearce</div><div class="presenter">报告人 / Presenter: <span class="pending">待定</span></div></td><td>常规报告 · 10 min</td></tr>
+<tr id="paper-259"><td class="time">14:30–14:40</td><td class="paper-id">259</td><td><span class="paper-title">HyperNeO: Efficient and Accurate Hyper-Dimensional Regression via Neural Optimization</span><div class="authors">Haomin Li; Fangxin Liu; Zongwu Wang; Li Jiang; Haibing Guan</div><div class="presenter">报告人 / Presenter: <span class="pending">待定</span></div></td><td>常规报告 · 10 min</td></tr>
+<tr id="paper-372"><td class="time">14:40–14:50</td><td class="paper-id">372</td><td><span class="paper-title">HT-ICP: A High-Throughput Iterative Closest Point Accelerator via Algorithm-Hardware Co-Design for Real-Time 3D Vision Systems</span><div class="authors">Yan Xu; Mengquan Li; Mingyue Cao; Yu Mao; Kaijie He; Junyu He; Yangfan Li; Kenli Li</div><div class="presenter">报告人 / Presenter: <span class="pending">待定</span></div></td><td>常规报告 · 10 min</td></tr>
+<tr id="paper-547"><td class="time">14:50–15:00</td><td class="paper-id">547</td><td><span class="paper-title">Operator-Aware Orchestration and DSE for Edge MLLM Inference on Heterogeneous Chiplets</span><div class="authors">Mengmeng Wen; Keni Qiu; Kaiwei Zou; Wen Li; Shun Tang</div><div class="presenter">报告人 / Presenter: <span class="pending">待定</span></div></td><td>常规报告 · 10 min</td></tr>
+<tr id="paper-641"><td class="time">15:00–15:10</td><td class="paper-id">641</td><td><span class="paper-title">STITCH: Structure and Traffic-Informed Topology Template Composition for Chiplet Heterogeneous Interconnection</span><div class="authors">Kaiwei Zou; Bowen Su; Yi Lu; Shangyang Lei; Keni Qiu; Shun Tang; Yongpan Liu</div><div class="presenter">报告人 / Presenter: <span class="pending">待定</span></div></td><td>常规报告 · 10 min</td></tr>
+<tr id="paper-613"><td class="time">15:10–15:20</td><td class="paper-id">613</td><td><span class="paper-title">ReCAF: A Unified Cross-Layer Reliability Analysis Framework for Non-Ideal ReRAM Accelerators</span><div class="authors">Jingwen Zheng; Xiaonan Wang; Chenghong Zhu; Yibo Sun; Nan Jiang; Hengshan Yue; Xiaohui Wei</div><div class="presenter">报告人 / Presenter: <span class="pending">待定</span></div></td><td>常规报告 · 10 min</td></tr>
+<tr class="event-row"><td class="time">15:20–15:30</td><td>—</td><td>茶歇 / Tea Break</td><td>—</td></tr>
+</tbody></table></div>
+<p class="back-top"><a href="#overview">返回日程总览 ↑</a></p>
+</article>
+<article class="session" id="session-1c">
+<h3>Session 1C — 知识增强、智能检索与推荐</h3>
+<p class="english-title" lang="en">Knowledge Augmentation, Intelligent Retrieval, and Recommendation</p>
+<div class="session-meta"><span><strong>日期：</strong>12月5日</span> <span><strong>时间：</strong>13:30–15:10</span> <span><strong>地点：</strong>五楼 芙蓉1厅</span> <span><strong>主持人：</strong><span class="pending">待定</span></span> <span><strong>技术联系人：</strong><span class="pending">待定</span></span></div>
+<div class="table-scroll"><table class="paper-table"><thead><tr><th scope="col">报告时间 / Time</th><th scope="col">论文ID</th><th scope="col">论文题目与作者 / Paper and Authors</th><th scope="col">类型 / Type</th></tr></thead><tbody>
+<tr id="paper-944"><td class="time">13:30–13:50</td><td class="paper-id">944</td><td><span class="paper-title">Decoupled Structural Pruning for Partition-Based Approximate Nearest Neighbor Search</span><div class="authors">Xuanjing Ye; Chengjun Li; Lingna Xin; Ruini Xue</div><div class="presenter">报告人 / Presenter: <span class="pending">待定</span></div></td><td><span class="key-report">重点报告 · 20 min</span></td></tr>
+<tr id="paper-438"><td class="time">13:50–14:10</td><td class="paper-id">438</td><td><span class="paper-title">Validation-Guided Semantic-View Calibration forLLM-Enhanced Knowledge-Graph Recommendation</span><div class="authors">Junyi Zhang; Zheng Liu; Ximin Zhao; Gang Liu; Yan Wang</div><div class="presenter">报告人 / Presenter: <span class="pending">待定</span></div></td><td><span class="key-report">重点报告 · 20 min</span></td></tr>
+<tr id="paper-563"><td class="time">14:10–14:20</td><td class="paper-id">563</td><td><span class="paper-title">An Adaptive Top-k Hybrid Search System with Bridging Search</span><div class="authors">Lei Chen; Zhiwei Xu; Run Zhang; Ao Ren; Dong Miao; Nanzhong Wu; Congming Gao</div><div class="presenter">报告人 / Presenter: <span class="pending">待定</span></div></td><td>常规报告 · 10 min</td></tr>
+<tr id="paper-317"><td class="time">14:20–14:30</td><td class="paper-id">317</td><td><span class="paper-title">Application of the Hybrid Retrieval-Enhanced RAG Framework in Bidding Laws and Regulations Knowledge Management</span><div class="authors">Wenxin Liu; Diqing Liang</div><div class="presenter">报告人 / Presenter: <span class="pending">待定</span></div></td><td>常规报告 · 10 min</td></tr>
+<tr id="paper-287"><td class="time">14:30–14:40</td><td class="paper-id">287</td><td><span class="paper-title">CVN-MaHCR: Conflict Value Network and Multi-Agent Hierarchical Resource Scheduling for Multi-source Heterogeneous Conflict Resolution</span><div class="authors">Xinyu Ma; Jiaqian Wu; Xiaodong Zhang; Jiajia Huang</div><div class="presenter">报告人 / Presenter: <span class="pending">待定</span></div></td><td>常规报告 · 10 min</td></tr>
+<tr id="paper-422"><td class="time">14:40–14:50</td><td class="paper-id">422</td><td><span class="paper-title">Question Evidence Type-Aware Adaptive Frame Selection for Long Video Question Answering</span><div class="authors">AiQiong Chen; HongBin Chen; ShiYi Tan; Cailu Yu</div><div class="presenter">报告人 / Presenter: <span class="pending">待定</span></div></td><td>常规报告 · 10 min</td></tr>
+<tr id="paper-5"><td class="time">14:50–15:00</td><td class="paper-id">5</td><td><span class="paper-title">Beyond Collaborative Relevance: Evidence-Aware Reranking for Reliable Top-K Recommendations</span><div class="authors">Sagedur Rahman; Yanchun Pan</div><div class="presenter">报告人 / Presenter: <span class="pending">待定</span></div></td><td>常规报告 · 10 min</td></tr>
+<tr id="paper-727"><td class="time">15:00–15:10</td><td class="paper-id">727</td><td><span class="paper-title">NeuFaTRF: Interaction-Aware Neural Factor Adaptation for Tensor Ring Factorization</span><div class="authors">Hao Li; Yuxin Xiao; Bingning Du; Lingyan Zhang</div><div class="presenter">报告人 / Presenter: <span class="pending">待定</span></div></td><td>常规报告 · 10 min</td></tr>
+<tr class="event-row"><td class="time">15:10–15:30</td><td>—</td><td>茶歇 / Tea Break</td><td>—</td></tr>
+</tbody></table></div>
+<p class="back-top"><a href="#overview">返回日程总览 ↑</a></p>
+</article>
+<article class="session" id="session-2a">
+<h3>Session 2A — 生物信号、行为感知与生物医学智能</h3>
+<p class="english-title" lang="en">Biosignal Analytics, Human Behavior, and Biomedical Intelligence</p>
+<div class="session-meta"><span><strong>日期：</strong>12月5日</span> <span><strong>时间：</strong>15:30–16:50</span> <span><strong>地点：</strong>五楼 桃花厅</span> <span><strong>主持人：</strong><span class="pending">待定</span></span> <span><strong>技术联系人：</strong><span class="pending">待定</span></span></div>
+<div class="table-scroll"><table class="paper-table"><thead><tr><th scope="col">报告时间 / Time</th><th scope="col">论文ID</th><th scope="col">论文题目与作者 / Paper and Authors</th><th scope="col">类型 / Type</th></tr></thead><tbody>
+<tr id="paper-630"><td class="time">15:30–15:40</td><td class="paper-id">630</td><td><span class="paper-title">Multi-Relational Recurrence Representations for Arrhythmia Detection from ECG</span><div class="authors">Jingxuan Wang; Shuai Wang; Keni Qiu; Hongxiao Wang</div><div class="presenter">报告人 / Presenter: <span class="pending">待定</span></div></td><td>常规报告 · 10 min</td></tr>
+<tr id="paper-268"><td class="time">15:40–15:50</td><td class="paper-id">268</td><td><span class="paper-title">Effective Detection of Ventricular Arrhythmia in Embedded Systems via Quantum-Inspired Neural Networks</span><div class="authors">Lin Li; Edwin Hsing-Mean Sha; Longshan Xu; Qingfeng Zhuge</div><div class="presenter">报告人 / Presenter: <span class="pending">待定</span></div></td><td>常规报告 · 10 min</td></tr>
+<tr id="paper-382"><td class="time">15:50–16:00</td><td class="paper-id">382</td><td><span class="paper-title">Direction-Aware Tiny ECG Transformer with Deployment-Time Specialization for Wearable Devices</span><div class="authors">Shuai Wang; Jingxuan Wang; Haohan Su; Hongxiao Wang; Keni Qiu</div><div class="presenter">报告人 / Presenter: <span class="pending">待定</span></div></td><td>常规报告 · 10 min</td></tr>
+<tr id="paper-221"><td class="time">16:00–16:10</td><td class="paper-id">221</td><td><span class="paper-title">MVSTFAM: A Multi-View Spatiotemporal-Frequency Aggregation Model for EEG Emotion Recognition</span><div class="authors">Haitao Su; Duan Li; Ni Yao</div><div class="presenter">报告人 / Presenter: <span class="pending">待定</span></div></td><td>常规报告 · 10 min</td></tr>
+<tr id="paper-495"><td class="time">16:10–16:20</td><td class="paper-id">495</td><td><span class="paper-title">Autism Spectrum Disorder-Oriented Facial Expression Recognition: A Local Evaluation of External Knowledge Transfer Strategies with Supporting Deployment Validation</span><div class="authors">Minhui She; Jialing Liu; Lingyun Shen; Xiaoxuan Wang</div><div class="presenter">报告人 / Presenter: <span class="pending">待定</span></div></td><td>常规报告 · 10 min</td></tr>
+<tr id="paper-395"><td class="time">16:20–16:30</td><td class="paper-id">395</td><td><span class="paper-title">EviMS-Phos: Evidence-Aware Multi-Scale Learning for Human S/T Phosphorylation Site Prediction</span><div class="authors">Zhongxu He; Xiao Wang</div><div class="presenter">报告人 / Presenter: <span class="pending">待定</span></div></td><td>常规报告 · 10 min</td></tr>
+<tr id="paper-419"><td class="time">16:30–16:40</td><td class="paper-id">419</td><td><span class="paper-title">Directional Cross-Attention for Asymmetric Influenza Antigenic Distance Prediction</span><div class="authors">Min Huang; Jiaxuan Wang; Kang He; Yanbu Guo</div><div class="presenter">报告人 / Presenter: <span class="pending">待定</span></div></td><td>常规报告 · 10 min</td></tr>
+<tr id="paper-597"><td class="time">16:40–16:50</td><td class="paper-id">597</td><td><span class="paper-title">cACP-PLM: Predicting Anticancer Peptides by incorporating Protein language Model and Physicochemical Features</span><div class="authors">Muhammad Arif; Kamran Arshad; Tanvir Alam</div><div class="presenter">报告人 / Presenter: <span class="pending">待定</span></div></td><td>常规报告 · 10 min</td></tr>
+<tr class="event-row"><td class="time">16:50–17:30</td><td>—</td><td>Academic Discussion | 学术讨论</td><td>—</td></tr>
+</tbody></table></div>
+<p class="back-top"><a href="#overview">返回日程总览 ↑</a></p>
+</article>
+<article class="session" id="session-2b">
+<h3>Session 2B — 边缘协同与网络优化</h3>
+<p class="english-title" lang="en">Edge Collaboration and Network Optimization</p>
+<div class="session-meta"><span><strong>日期：</strong>12月5日</span> <span><strong>时间：</strong>15:30–17:00</span> <span><strong>地点：</strong>五楼 百合厅</span> <span><strong>主持人：</strong><span class="pending">待定</span></span> <span><strong>技术联系人：</strong><span class="pending">待定</span></span></div>
+<div class="table-scroll"><table class="paper-table"><thead><tr><th scope="col">报告时间 / Time</th><th scope="col">论文ID</th><th scope="col">论文题目与作者 / Paper and Authors</th><th scope="col">类型 / Type</th></tr></thead><tbody>
+<tr id="paper-233"><td class="time">15:30–15:40</td><td class="paper-id">233</td><td><span class="paper-title">Improved SAC-Based Joint Optimization for Multi-UAV-Assisted MEC</span><div class="authors">Jiaxing Zheng; Qiang Tang; Meng Lu; Zhe Li</div><div class="presenter">报告人 / Presenter: <span class="pending">待定</span></div></td><td>常规报告 · 10 min</td></tr>
+<tr id="paper-236"><td class="time">15:40–15:50</td><td class="paper-id">236</td><td><span class="paper-title">Priority-Aware Multi-UAV Cooperative Edge Computing for QoE Maximization in Post-Disaster Rescue Scenarios</span><div class="authors">Meng Lu; Qiang Tang; Jiaxing Zheng; Zhe Li</div><div class="presenter">报告人 / Presenter: <span class="pending">待定</span></div></td><td>常规报告 · 10 min</td></tr>
+<tr id="paper-241"><td class="time">15:50–16:00</td><td class="paper-id">241</td><td><span class="paper-title">PCG-PPO:  Predictive Online Task Offloading in Bursty IIoT-MEC Networks</span><div class="authors">Jiayi Sun; Zhao Tong; Lihui Xia; Zijun Zhang</div><div class="presenter">报告人 / Presenter: <span class="pending">待定</span></div></td><td>常规报告 · 10 min</td></tr>
+<tr id="paper-718"><td class="time">16:00–16:10</td><td class="paper-id">718</td><td><span class="paper-title">Dependency-Aware Secure Edge Caching for Interdependent Content</span><div class="authors">Jiwang Liu; Jianye Lu; Shaowen Yao</div><div class="presenter">报告人 / Presenter: <span class="pending">待定</span></div></td><td>常规报告 · 10 min</td></tr>
+<tr id="paper-468"><td class="time">16:10–16:20</td><td class="paper-id">468</td><td><span class="paper-title">Joint  Optimization of Task Scheduling and Bandwidth Allocation in Spark Framework</span><div class="authors">Xiaoyang Xuan; Zhongming Fu; Qing Liu; Wei Liang</div><div class="presenter">报告人 / Presenter: <span class="pending">待定</span></div></td><td>常规报告 · 10 min</td></tr>
+<tr id="paper-728"><td class="time">16:20–16:30</td><td class="paper-id">728</td><td><span class="paper-title">Joint Scheduling of Tasks and Coflow for MapReduce-style Jobs Based on Reinforcement Learning</span><div class="authors">Mengsi He; Xiong Xiao; Dong Zhou; Shangxuan Wu</div><div class="presenter">报告人 / Presenter: <span class="pending">待定</span></div></td><td>常规报告 · 10 min</td></tr>
+<tr id="paper-744"><td class="time">16:30–16:40</td><td class="paper-id">744</td><td><span class="paper-title">NetLocator: A Dual Thresholds based Active Failure Localization Scheme in Telecom Carrier Network</span><div class="authors">Chang Ruan; Zhijing Wu; Zhihong Bao; Zhihui Cai; Yin Xie; Jinbin Hu; Shiming He</div><div class="presenter">报告人 / Presenter: <span class="pending">待定</span></div></td><td>常规报告 · 10 min</td></tr>
+<tr id="paper-657"><td class="time">16:40–16:50</td><td class="paper-id">657</td><td><span class="paper-title">Scheduling Coflows across Heterogeneous Optical Circuit Switching Cores</span><div class="authors">Xin Wang; Hong Shen; Hui Tian</div><div class="presenter">报告人 / Presenter: <span class="pending">待定</span></div></td><td>常规报告 · 10 min</td></tr>
+<tr id="paper-414"><td class="time">16:50–17:00</td><td class="paper-id">414</td><td><span class="paper-title">PACE: Placement-Aware and Communication-Budgeted Distributed Inference for Encrypted Traffic Classification</span><div class="authors">Xin-Chen Zhou; Nian-Dong Liao</div><div class="presenter">报告人 / Presenter: <span class="pending">待定</span></div></td><td>常规报告 · 10 min</td></tr>
+<tr class="event-row"><td class="time">17:00–17:30</td><td>—</td><td>Academic Discussion | 学术讨论</td><td>—</td></tr>
+</tbody></table></div>
+<p class="back-top"><a href="#overview">返回日程总览 ↑</a></p>
+</article>
+<article class="session" id="session-2c">
+<h3>Session 2C — 隐私保护数据处理与系统网络安全</h3>
+<p class="english-title" lang="en">Privacy-Preserving Data Processing and System-Network Security</p>
+<div class="session-meta"><span><strong>日期：</strong>12月5日</span> <span><strong>时间：</strong>15:30–17:10</span> <span><strong>地点：</strong>五楼 芙蓉1厅</span> <span><strong>主持人：</strong><span class="pending">待定</span></span> <span><strong>技术联系人：</strong><span class="pending">待定</span></span></div>
+<div class="table-scroll"><table class="paper-table"><thead><tr><th scope="col">报告时间 / Time</th><th scope="col">论文ID</th><th scope="col">论文题目与作者 / Paper and Authors</th><th scope="col">类型 / Type</th></tr></thead><tbody>
+<tr id="paper-274"><td class="time">15:30–15:40</td><td class="paper-id">274</td><td><span class="paper-title">MegaBatch: Fixed-Shape Streaming Batched Reads for Remote Hierarchical ORAM</span><div class="authors">Zhiqiang Wu; Zexin Zhuang</div><div class="presenter">报告人 / Presenter: <span class="pending">待定</span></div></td><td>常规报告 · 10 min</td></tr>
+<tr id="paper-535"><td class="time">15:40–15:50</td><td class="paper-id">535</td><td><span class="paper-title">Sharded Version Merging for Concurrent ORAM: Communication Costs and Routing Leakage</span><div class="authors">Zhiqiang Wu; Zexin Zhuang</div><div class="presenter">报告人 / Presenter: <span class="pending">待定</span></div></td><td>常规报告 · 10 min</td></tr>
+<tr id="paper-243"><td class="time">15:50–16:00</td><td class="paper-id">243</td><td><span class="paper-title">RS-MedCross: Privacy-Preserving for Cross-Chain Medical Data Sharing with Ring Signature</span><div class="authors">Hongxin Guo; Chaoyang Li; Fenlong Wu</div><div class="presenter">报告人 / Presenter: <span class="pending">待定</span></div></td><td>常规报告 · 10 min</td></tr>
+<tr id="paper-454"><td class="time">16:00–16:10</td><td class="paper-id">454</td><td><span class="paper-title">A Systematic Side-Channel Security Analysis of Cryptographic Nodes in Edge Computing</span><div class="authors">Wen Wang; Minkang Lu; Huanyu Wang</div><div class="presenter">报告人 / Presenter: <span class="pending">待定</span></div></td><td>常规报告 · 10 min</td></tr>
+<tr id="paper-229"><td class="time">16:10–16:20</td><td class="paper-id">229</td><td><span class="paper-title">Data-Flow Graph-Based Graph Learning for Stack-Based Buffer Overflow Vulnerability Detection in Compiled Code</span><div class="authors">Junling Zhu; Zining Wang; Qing Tian; YuanLv Tan; Yueyuan Hou; Zexing Zheng</div><div class="presenter">报告人 / Presenter: <span class="pending">待定</span></div></td><td>常规报告 · 10 min</td></tr>
+<tr id="paper-715"><td class="time">16:20–16:30</td><td class="paper-id">715</td><td><span class="paper-title">A High-Interaction Honeynet Framework for Industrial Control Networks Integrating Finite State Machines and Time-Series Prediction</span><div class="authors">Jindong Zhao; Haoyuan Jin; Shilin Ma; Yao Shan</div><div class="presenter">报告人 / Presenter: <span class="pending">待定</span></div></td><td>常规报告 · 10 min</td></tr>
+<tr id="paper-717"><td class="time">16:30–16:40</td><td class="paper-id">717</td><td><span class="paper-title">An IoT Intrusion Detection Method Based on Diffusion Model</span><div class="authors">Shilin Ma; Lei Mao; Yao Shan</div><div class="presenter">报告人 / Presenter: <span class="pending">待定</span></div></td><td>常规报告 · 10 min</td></tr>
+<tr id="paper-355"><td class="time">16:40–16:50</td><td class="paper-id">355</td><td><span class="paper-title">P-Flexway: Stage Recovery and Coalescing for Parallel Flexway O-Sort</span><div class="authors">Zhiqiang Wu; Yuxuan Jiao</div><div class="presenter">报告人 / Presenter: <span class="pending">待定</span></div></td><td>常规报告 · 10 min</td></tr>
+<tr id="paper-462"><td class="time">16:50–17:00</td><td class="paper-id">462</td><td><span class="paper-title">MegaBlocks on Silicon: A Page-Granularity Oblivious RAM for Secure Processors and Trusted Enclaves</span><div class="authors">Zhiqiang Wu; Mingli Luo</div><div class="presenter">报告人 / Presenter: <span class="pending">待定</span></div></td><td>常规报告 · 10 min</td></tr>
+<tr id="paper-579"><td class="time">17:00–17:10</td><td class="paper-id">579</td><td><span class="paper-title">Privacy-Preserving Federated Learning for Multi-Center Medical Image Analysis: A Systematic Taxonomy, Attack-Defense Framework, and Open Challenges</span><div class="authors">Cheng Jiang; Jing Liao</div><div class="presenter">报告人 / Presenter: <span class="pending">待定</span></div></td><td>常规报告 · 10 min</td></tr>
+<tr class="event-row"><td class="time">17:10–17:30</td><td>—</td><td>Academic Discussion | 学术讨论</td><td>—</td></tr>
+</tbody></table></div>
+<p class="back-top"><a href="#overview">返回日程总览 ↑</a></p>
+</article>
+<article class="session" id="session-online-1">
+<h3>Session Online-1 — 线上专场一：分布式系统与安全</h3>
+<p class="english-title" lang="en">Online Session 1: Distributed Systems and Security</p>
+<div class="session-meta"><span><strong>日期：</strong>12月5日</span> <span><strong>时间：</strong>16:00–17:10</span> <span><strong>地点：</strong>腾讯会议</span> <span><strong>主持人：</strong><span class="pending">待定</span></span> <span><strong>技术联系人：</strong><span class="pending">待定</span></span> <span><strong>腾讯会议号／链接：</strong><span class="pending">待定</span></span></div>
+<div class="table-scroll"><table class="paper-table"><thead><tr><th scope="col">报告时间 / Time</th><th scope="col">论文ID</th><th scope="col">论文题目与作者 / Paper and Authors</th><th scope="col">类型 / Type</th></tr></thead><tbody>
+<tr id="paper-278"><td class="time">16:00–16:10</td><td class="paper-id">278</td><td><span class="paper-title">Scheduling Muti-Instance Microservices Following Workflow Dependencies under QoS Constraints</span><div class="authors">Ruiyu Dai; Hong Shen; Wei Ke; Chan-Tong Lam</div><div class="presenter">报告人 / Presenter: <span class="pending">待定</span></div></td><td>常规报告 · 10 min</td></tr>
+<tr id="paper-589"><td class="time">16:10–16:20</td><td class="paper-id">589</td><td><span class="paper-title">A Proactive PPO Scheduler for Heterogeneous Fog-Cloud Environments</span><div class="authors">Soumil Khanna; Sanjay Moulik</div><div class="presenter">报告人 / Presenter: <span class="pending">待定</span></div></td><td>常规报告 · 10 min</td></tr>
+<tr id="paper-356"><td class="time">16:20–16:30</td><td class="paper-id">356</td><td><span class="paper-title">Context-Aware Application Mapping and Traffic Orchestration in Disaggregated Fog-Cloud Platforms</span><div class="authors">Somnath Mazumdar; Thomas Dreibholz</div><div class="presenter">报告人 / Presenter: <span class="pending">待定</span></div></td><td>常规报告 · 10 min</td></tr>
+<tr id="paper-659"><td class="time">16:30–16:40</td><td class="paper-id">659</td><td><span class="paper-title">Edge-Assisted Distributed Multi-Objective Conflict Resolution for Multi-UAV Highway Inspection under Dynamic Events</span><div class="authors">Xingyu Li; Jiaxin Zhou; Liming Chen; Xiaoyu Ke</div><div class="presenter">报告人 / Presenter: <span class="pending">待定</span></div></td><td>常规报告 · 10 min</td></tr>
+<tr id="paper-598"><td class="time">16:40–16:50</td><td class="paper-id">598</td><td><span class="paper-title">HyperMFDiagnosis: Multimodal Microservice Fault Diagnosis via Parameterized Hypercomplex Neural Networks</span><div class="authors">Pingping Xu; Hong Shen; Wei Ke; Chan Tong Lam</div><div class="presenter">报告人 / Presenter: <span class="pending">待定</span></div></td><td>常规报告 · 10 min</td></tr>
+<tr id="paper-279"><td class="time">16:50–17:00</td><td class="paper-id">279</td><td><span class="paper-title">Consent-Aware Virtual-Actor Production in Distributed Media Pipelines: Identity Protection, Provenance, and Revocation</span><div class="authors">Bin Hu; Yage Xiao; Yiming Du; Yanpin Song; Yucong Feng</div><div class="presenter">报告人 / Presenter: <span class="pending">待定</span></div></td><td>常规报告 · 10 min</td></tr>
+<tr id="paper-593"><td class="time">17:00–17:10</td><td class="paper-id">593</td><td><span class="paper-title">O-HybEnc: A Secure and Efficient OBDD based CP-ABE with Hybrid Encryption</span><div class="authors">Richa Sarma; Vivek Patel; Sanjay Moulik</div><div class="presenter">报告人 / Presenter: <span class="pending">待定</span></div></td><td>常规报告 · 10 min</td></tr>
+<tr class="event-row"><td class="time">17:10–17:30</td><td>—</td><td>Academic Discussion | 学术讨论</td><td>—</td></tr>
+</tbody></table></div>
+<p class="back-top"><a href="#overview">返回日程总览 ↑</a></p>
+</article>
+<h3>12月6日 Session</h3>
+<article class="session" id="session-1d">
+<h3>Session 1D — 医学影像与多模态模型适配</h3>
+<p class="english-title" lang="en">Medical Imaging and Multimodal Model Adaptation</p>
+<div class="session-meta"><span><strong>日期：</strong>12月6日</span> <span><strong>时间：</strong>13:30–15:20</span> <span><strong>地点：</strong>五楼 芙蓉1厅</span> <span><strong>主持人：</strong><span class="pending">待定</span></span> <span><strong>技术联系人：</strong><span class="pending">待定</span></span></div>
+<div class="table-scroll"><table class="paper-table"><thead><tr><th scope="col">报告时间 / Time</th><th scope="col">论文ID</th><th scope="col">论文题目与作者 / Paper and Authors</th><th scope="col">类型 / Type</th></tr></thead><tbody>
+<tr id="paper-764"><td class="time">13:30–13:50</td><td class="paper-id">764</td><td><span class="paper-title">Sampling-Aware and Tissue-Balanced Super-Resolution for Sparse-View Ultrasound Computed Tomography</span><div class="authors">Yuxuan Huang; Zhenzhong Kuang; Hui Tian; David John Saxby; Takahiko Furuya; Xuefei Yin; Yanming Zhu</div><div class="presenter">报告人 / Presenter: <span class="pending">待定</span></div></td><td><span class="key-report">重点报告 · 20 min</span></td></tr>
+<tr id="paper-693"><td class="time">13:50–14:10</td><td class="paper-id">693</td><td><span class="paper-title">FetalCLIP Prompt-Guided Feature Distillation for Semi-Supervised Fetal Ultrasound Abnormality Detection</span><div class="authors">Da Li; Shirui Tian; Guanghua Tan; Bohan Tan; Tingkun Hu; Ningbo Zhu; Zhan Gao</div><div class="presenter">报告人 / Presenter: <span class="pending">待定</span></div></td><td><span class="key-report">重点报告 · 20 min</span></td></tr>
+<tr id="paper-689"><td class="time">14:10–14:20</td><td class="paper-id">689</td><td><span class="paper-title">PlaneFromLabel: Weakly Supervised Standard-PlaneRecognition for Fetal Ultrasound fromDevice-Embedded Measurement Labels</span><div class="authors">Jie He; Zhen Zhang; Liang Wang; Hui Guo; Yuyi Ma; Bo Li; Zhuobao Wei</div><div class="presenter">报告人 / Presenter: <span class="pending">待定</span></div></td><td>常规报告 · 10 min</td></tr>
+<tr id="paper-301"><td class="time">14:20–14:30</td><td class="paper-id">301</td><td><span class="paper-title">AmnioSAM: A Data- and Parameter-Efficient Foundation Model Adaptation Framework for Amniotic Fluid MVP Clinical Quantification in Prenatal Ultrasound Cine-loops</span><div class="authors">Liang Wang; Zijian Sun; Hui Guo; Jie He; Jiao He; Caichun Cen; Hongyan Lu; Bo Li</div><div class="presenter">报告人 / Presenter: <span class="pending">待定</span></div></td><td>常规报告 · 10 min</td></tr>
+<tr id="paper-692"><td class="time">14:30–14:40</td><td class="paper-id">692</td><td><span class="paper-title">Context- and Boundary-Cooperative U-Net for Breast Ultrasound Lesion Segmentation</span><div class="authors">Keng Yu; Ningbo Zhu; Zhan Gao; Bohan Tan; Tingkun Hu; Shirui Tian; Guanghua Tan</div><div class="presenter">报告人 / Presenter: <span class="pending">待定</span></div></td><td>常规报告 · 10 min</td></tr>
+<tr id="paper-248"><td class="time">14:40–14:50</td><td class="paper-id">248</td><td><span class="paper-title">UC-SemiSeg:A Confidence-Calibrated Teacher-Student Framework for Semi-Supervised Skin Lesion Segmentation</span><div class="authors">Keni Tang; Mingyue Zhang</div><div class="presenter">报告人 / Presenter: <span class="pending">待定</span></div></td><td>常规报告 · 10 min</td></tr>
+<tr id="paper-553"><td class="time">14:50–15:00</td><td class="paper-id">553</td><td><span class="paper-title">SWIFTNet: A Selective-Wavelet Integration and Fusion Transform-Mamba Network for Boundary-Aware Skin Lesion Segmentation</span><div class="authors">Yan Qiang; ZeYu Dong; Qing Li; Zheng Che</div><div class="presenter">报告人 / Presenter: <span class="pending">待定</span></div></td><td>常规报告 · 10 min</td></tr>
+<tr id="paper-560"><td class="time">15:00–15:10</td><td class="paper-id">560</td><td><span class="paper-title">Adaptive Wavelet-Enhanced State-Space Collaborative Modeling for Low-Dose CT Image Denoising</span><div class="authors">Shilei Ren; Zhiyuan Li; Yang Wei; Lei Guo; Zeyu Li</div><div class="presenter">报告人 / Presenter: <span class="pending">待定</span></div></td><td>常规报告 · 10 min</td></tr>
+<tr id="paper-313"><td class="time">15:10–15:20</td><td class="paper-id">313</td><td><span class="paper-title">Sequence-Aware Multi-Scale Feature Learning for Endometrial Cancer FIGO Staging in MRI</span><div class="authors">Zhengda Lu; Jie He; Caixu Xu; Weizhen Yang; Jiao He; Hongyan Lu; Hui Guo; Linting Meng; Zhen Zhang</div><div class="presenter">报告人 / Presenter: <span class="pending">待定</span></div></td><td>常规报告 · 10 min</td></tr>
+<tr class="event-row"><td class="time">15:20–15:30</td><td>—</td><td>茶歇 / Tea Break</td><td>—</td></tr>
+</tbody></table></div>
+<p class="back-top"><a href="#overview">返回日程总览 ↑</a></p>
+</article>
+<article class="session" id="session-1e">
+<h3>Session 1E — 模型服务、专家协同与智能体工作流</h3>
+<p class="english-title" lang="en">Model Serving, Expert Coordination, and Agent Workflows</p>
+<div class="session-meta"><span><strong>日期：</strong>12月6日</span> <span><strong>时间：</strong>13:30–15:20</span> <span><strong>地点：</strong>五楼 芙蓉2厅</span> <span><strong>主持人：</strong><span class="pending">待定</span></span> <span><strong>技术联系人：</strong><span class="pending">待定</span></span></div>
+<div class="table-scroll"><table class="paper-table"><thead><tr><th scope="col">报告时间 / Time</th><th scope="col">论文ID</th><th scope="col">论文题目与作者 / Paper and Authors</th><th scope="col">类型 / Type</th></tr></thead><tbody>
+<tr id="paper-349"><td class="time">13:30–13:50</td><td class="paper-id">349</td><td><span class="paper-title">MoEFlash: A Storage–Compute Co-Designed System for MoE  Inference</span><div class="authors">Yusen Zhang; Xiaojian Liao; Limin Xiao</div><div class="presenter">报告人 / Presenter: <span class="pending">待定</span></div></td><td><span class="key-report">重点报告 · 20 min</span></td></tr>
+<tr id="paper-253"><td class="time">13:50–14:10</td><td class="paper-id">253</td><td><span class="paper-title">EMULATE: Empowering MULti-turn ConversAtion of Long Context WiTh an Efficient KV Cache Pool Design</span><div class="authors">Zongwu Wang; Fangxin Liu; Li Jiang; Haibing Guan</div><div class="presenter">报告人 / Presenter: <span class="pending">待定</span></div></td><td><span class="key-report">重点报告 · 20 min</span></td></tr>
+<tr id="paper-272"><td class="time">14:10–14:20</td><td class="paper-id">272</td><td><span class="paper-title">PATR: Predictive Heterogeneous Memory Management for Hybrid-Attention LLM Serving</span><div class="authors">Xiaoming Zhou; Shengshai Zhang</div><div class="presenter">报告人 / Presenter: <span class="pending">待定</span></div></td><td>常规报告 · 10 min</td></tr>
+<tr id="paper-365"><td class="time">14:20–14:30</td><td class="paper-id">365</td><td><span class="paper-title">TideCache: Capacity-Adaptive Host KV Admission for Tool-Interleaved Large Language Model Serving</span><div class="authors">Hongjian Chen</div><div class="presenter">报告人 / Presenter: <span class="pending">待定</span></div></td><td>常规报告 · 10 min</td></tr>
+<tr id="paper-520"><td class="time">14:30–14:40</td><td class="paper-id">520</td><td><span class="paper-title">ErgoLLM: Codebook-Free LLM Compression via Ergodic Torus Dynamics and First-Hitting-Time Coding</span><div class="authors">Junjie Wang; Fangxin Liu; Can Cui; Ning Yang; Li Jiang; Haibing Guan</div><div class="presenter">报告人 / Presenter: <span class="pending">待定</span></div></td><td>常规报告 · 10 min</td></tr>
+<tr id="paper-531"><td class="time">14:40–14:50</td><td class="paper-id">531</td><td><span class="paper-title">Federated Mixture-of-Experts Coordination for Globaland Personalized Knowledge Integration</span><div class="authors">Fulian Li; Penglin Dai; Xincao Xu; Huanlai Xing; Rong Qu</div><div class="presenter">报告人 / Presenter: <span class="pending">待定</span></div></td><td>常规报告 · 10 min</td></tr>
+<tr id="paper-247"><td class="time">14:50–15:00</td><td class="paper-id">247</td><td><span class="paper-title">Budgeted Pareto Refinement for Constrained Multi-Agent Workflow Scheduling</span><div class="authors">Xiaodong Zhang; Jiaqian Wu; Jingyu Zhang; Sen Chen; Yisha Hou; Hong Shen</div><div class="presenter">报告人 / Presenter: <span class="pending">待定</span></div></td><td>常规报告 · 10 min</td></tr>
+<tr id="paper-363"><td class="time">15:00–15:10</td><td class="paper-id">363</td><td><span class="paper-title">CL-SRPT: Lifecycle-Aware Reservation Scheduling for LLM DAG Workflows</span><div class="authors">Hongjian Chen; Zhao Tong</div><div class="presenter">报告人 / Presenter: <span class="pending">待定</span></div></td><td>常规报告 · 10 min</td></tr>
+<tr id="paper-696"><td class="time">15:10–15:20</td><td class="paper-id">696</td><td><span class="paper-title">When Is Collaboration Worth the Cost? An Empirical Study of Collaboration Boundaries in Shared-Capacity LLM Agent Systems</span><div class="authors">Chenhao Wei; Hong Rao</div><div class="presenter">报告人 / Presenter: <span class="pending">待定</span></div></td><td>常规报告 · 10 min</td></tr>
+<tr class="event-row"><td class="time">15:20–15:30</td><td>—</td><td>茶歇 / Tea Break</td><td>—</td></tr>
+</tbody></table></div>
+<p class="back-top"><a href="#overview">返回日程总览 ↑</a></p>
+</article>
+<article class="session" id="session-1f">
+<h3>Session 1F — 视觉感知与时序预测</h3>
+<p class="english-title" lang="en">Visual Perception and Time-Series Prediction</p>
+<div class="session-meta"><span><strong>日期：</strong>12月6日</span> <span><strong>时间：</strong>13:30–15:20</span> <span><strong>地点：</strong>五楼 紫荆厅</span> <span><strong>主持人：</strong><span class="pending">待定</span></span> <span><strong>技术联系人：</strong><span class="pending">待定</span></span></div>
+<div class="table-scroll"><table class="paper-table"><thead><tr><th scope="col">报告时间 / Time</th><th scope="col">论文ID</th><th scope="col">论文题目与作者 / Paper and Authors</th><th scope="col">类型 / Type</th></tr></thead><tbody>
+<tr id="paper-775"><td class="time">13:30–13:50</td><td class="paper-id">775</td><td><span class="paper-title">Auditing the Efficiency-Safety Trade-off in Deepfake Detection Cascades</span><div class="authors">Hangyu Lu; Yangfan Li</div><div class="presenter">报告人 / Presenter: <span class="pending">待定</span></div></td><td><span class="key-report">重点报告 · 20 min</span></td></tr>
+<tr id="paper-519"><td class="time">13:50–14:10</td><td class="paper-id">519</td><td><span class="paper-title">MTC-KAN: A Dual-Branch KAN with Multi-Scale Temporal-Channel Dependency for Time Series Forecasting</span><div class="authors">Mengxin Tian; Hongbo Guo; Dekang Zhu; Bo Wang; Zhi-Zhong Liu; Kenli Li</div><div class="presenter">报告人 / Presenter: <span class="pending">待定</span></div></td><td><span class="key-report">重点报告 · 20 min</span></td></tr>
+<tr id="paper-618"><td class="time">14:10–14:20</td><td class="paper-id">618</td><td><span class="paper-title">Adaptive Multi-Scale Human Pose Estimation Based on HRNet</span><div class="authors">Xiaohong Zhang; Ke Dong; Wenru Wan</div><div class="presenter">报告人 / Presenter: <span class="pending">待定</span></div></td><td>常规报告 · 10 min</td></tr>
+<tr id="paper-309"><td class="time">14:20–14:30</td><td class="paper-id">309</td><td><span class="paper-title">An Interpretable Energy-Based Framework for 3D Human Pose Quality Evaluation with Distortion Sensitivity Analysis</span><div class="authors">ShiYi-Tan; Yuan-Ye; YuanLv-Tan; Qing-Tian; Yawen Luo; Juan Xu</div><div class="presenter">报告人 / Presenter: <span class="pending">待定</span></div></td><td>常规报告 · 10 min</td></tr>
+<tr id="paper-503"><td class="time">14:30–14:40</td><td class="paper-id">503</td><td><span class="paper-title">Modeling Class Interference for Continual Adaptation in Open-World Object Detection</span><div class="authors">Ronghui Cao; Hongyang Zeng; Mengyuan Wei; Zhiwei Zuo</div><div class="presenter">报告人 / Presenter: <span class="pending">待定</span></div></td><td>常规报告 · 10 min</td></tr>
+<tr id="paper-210"><td class="time">14:40–14:50</td><td class="paper-id">210</td><td><span class="paper-title">Improved YOLOv11s Algorithm for Metal Surface Defect Detection Based on SimAM and C2f_MSBlock</span><div class="authors">ShiYi-Tan; JiaMing Zhang; Hong-Nie; YuanLv-Tan; BoYong Peng; BaiDong Wu</div><div class="presenter">报告人 / Presenter: <span class="pending">待定</span></div></td><td>常规报告 · 10 min</td></tr>
+<tr id="paper-622"><td class="time">14:50–15:00</td><td class="paper-id">622</td><td><span class="paper-title">A Low-Rank PPSA Statistical Stream for Enhanced Industrial Defect Localization</span><div class="authors">Lehua Ouyang; Xiangyuan Zhu; Yintao Mo; Yulong Chen</div><div class="presenter">报告人 / Presenter: <span class="pending">待定</span></div></td><td>常规报告 · 10 min</td></tr>
+<tr id="paper-684"><td class="time">15:00–15:10</td><td class="paper-id">684</td><td><span class="paper-title">EAutoformer: Local Dynamics and Target Residual Refinement for Wastewater Forecasting</span><div class="authors">Jun Pan; Yang Pan</div><div class="presenter">报告人 / Presenter: <span class="pending">待定</span></div></td><td>常规报告 · 10 min</td></tr>
+<tr id="paper-485"><td class="time">15:10–15:20</td><td class="paper-id">485</td><td><span class="paper-title">Monitoring of Grain Cultivated Area and Yield Prediction Based on Sentinel-2 Time-series Imagery and Multi-task MLP</span><div class="authors">Minrong Lu; Xuerong Xu; JianSheng Gan</div><div class="presenter">报告人 / Presenter: <span class="pending">待定</span></div></td><td>常规报告 · 10 min</td></tr>
+<tr class="event-row"><td class="time">15:20–15:30</td><td>—</td><td>茶歇 / Tea Break</td><td>—</td></tr>
+</tbody></table></div>
+<p class="back-top"><a href="#overview">返回日程总览 ↑</a></p>
+</article>
+<article class="session" id="session-2d">
+<h3>Session 2D — 系统优化、性能观测与可靠性分析</h3>
+<p class="english-title" lang="en">System Optimization, Performance Observation and Reliability Analysis</p>
+<div class="session-meta"><span><strong>日期：</strong>12月6日</span> <span><strong>时间：</strong>15:30–17:00</span> <span><strong>地点：</strong>五楼 芙蓉1厅</span> <span><strong>主持人：</strong><span class="pending">待定</span></span> <span><strong>技术联系人：</strong><span class="pending">待定</span></span></div>
+<div class="table-scroll"><table class="paper-table"><thead><tr><th scope="col">报告时间 / Time</th><th scope="col">论文ID</th><th scope="col">论文题目与作者 / Paper and Authors</th><th scope="col">类型 / Type</th></tr></thead><tbody>
+<tr id="paper-412"><td class="time">15:30–15:40</td><td class="paper-id">412</td><td><span class="paper-title">A Triton-Based Diagonal Wavefront Parallelization Method for Optimizing Multi-Layer LSTM Networks</span><div class="authors">Shangfeng Mo; Min Lin; Yonghua Hu; Jie Luo; Wenqu Yan</div><div class="presenter">报告人 / Presenter: <span class="pending">待定</span></div></td><td>常规报告 · 10 min</td></tr>
+<tr id="paper-529"><td class="time">15:40–15:50</td><td class="paper-id">529</td><td><span class="paper-title">A Structure-Aware Analytical Scheduling Framework for Reduction Computation Patterns</span><div class="authors">Zhijian Cui; Shengle Lin; Haotian Wang; Kenli Li; Mingxing Duan</div><div class="presenter">报告人 / Presenter: <span class="pending">待定</span></div></td><td>常规报告 · 10 min</td></tr>
+<tr id="paper-561"><td class="time">15:50–16:00</td><td class="paper-id">561</td><td><span class="paper-title">Dependence-Legal and Pipeline-Aware 3D Tiling for Reducing Remote-Memory Traffic</span><div class="authors">Rui Xu; Kun Cao</div><div class="presenter">报告人 / Presenter: <span class="pending">待定</span></div></td><td>常规报告 · 10 min</td></tr>
+<tr id="paper-576"><td class="time">16:00–16:10</td><td class="paper-id">576</td><td><span class="paper-title">Static Feature-Guided Buffering Selection forAscend Vector Kernels</span><div class="authors">Yiqing Yang; Yu Long; Jianguo Chen</div><div class="presenter">报告人 / Presenter: <span class="pending">待定</span></div></td><td>常规报告 · 10 min</td></tr>
+<tr id="paper-631"><td class="time">16:10–16:20</td><td class="paper-id">631</td><td><span class="paper-title">GraphDA: A Dynamic Approximation Framework for Iterative Graph Algorithms</span><div class="authors">Huijie Zheng; Nan Jiang; Ningfei Li; Hengshan Yue; Xiaohui Wei</div><div class="presenter">报告人 / Presenter: <span class="pending">待定</span></div></td><td>常规报告 · 10 min</td></tr>
+<tr id="paper-886"><td class="time">16:20–16:30</td><td class="paper-id">886</td><td><span class="paper-title">Reflex: A Closed-Loop Adaptive Zram Instance Pool for Compression-Aware Memory Management on Resource-Sensitive Embedded Systems</span><div class="authors">Shangzhi Fu; Zhiqiang Wu</div><div class="presenter">报告人 / Presenter: <span class="pending">待定</span></div></td><td>常规报告 · 10 min</td></tr>
+<tr id="paper-467"><td class="time">16:30–16:40</td><td class="paper-id">467</td><td><span class="paper-title">SpiralSnap: Low-Interference Directory-Tree Versioning for Ordinary Directories on BTRFS</span><div class="authors">Yongchang Zhou; Xianzhang Chen; Run Zhang; Yu Zou; Nanzhong Wu; Congming Gao; Tianrui Feng; Ao Ren</div><div class="presenter">报告人 / Presenter: <span class="pending">待定</span></div></td><td>常规报告 · 10 min</td></tr>
+<tr id="paper-455"><td class="time">16:40–16:50</td><td class="paper-id">455</td><td><span class="paper-title">TRSR: Model-Agnostic Time-Reversal Subspace Reweighting for Multi-Horizon Failure-Risk Estimation</span><div class="authors">Junyu He; Mengquan Li; Zhaoyuan Zhang; Yu Mao; Xinyi Zhao; Yangfan Li; Yunchuan Qin; Kenli Li</div><div class="presenter">报告人 / Presenter: <span class="pending">待定</span></div></td><td>常规报告 · 10 min</td></tr>
+<tr id="paper-985"><td class="time">16:50–17:00</td><td class="paper-id">985</td><td><span class="paper-title">Scheduler-Integrated Measurement of Device Execution Context on Heterogeneous Supercomputers</span><div class="authors">Haoyu Guan; Rui Wang</div><div class="presenter">报告人 / Presenter: <span class="pending">待定</span></div></td><td>常规报告 · 10 min</td></tr>
+<tr class="event-row"><td class="time">17:00–17:30</td><td>—</td><td>Academic Discussion | 学术讨论</td><td>—</td></tr>
+</tbody></table></div>
+<p class="back-top"><a href="#overview">返回日程总览 ↑</a></p>
+</article>
+<article class="session" id="session-2e">
+<h3>Session 2E — 新型计算范式：量子计算</h3>
+<p class="english-title" lang="en">Emerging Computing Paradigms: Quantum Computing</p>
+<div class="session-meta"><span><strong>日期：</strong>12月6日</span> <span><strong>时间：</strong>15:30–16:50</span> <span><strong>地点：</strong>五楼 芙蓉2厅</span> <span><strong>主持人：</strong><span class="pending">待定</span></span> <span><strong>技术联系人：</strong><span class="pending">待定</span></span></div>
+<div class="table-scroll"><table class="paper-table"><thead><tr><th scope="col">报告时间 / Time</th><th scope="col">论文ID</th><th scope="col">论文题目与作者 / Paper and Authors</th><th scope="col">类型 / Type</th></tr></thead><tbody>
+<tr id="paper-288"><td class="time">15:30–15:40</td><td class="paper-id">288</td><td><span class="paper-title">Adaptive Depth in Quantum Computation with Classical Feedback</span><div class="authors">Xiaohan Yu; Bo Zhao; Xuyan Qi; Zheng Shan</div><div class="presenter">报告人 / Presenter: <span class="pending">待定</span></div></td><td>常规报告 · 10 min</td></tr>
+<tr id="paper-340"><td class="time">15:40–15:50</td><td class="paper-id">340</td><td><span class="paper-title">Where to Run vs. How Well: The Cost of Calibration Staleness in Hybrid HPC–Quantum Scheduling</span><div class="authors">Qing Mu; Weilong Wang; Lixin Wang</div><div class="presenter">报告人 / Presenter: <span class="pending">待定</span></div></td><td>常规报告 · 10 min</td></tr>
+<tr id="paper-393"><td class="time">15:50–16:00</td><td class="paper-id">393</td><td><span class="paper-title">Scalable Heterogeneous Reconstruction for Ultra-Large-Scale Random Quantum Circuit Cutting</span><div class="authors">Qingqing Jiang; Weidong Liu; Yufu Liu; Ruiqing He; Jiandong Shang; Hengliang Guo; Qiang Chen</div><div class="presenter">报告人 / Presenter: <span class="pending">待定</span></div></td><td>常规报告 · 10 min</td></tr>
+<tr id="paper-573"><td class="time">16:00–16:10</td><td class="paper-id">573</td><td><span class="paper-title">Fidelity-Constrained Pulse Fusion for an Eight-Qubit Alternating-Operator Circuit</span><div class="authors">Zhiyuan Zhang; Bolin Zhang; Yongguang Lv; Ruiqing He; Hengliang Guo; Jiandong Shang; Qiang Chen</div><div class="presenter">报告人 / Presenter: <span class="pending">待定</span></div></td><td>常规报告 · 10 min</td></tr>
+<tr id="paper-664"><td class="time">16:10–16:20</td><td class="paper-id">664</td><td><span class="paper-title">Towards Secure Quantum Key Distribution: The Role of AI Models</span><div class="authors">Shaoqing Wang; Hui Tian; Hong Shen; Yanming Zhu</div><div class="presenter">报告人 / Presenter: <span class="pending">待定</span></div></td><td>常规报告 · 10 min</td></tr>
+<tr id="paper-307"><td class="time">16:20–16:30</td><td class="paper-id">307</td><td><span class="paper-title">Modular Design and Numerical Verification of a DNA Strand Displacement-Based Cascaded Convolutional Neural Network</span><div class="authors">Chenqian Yue; Lingyu Liang; Yanfeng Wang; Yingcong Wang; Junwei Sun</div><div class="presenter">报告人 / Presenter: <span class="pending">待定</span></div></td><td>常规报告 · 10 min</td></tr>
+<tr id="paper-373"><td class="time">16:30–16:40</td><td class="paper-id">373</td><td><span class="paper-title">State Observer Synchronization of a Four-Dimensional Chaotic System Based on DNA Strand Displacement</span><div class="authors">Lingyu Liang; Yibo Dong; Yanfeng Wang; Junwei Sun; Yingcong Wang</div><div class="presenter">报告人 / Presenter: <span class="pending">待定</span></div></td><td>常规报告 · 10 min</td></tr>
+<tr id="paper-300"><td class="time">16:40–16:50</td><td class="paper-id">300</td><td><span class="paper-title">Stage-Adapted LIFU Thermal Regulation Coupled with DSD-Inspired Release Mapping</span><div class="authors">Yibo Dong; Chenqian Yue; Yanfeng Wang; Yingcong Wang; Junwei Sun</div><div class="presenter">报告人 / Presenter: <span class="pending">待定</span></div></td><td>常规报告 · 10 min</td></tr>
+<tr class="event-row"><td class="time">16:50–17:30</td><td>—</td><td>Academic Discussion | 学术讨论</td><td>—</td></tr>
+</tbody></table></div>
+<p class="back-top"><a href="#overview">返回日程总览 ↑</a></p>
+</article>
+<article class="session" id="session-2f">
+<h3>Session 2F — 在线优化、资源调度与绿色计算</h3>
+<p class="english-title" lang="en">Online Optimization, Resource Scheduling and Green Computing</p>
+<div class="session-meta"><span><strong>日期：</strong>12月6日</span> <span><strong>时间：</strong>15:30–17:00</span> <span><strong>地点：</strong>五楼 紫荆厅</span> <span><strong>主持人：</strong><span class="pending">待定</span></span> <span><strong>技术联系人：</strong><span class="pending">待定</span></span></div>
+<div class="table-scroll"><table class="paper-table"><thead><tr><th scope="col">报告时间 / Time</th><th scope="col">论文ID</th><th scope="col">论文题目与作者 / Paper and Authors</th><th scope="col">类型 / Type</th></tr></thead><tbody>
+<tr id="paper-240"><td class="time">15:30–15:40</td><td class="paper-id">240</td><td><span class="paper-title">A Randomized Algorithm for the Unconstrained Online Weighted Set Multi-Cover Problem</span><div class="authors">Dadong Xiao; Weixian Lai; Wenbin Chen; Hao Lei; Jianxiong Wang</div><div class="presenter">报告人 / Presenter: <span class="pending">待定</span></div></td><td>常规报告 · 10 min</td></tr>
+<tr id="paper-311"><td class="time">15:40–15:50</td><td class="paper-id">311</td><td><span class="paper-title">Adaptive Harmony Search algorithm with Q-learning for Distributed Flowshop Scheduling</span><div class="authors">—</div><div class="presenter">报告人 / Presenter: <span class="pending">待定</span></div></td><td>常规报告 · 10 min</td></tr>
+<tr id="paper-603"><td class="time">15:50–16:00</td><td class="paper-id">603</td><td><span class="paper-title">A Multi-Constraint Hierarchical Intelligent Dispatch Method for Building Maintenance</span><div class="authors">Hong Nie; Hao Yu; Xiangyuan Zhu; Leyi Gao; Zhixian Chen; Kaiding Yang</div><div class="presenter">报告人 / Presenter: <span class="pending">待定</span></div></td><td>常规报告 · 10 min</td></tr>
+<tr id="paper-602"><td class="time">16:00–16:10</td><td class="paper-id">602</td><td><span class="paper-title">AffinityWeaver: Prediction-Assisted Scheduling of Multimodal AIGC Batch Jobs in Heterogeneous GPU Clusters</span><div class="authors">Yuhang Yuan; Congfeng Jiang; Junming Liu</div><div class="presenter">报告人 / Presenter: <span class="pending">待定</span></div></td><td>常规报告 · 10 min</td></tr>
+<tr id="paper-522"><td class="time">16:10–16:20</td><td class="paper-id">522</td><td><span class="paper-title">Two-Timescale Optimization of Multi-scale Lightweight Model Deployment and Online Request Scheduling in Cloud-Edge Systems</span><div class="authors">Juan Fang; Xiaoning Zhai; Mengxia Li</div><div class="presenter">报告人 / Presenter: <span class="pending">待定</span></div></td><td>常规报告 · 10 min</td></tr>
+<tr id="paper-811"><td class="time">16:20–16:30</td><td class="paper-id">811</td><td><span class="paper-title">EdgeGrant: Pre-Authorized Elasticity for Intermittently Connected Edge Systems</span><div class="authors">Weijian You; Jianguo Chen; Zebin Chen; Guangshun Li; Jing Liu; Yuyin Ma</div><div class="presenter">报告人 / Presenter: <span class="pending">待定</span></div></td><td>常规报告 · 10 min</td></tr>
+<tr id="paper-1130"><td class="time">16:30–16:40</td><td class="paper-id">1130</td><td><span class="paper-title">A Reliability-Aware Energy Efficiency Scheduling Method Using Reinforcement Learning in Heterogeneous Cloud Environments</span><div class="authors">Yizhi Zheng; Longxing Zhang; Huiming Luo</div><div class="presenter">报告人 / Presenter: <span class="pending">待定</span></div></td><td>常规报告 · 10 min</td></tr>
+<tr id="paper-774"><td class="time">16:40–16:50</td><td class="paper-id">774</td><td><span class="paper-title">Sleep and Shutdown Matter: Revisiting Carbon-Aware Inference Scheduling with Low-Power States</span><div class="authors">Shangzhi Fu; Zhiqiang Wu</div><div class="presenter">报告人 / Presenter: <span class="pending">待定</span></div></td><td>常规报告 · 10 min</td></tr>
+<tr id="paper-1137"><td class="time">16:50–17:00</td><td class="paper-id">1137</td><td><span class="paper-title">Feasibility Study of Shrinkage Power Supply for Scalable Clusters</span><div class="authors">Cheng Hu</div><div class="presenter">报告人 / Presenter: <span class="pending">待定</span></div></td><td>常规报告 · 10 min</td></tr>
+<tr class="event-row"><td class="time">17:00–17:30</td><td>—</td><td>Academic Discussion | 学术讨论</td><td>—</td></tr>
+</tbody></table></div>
+<p class="back-top"><a href="#overview">返回日程总览 ↑</a></p>
+</article>
+<article class="session" id="session-online-2">
+<h3>Session Online-2 — 线上专场二：智能计算与交叉应用</h3>
+<p class="english-title" lang="en">Online Session 2: Intelligent Computing and Applications</p>
+<div class="session-meta"><span><strong>日期：</strong>12月6日</span> <span><strong>时间：</strong>16:10–17:10</span> <span><strong>地点：</strong>腾讯会议</span> <span><strong>主持人：</strong><span class="pending">待定</span></span> <span><strong>技术联系人：</strong><span class="pending">待定</span></span> <span><strong>腾讯会议号／链接：</strong><span class="pending">待定</span></span></div>
+<div class="table-scroll"><table class="paper-table"><thead><tr><th scope="col">报告时间 / Time</th><th scope="col">论文ID</th><th scope="col">论文题目与作者 / Paper and Authors</th><th scope="col">类型 / Type</th></tr></thead><tbody>
+<tr id="paper-214"><td class="time">16:10–16:20</td><td class="paper-id">214</td><td><span class="paper-title">Resource-Aware Quantum Downstream Classification for Speech Emotion Recognition under Compact Feature Budgets</span><div class="authors">Minh Ngoc Le; Duy Thanh Huynh; Bao Quoc Tien; Hoang Ngoc Tran</div><div class="presenter">报告人 / Presenter: <span class="pending">待定</span></div></td><td>常规报告 · 10 min</td></tr>
+<tr id="paper-297"><td class="time">16:20–16:30</td><td class="paper-id">297</td><td><span class="paper-title">Lightweight YOLO11n with High-Resolution Multi-Scale Fusion for Small Traffic Sign Detection</span><div class="authors">Huynh Tien Dat Kim; Nhat Hoa Huynh; Thong Hoang Dang; Hoang Ngoc Tran</div><div class="presenter">报告人 / Presenter: <span class="pending">待定</span></div></td><td>常规报告 · 10 min</td></tr>
+<tr id="paper-521"><td class="time">16:30–16:40</td><td class="paper-id">521</td><td><span class="paper-title">Balancing Real and Synthetic Facial Images for Age Estimation and Verification</span><div class="authors">Craig Price; Kaden Davis; Md Mashrur Arifin; Jyh-haw Yeh</div><div class="presenter">报告人 / Presenter: <span class="pending">待定</span></div></td><td>常规报告 · 10 min</td></tr>
+<tr id="paper-730"><td class="time">16:40–16:50</td><td class="paper-id">730</td><td><span class="paper-title">Explainable Anomaly Detection in PM2.5 Sensor Networks with Limited Spatial Context</span><div class="authors">Gabriel Guerrero-Contreras; Sara Balderas-Díaz; João M. F. Rodrigues; Pedro J. S. Cardoso</div><div class="presenter">报告人 / Presenter: <span class="pending">待定</span></div></td><td>常规报告 · 10 min</td></tr>
+<tr id="paper-694"><td class="time">16:50–17:00</td><td class="paper-id">694</td><td><span class="paper-title">Large-Scale Opinion Leader Detection in Heterogeneous Social Networks via Trust and Priority-Aware Aggregation</span><div class="authors">Amira Foughali; Lobna Hlaoua</div><div class="presenter">报告人 / Presenter: <span class="pending">待定</span></div></td><td>常规报告 · 10 min</td></tr>
+<tr id="paper-271"><td class="time">17:00–17:10</td><td class="paper-id">271</td><td><span class="paper-title">Attention-Aware ICH Cover Design and Validation for Distributed Content Platforms: A Novel AOI-Normalized Eye-Tracking Study</span><div class="authors">Xiao Yage; Song Yanpin; Zhang Pinren; Bin Hu</div><div class="presenter">报告人 / Presenter: <span class="pending">待定</span></div></td><td>常规报告 · 10 min</td></tr>
+<tr class="event-row"><td class="time">17:10–17:30</td><td>—</td><td>Academic Discussion | 学术讨论</td><td>—</td></tr>
+</tbody></table></div>
+<p class="back-top"><a href="#overview">返回日程总览 ↑</a></p>
+</article>
+</section>
+<section class="day" id="poster"><h2>Poster | 海报展示</h2>
+<p>12月5日与6日，13:30–17:30 · 湖南佳兴世尊酒店海报展示区 · 楼层、区域及展板位置：<span class="pending">待定</span></p>
+<p><strong>Poster · Paper ID 510</strong><br><span class="paper-title">Research on Modality-Aware Low-Rank Reparameterized Differentially Private Fine-Tuning for Multimodal Large Models</span><br><span class="authors">Yingqiu Zhang; Yingpeng Sang</span></p>
+<p class="muted">仅展示海报，不安排口头报告。</p>
+</section>
+</main></section>
+<div id="footer-placeholder"></div>
+<script src="../vendor/jquery/jquery.min.js"></script>
+<script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 <script src="js/pdcat-dropdown.js"></script>
+<script>Promise.all([fetch("my_navbar.html").then(r => r.text()), fetch("my_footer.html").then(r => r.text())]).then(([nav, footer]) => { document.getElementById("navbar-placeholder").innerHTML = nav; document.getElementById("footer-placeholder").innerHTML = footer; const active = document.querySelector(".nav-link[data-page='program.html']"); if (active) active.classList.add("active"); }).catch(console.error);</script>
 </body>
-
 </html>
