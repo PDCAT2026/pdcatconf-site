@@ -1,51 +1,152 @@
 .schedule-page {
-  padding: 6.5rem 0 4rem;
-  background: #f8fafc;
-  color: #1f2937;
-  font-family: "Open Sans", "Microsoft YaHei", sans-serif;
+  --slate: #546b82;
+  --coral: #f05f40;
+  --link: #9c3c28;
+  --rule: #d9dee3;
+  --pale: #f0f2f5;
+  padding: 4.5rem 0 3rem;
+  color: #212529;
+  background: #fff;
   line-height: 1.55;
 }
-.schedule-page .schedule-container { max-width: 1160px; }
-.schedule-page h1, .schedule-page h2, .schedule-page h3 { font-weight: 700; color: #183653; }
-.schedule-page h1 { font-size: clamp(2rem, 4vw, 3rem); margin-bottom: .5rem; }
-.schedule-page h2 { font-size: 1.55rem; margin: 2.7rem 0 .8rem; }
-.schedule-page h3 { font-size: 1.2rem; margin-bottom: .35rem; }
-.schedule-page a { color: #176194; text-decoration: underline; text-underline-offset: 2px; }
-.schedule-page a:hover, .schedule-page a:focus { color: #a44222; }
-.schedule-page .intro { color: #4b5563; max-width: 860px; }
-.schedule-page .quick-links { display: flex; flex-wrap: wrap; gap: .6rem; margin: 1.35rem 0 2rem; }
-.schedule-page .quick-links a { border: 1px solid #9fb2c4; border-radius: .3rem; padding: .45rem .75rem; text-decoration: none; background: #fff; }
-.schedule-page .quick-links a:focus-visible, .schedule-page a:focus-visible { outline: 3px solid #b45309; outline-offset: 2px; }
-.schedule-page .stats { display: flex; flex-wrap: wrap; gap: 1rem; margin: 1rem 0 2rem; }
-.schedule-page .stats span { border-left: 3px solid #d3603d; padding: .2rem .8rem; background: #fff; }
-.schedule-page .stats strong { font-size: 1.2rem; color: #183653; }
-.schedule-page .day { border-top: 2px solid #e2e8f0; margin-top: 2rem; scroll-margin-top: 5rem; }
-.schedule-page .day-date { margin: 0 0 1rem; color: #516276; }
-.schedule-page .table-scroll { overflow-x: auto; margin: 1rem 0 1.5rem; }
-.schedule-page table { width: 100%; border-collapse: collapse; background: #fff; }
-.schedule-page th, .schedule-page td { border: 1px solid #ccd6e0; padding: .6rem .75rem; vertical-align: top; }
-.schedule-page th { color: #183653; font-weight: 700; text-align: left; }
-.schedule-page .overview-table { min-width: 850px; }
-.schedule-page .agenda-table { min-width: 560px; }
-.schedule-page .paper-table { min-width: 690px; }
-.schedule-page .time, .schedule-page .paper-id { white-space: nowrap; font-variant-numeric: tabular-nums; }
-.schedule-page .paper-id { font-weight: 700; }
-.schedule-page .paper-title { font-weight: 700; color: #263f5a; }
-.schedule-page .authors, .schedule-page .presenter { color: #526173; margin-top: .2rem; font-size: .91rem; }
-.schedule-page .pending { color: #8a6d00; font-weight: 400; }
-.schedule-page .session-slot { white-space: nowrap; }
-.schedule-page .session { background: #fff; border: 1px solid #ccd6e0; border-radius: .35rem; padding: 1.25rem; margin: 1.25rem 0; scroll-margin-top: 5rem; }
-.schedule-page .session:target { border-color: #c45a34; }
-.schedule-page .session-meta { display: flex; flex-wrap: wrap; gap: .35rem 1.5rem; margin: .55rem 0 1rem; font-size: .95rem; }
-.schedule-page .session-meta span { display: inline-block; }
-.schedule-page .english-title { color: #607386; margin-bottom: .5rem; }
-.schedule-page .event-row td { font-weight: 700; color: #34506a; }
-.schedule-page .key-report { font-weight: 700; color: #9a411f; }
-.schedule-page .muted { color: #667585; }
-.schedule-page .note { border-left: 3px solid #d3603d; padding-left: .75rem; margin: 1rem 0; }
-.schedule-page .back-top { font-size: .9rem; margin-top: .8rem; }
-@media (max-width: 768px) {
-  .schedule-page { padding-top: 5rem; }
-  .schedule-page .session { padding: .8rem; }
-  .schedule-page th, .schedule-page td { padding: .5rem; }
+
+.program-banner {
+  color: #fff;
+  background: linear-gradient(90deg, rgba(28, 46, 63, .93), rgba(37, 58, 78, .78) 44%, rgba(36, 54, 71, .12) 86%),
+              var(--slate) url("../img/temp2.png") center 62% / cover no-repeat;
+  border-bottom: 3px solid var(--coral);
+}
+.program-banner .container { padding-block: clamp(1.8rem, 4vw, 3.1rem); }
+.program-banner h1 {
+  margin: .25rem 0 .6rem;
+  color: #fff;
+  font-size: clamp(2.2rem, 4.5vw, 3.6rem);
+  font-weight: 700;
+  line-height: 1.1;
+}
+.program-banner p { margin: 0; }
+.program-dateline { font-size: .95rem; font-weight: 700; }
+.program-venue { font-size: 1.08rem; }
+.program-zone { font-size: .9rem; }
+
+.quick-links { border-bottom: 1px solid var(--rule); }
+.quick-links .container { display: flex; flex-wrap: wrap; column-gap: clamp(1rem, 3vw, 2.4rem); }
+.schedule-page a { color: var(--link); text-decoration: underline; text-underline-offset: .16em; }
+.schedule-page a:hover { color: #702a1b; }
+.schedule-page a:focus-visible { outline: 3px solid var(--slate); outline-offset: 2px; }
+.quick-links a {
+  padding: .85rem 0 .7rem;
+  border-bottom: 2px solid transparent;
+  color: #354350;
+  font-weight: 600;
+  text-decoration: none;
+}
+.quick-links a:hover, .quick-links a:focus-visible { border-bottom-color: var(--coral); }
+
+.program-content { padding-top: .35rem; }
+.program-content section { padding: 0; }
+.program-content .day { padding-top: 1.9rem; }
+.program-content :is(.day, .session, #overview) { scroll-margin-top: 5rem; }
+.program-content .section-heading { margin: 0 0 .9rem; font-size: clamp(1.25rem, 2.2vw, 1.7rem); }
+.program-content h3 { margin: 1.4rem 0 .5rem; font-size: 1.22rem; font-weight: 700; }
+.day-date, .intro { margin-bottom: .85rem; color: #49545e; }
+.note { padding-left: .85rem; border-left: 3px solid var(--coral); }
+.pending { color: #805600; }
+
+.table-scroll { overflow-x: auto; margin: .5rem 0 1.25rem; }
+.program-content table { width: 100%; border-collapse: collapse; }
+.program-content th, .program-content td {
+  padding: .62rem .8rem;
+  border-bottom: 1px solid var(--rule);
+  text-align: left;
+  vertical-align: top;
+}
+.program-content thead th { background: var(--slate); color: #fff; font-weight: 700; }
+.program-content tbody tr:nth-child(even) { background: #f8f9fa; }
+.program-content .time, .paper-id { white-space: nowrap; font-variant-numeric: tabular-nums; }
+.agenda-table th:first-child, .paper-table th:first-child { width: 8rem; }
+.overview-table { font-size: .94rem; }
+.overview-table .session-slot { font-weight: 600; }
+.overview-table th[scope="row"] { font-weight: 700; }
+.overview-table .session-chairs { display: block; margin-top: .45rem; font-size: .85rem; color: #424c55; }
+.chair-person { display: inline-block; max-width: 100%; }
+.session-chairs { font-family: Arial, "Microsoft YaHei", "PingFang SC", sans-serif; overflow-wrap: anywhere; }
+
+.session { margin: 1.5rem 0 2rem; }
+.session > h3 { padding: .6rem .85rem; border-left: 4px solid var(--coral); background: var(--pale); line-height: 1.35; }
+.session-meta { display: flex; flex-wrap: wrap; gap: .35rem 1.5rem; margin: .7rem 0 .8rem; color: #48525b; font-size: .95rem; }
+.session-meta > .session-chairs { flex-basis: 100%; color: #212529; }
+.session-meta > span { min-width: 0; }
+.paper-table th:nth-child(2) { width: 6.5rem; }
+.paper-title, .paper-id { font-weight: 700; }
+.authors { margin-top: .12rem; font-size: .92rem; color: #505860; }
+.paper-category { color: var(--link); font-size: .88rem; }
+.event-row td { font-weight: 600; color: #43566a; }
+.back-top { text-align: right; font-size: .9rem; }
+
+@media (max-width: 767px) {
+  .quick-links .container { gap: 0 1rem; }
+  .quick-links a { padding: .48rem 0 .35rem; font-size: .9rem; }
+  .program-content .day { padding-top: 1.35rem; }
+  .program-content th, .program-content td { padding: .5rem .55rem; }
+  .agenda-table th:first-child { width: 6.5rem; }
+
+  .overview-table, .overview-table tbody { display: block; }
+  .overview-table thead {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+  }
+  .overview-table tbody tr {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    border: 1px solid var(--rule);
+    margin: .5rem 0 .8rem;
+    background: #fff;
+  }
+  .program-content .overview-table tbody tr:nth-child(even) { background: #fff; }
+  .overview-table th[scope="row"], .overview-table td:nth-child(2) { background: var(--pale); }
+  .overview-table td:nth-child(n+3) { grid-column: 1 / -1; }
+  .overview-table td:last-child { border-bottom: 0; }
+  .overview-table [data-label]::before { content: attr(data-label) " "; color: #505860; font-size: .85rem; font-weight: 600; }
+  .overview-table td:nth-child(3)::before, .overview-table td:nth-child(5)::before { display: block; }
+}
+
+@media (max-width: 575px) {
+  .program-banner {
+    background-image: linear-gradient(90deg, rgba(28, 46, 63, .93), rgba(37, 58, 78, .73) 70%, rgba(36, 54, 71, .48)), url("../img/temp2.png");
+  }
+  .program-banner h1 { font-size: clamp(1.95rem, 8vw, 2.5rem); }
+  .paper-table, .paper-table tbody { display: block; }
+  .paper-table thead {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+  }
+  .paper-table tr {
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr);
+    gap: .22rem .85rem;
+    border-bottom: 1px solid var(--rule);
+    padding: .65rem .55rem;
+  }
+  .paper-table tbody { border-top: 2px solid var(--slate); }
+  .program-content .paper-table td { padding: 0; border: 0; }
+  .paper-table td:last-child { grid-column: 1 / -1; overflow-wrap: anywhere; }
+  .paper-table .paper-id::before { content: "Paper ID "; font-weight: 400; }
+  .paper-table .time, .paper-table .paper-id { font-size: .9rem; color: #43566a; }
+  .paper-table .event-row td:nth-child(2) { display: none; }
+  .session-meta { column-gap: .85rem; }
+}
+
+@media print {
+  .schedule-page { padding: 0; }
+  .program-banner, .program-banner h1 { background: #fff; color: #212529; }
+  .program-banner .container { padding-block: .5rem; }
+  .quick-links, .back-top { display: none; }
+  .table-scroll { overflow: visible; }
 }
