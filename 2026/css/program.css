@@ -43,6 +43,27 @@
 }
 .quick-links a:hover, .quick-links a:focus-visible { border-bottom-color: var(--coral); }
 
+.jump-rail { position: sticky; top: 4.5rem; z-index: 5; align-self: start; margin-top: 1rem; }
+.program-jumps {
+  max-height: calc(100vh - 5.5rem);
+  overflow-y: auto;
+  background: #fff;
+  border: 1px solid var(--rule);
+  border-top: 3px solid var(--coral);
+  border-radius: .35rem;
+}
+.program-jumps summary { padding: .55rem .8rem; color: #273848; font-weight: 700; cursor: pointer; }
+.program-jumps summary::marker { color: var(--link); }
+.program-jumps summary:focus-visible { outline: 2px solid var(--slate); outline-offset: -3px; }
+.program-jumps[open] summary { border-bottom: 1px solid var(--rule); }
+.program-jumps nav { padding: .35rem .7rem .55rem; }
+.program-jumps a { display: block; color: #354350; text-decoration: none; }
+.program-jumps nav > a { padding: .25rem .1rem; font-weight: 600; font-size: .93rem; }
+.jump-sessions { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: .2rem; margin: .1rem 0 .45rem; }
+.jump-sessions a { padding: .15rem .1rem; background: var(--pale); text-align: center; font-size: .85rem; border-radius: .2rem; }
+.jump-sessions a:last-child { grid-column: 1 / -1; }
+.program-jumps a:hover { color: var(--link); text-decoration: underline; }
+
 .program-content { padding-top: .35rem; }
 .program-content section { padding: 0; }
 .program-content .day { padding-top: 1.9rem; }
@@ -80,9 +101,18 @@
 .paper-table th:nth-child(2) { width: 6.5rem; }
 .paper-title, .paper-id { font-weight: 700; }
 .authors { margin-top: .12rem; font-size: .92rem; color: #505860; }
-.paper-category { color: var(--link); font-size: .88rem; }
 .event-row td { font-weight: 600; color: #43566a; }
 .back-top { text-align: right; font-size: .9rem; }
+
+@media (min-width: 992px) {
+  .program-layout { display: grid; grid-template-columns: minmax(11.75rem, 1fr) minmax(0, 1140px) minmax(0, 1fr); }
+  .jump-rail { top: 5rem; max-width: 14.5rem; margin: 2.25rem 0 0 auto; }
+  .program-layout > .program-content { min-width: 0; max-width: none; }
+}
+@media (max-width: 991.98px) {
+  .program-content :is(.day, .session, #overview) { scroll-margin-top: 8.25rem; }
+  .jump-sessions a { padding-block: .45rem; }
+}
 
 @media (max-width: 767px) {
   .quick-links .container { gap: 0 1rem; }
@@ -147,6 +177,7 @@
   .schedule-page { padding: 0; }
   .program-banner, .program-banner h1 { background: #fff; color: #212529; }
   .program-banner .container { padding-block: .5rem; }
-  .quick-links, .back-top { display: none; }
+  .quick-links, .jump-rail, .back-top { display: none; }
+  .program-layout { display: block; }
   .table-scroll { overflow: visible; }
 }
