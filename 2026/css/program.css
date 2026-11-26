@@ -83,7 +83,6 @@
   vertical-align: top;
 }
 .program-content thead th { background: var(--slate); color: #fff; font-weight: 700; }
-.program-content tbody tr:nth-child(even) { background: #f8f9fa; }
 .program-content .time, .paper-id { white-space: nowrap; font-variant-numeric: tabular-nums; }
 .agenda-table th:first-child, .paper-table th:first-child { width: 8rem; }
 .overview-table { font-size: .94rem; }
@@ -142,8 +141,6 @@
     margin: .5rem 0 .8rem;
     background: #fff;
   }
-  .program-content .overview-table tbody tr:nth-child(even) { background: #fff; }
-  .overview-table th[scope="row"], .overview-table td:nth-child(2) { background: var(--pale); }
   .overview-table td:nth-child(n+3) { grid-column: 1 / -1; }
   .overview-table td:last-child { border-bottom: 0; }
   .overview-table [data-label]::before { content: attr(data-label) " "; color: #505860; font-size: .85rem; font-weight: 600; }
