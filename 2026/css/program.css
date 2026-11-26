@@ -125,6 +125,7 @@
   .program-content .day { padding-top: 1.35rem; }
   .program-content th, .program-content td { padding: .5rem .55rem; }
   .agenda-table th:first-child { width: 6.5rem; }
+  #overview .agenda-table td { overflow-wrap: anywhere; }
 
   .overview-table, .overview-table tbody { display: block; }
   .overview-table thead {
