@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>In-Person Presentation Slides | PDCAT 2026</title>
+  <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../css/creative.css" rel="stylesheet">
+  <link href="css/pdcat-dropdown.css" rel="stylesheet">
+  <style>
+    main { padding: 6rem 15px 2rem; }
+    main.container { max-width: 920px; }
+    .form-section { padding: 1.5rem; border: 1px solid #dee2e6; border-radius: 8px; margin-bottom: 1rem; }
+    label { font-weight: 600; }
+    fieldset { min-width: 0; }
+    input[type="file"] { max-width: 100%; }
+    #submission-result { overflow-wrap: anywhere; scroll-margin-top: 6rem; }
+    [hidden] { display: none !important; }
+  </style>
+  <script>
+    fetch('my_head.html').then(res => res.text()).then(html => {
+      document.head.insertAdjacentHTML('beforeend', html);
+      document.title = 'In-Person Presentation Slides | PDCAT 2026';
+    }).catch(console.error);
+  </script>
+</head>
+<body id="page_top">
+  <div id="navbar-placeholder"></div>
+  <main class="container">
+    <h1 class="section-heading">In-Person Presentation Slides</h1>
+    <p class="alert alert-info"><strong>Deadline <time datetime="2026-12-03T00:00:00+08:00">2 December 2026, 24:00 (Beijing time)</time></strong><br>Upload one PPT, PPTX, or PDF file per paper, up to 15 MB.</p>
+    <p>Check your session in the <a href="program.html">conference program</a> before you upload. If your session changes, submit again with the updated session.</p>
+    <noscript><p class="alert alert-warning">Please enable JavaScript to upload your presentation file.</p></noscript>
+    <form id="slides-form" enctype="multipart/form-data">
+      <fieldset id="slides-fields" disabled>
+        <div class="form-section">
+          <div class="form-row">
+            <div class="form-group col-sm-5"><label for="paper-id">Paper ID *</label><input class="form-control" id="paper-id" name="paper_id" inputmode="numeric" maxlength="10" placeholder="e.g. 501" required></div>
+            <div class="form-group col-sm-7">
+              <label for="session">Session *</label>
+              <select class="form-control" id="session" name="session" required>
+                <option value="">Select your in-person session</option>
+                <optgroup label="December 5">
+                  <option value="A1">Session A1</option><option value="B1">Session B1</option><option value="C1">Session C1</option>
+                  <option value="A2">Session A2</option><option value="B2">Session B2</option><option value="C2">Session C2</option>
+                </optgroup>
+                <optgroup label="December 6">
+                  <option value="D1">Session D1</option><option value="E1">Session E1</option><option value="F1">Session F1</option>
+                  <option value="D2">Session D2</option><option value="E2">Session E2</option><option value="F2">Session F2</option>
+                </optgroup>
+              </select>
+            </div>
+          </div>
+          <div class="form-group"><label for="paper-title">Paper title *</label><input class="form-control" id="paper-title" name="paper_title" maxlength="500" required></div>
+          <div class="form-group mb-0"><label for="email">Contact email *</label><input class="form-control" type="email" id="email" name="email" autocomplete="email" maxlength="254" required></div>
+        </div>
+        <div class="form-section">
+          <div class="form-group"><label for="slides">Presentation file *</label><input type="file" class="form-control-file" id="slides" name="slides" accept=".ppt,.pptx,.pdf" aria-describedby="file-help" required></div>
+          <p id="file-help" class="text-muted mb-0">PPT, PPTX, or PDF, up to 15 MB.</p>
+        </div>
+        <label class="mb-3"><input type="checkbox" name="consent" value="yes" required> I agree to share this file and contact email with the conference organizers. *</label>
+        <div><button class="btn btn-primary" type="submit">Upload slides</button></div>
+      </fieldset>
+    </form>
+    <p id="form-status" role="status" aria-live="polite" class="mt-3"></p>
+    <section id="submission-result" class="alert alert-success" hidden aria-labelledby="saved-title" tabindex="-1">
+      <h2 id="saved-title" class="h4">Presentation file received</h2>
+      <p id="confirmation"></p>
+      <button type="button" id="new-upload" class="btn btn-outline-secondary">Upload another file</button>
+    </section>
+  </main>
+  <div id="footer-placeholder"></div>
+  <script src="../vendor/jquery/jquery.min.js"></script>
+  <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script>
+    fetch('my_navbar.html').then(res => res.text()).then(html => {
+      document.getElementById('navbar-placeholder').innerHTML = html;
+      document.querySelector('.nav-link[data-page="register.html"]')?.classList.add('active');
+    }).catch(console.error);
+    fetch('my_footer.html').then(res => res.text()).then(html => {
+      document.getElementById('footer-placeholder').innerHTML = html;
+    }).catch(console.error);
+  </script>
+  <script src="js/pdcat-dropdown.js"></script>
+  <script src="js/slides-upload.js?v=20261126"></script>
+</body>
+</html>
