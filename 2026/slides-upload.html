@@ -56,7 +56,7 @@
         </div>
         <div class="form-section">
           <div class="form-group"><label for="slides">Presentation file *</label><input type="file" class="form-control-file" id="slides" name="slides" accept=".ppt,.pptx,.pdf" aria-describedby="file-help" required></div>
-          <p id="file-help" class="text-muted mb-0">PPT, PPTX, or PDF, up to 15 MB.</p>
+          <p id="file-help" class="text-muted mb-0">Use <strong>Session-PaperID</strong> followed by the file extension, for example <code>A1-123.pptx</code>. The session and paper ID must match the form. PPT, PPTX, or PDF, up to 15 MB.</p>
         </div>
         <label class="mb-3"><input type="checkbox" name="consent" value="yes" required> I agree to share this file and contact email with the conference organizers. *</label>
         <div><button class="btn btn-primary" type="submit">Upload slides</button></div>
@@ -82,6 +82,6 @@
     }).catch(console.error);
   </script>
   <script src="js/pdcat-dropdown.js"></script>
-  <script src="js/slides-upload.js?v=20261126"></script>
+  <script src="js/slides-upload.js?v=20261126-filename"></script>
 </body>
 </html>

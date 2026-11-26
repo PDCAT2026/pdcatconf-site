@@ -4,6 +4,7 @@ const endpoint = 'https://101.37.245.203/api/slides';
 const byId = id => document.getElementById(id);
 const pendingKey = 'pdcat2026-slides-upload-code';
 const form = byId('slides-form'), fields = byId('slides-fields'), fileInput = byId('slides');
+const paperInput = byId('paper-id'), sessionInput = byId('session');
 let uploadCode = '';
 try { uploadCode = sessionStorage.getItem(pendingKey) || ''; } catch (_) {}
 
@@ -12,14 +13,31 @@ function clearCode() {
   try { sessionStorage.removeItem(pendingKey); } catch (_) {}
 }
 
-fileInput.addEventListener('change', () => {
+function validateFile() {
+  fileInput.setCustomValidity('');
   const file = fileInput.files[0];
-  fileInput.setCustomValidity(file && (!/\.(pptx?|pdf)$/i.test(file.name) || !file.size || file.size > 15 * 1024 * 1024)
-    ? 'Choose a nonempty PPT, PPTX, or PDF file no larger than 15 MB.' : '');
-});
+  if (!file) return;
+  const extension = file.name.match(/\.(pptx?|pdf)$/i)?.[0].toLowerCase();
+  if (!extension || !file.size || file.size > 15 * 1024 * 1024) {
+    fileInput.setCustomValidity('Choose a nonempty PPT, PPTX, or PDF file no larger than 15 MB.');
+    return;
+  }
+  const paperID = Number(paperInput.value.trim().normalize('NFKC').match(/[0-9]+$/)?.[0]);
+  if (sessionInput.value && paperID > 0 && paperID <= 4294967295) {
+    const expected = `${sessionInput.value}-${paperID}${extension}`;
+    if (file.name.toLowerCase() !== expected.toLowerCase()) {
+      fileInput.setCustomValidity(`Rename your file to ${expected} to match the session and paper ID.`);
+    }
+  }
+}
+
+fileInput.addEventListener('change', validateFile);
+paperInput.addEventListener('input', validateFile);
+sessionInput.addEventListener('change', validateFile);
 
 form.addEventListener('submit', async event => {
   event.preventDefault();
+  validateFile();
   if (fields.disabled || !form.reportValidity()) return;
   if (!uploadCode) uploadCode = Array.from(crypto.getRandomValues(new Uint8Array(32)), b => b.toString(16).padStart(2, '0')).join('');
   try { sessionStorage.setItem(pendingKey, uploadCode); } catch (_) {}
